@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {TeamTypes} from 'xenia-redux/action_types';
-import {viewChannel, getChannelStats} from 'xenia-redux/actions/channels';
-import * as TeamActions from 'xenia-redux/actions/teams';
-import {getCurrentChannelId} from 'xenia-redux/selectors/entities/channels';
-import {getUser} from 'xenia-redux/actions/users';
+import {TeamTypes} from 'mattermost-redux/action_types';
+import {viewChannel, getChannelStats} from 'mattermost-redux/actions/channels';
+import * as TeamActions from 'mattermost-redux/actions/teams';
+import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
+import {getUser} from 'mattermost-redux/actions/users';
 
 import {browserHistory} from 'utils/browser_history';
 

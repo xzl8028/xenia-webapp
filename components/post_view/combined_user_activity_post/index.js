@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 
-import {makeGenerateCombinedPost} from 'xenia-redux/utils/post_list';
+import {makeGenerateCombinedPost} from 'mattermost-redux/utils/post_list';
 
 import Post from 'components/post_view/post';
 

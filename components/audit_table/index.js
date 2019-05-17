@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
-import {getUser, getCurrentUser} from 'xenia-redux/selectors/entities/users';
-import {getChannelByName} from 'xenia-redux/selectors/entities/channels';
+import {getUser, getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {getChannelByName} from 'mattermost-redux/selectors/entities/channels';
 
 import AuditTable from './audit_table.jsx';
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -114,7 +114,7 @@ export default class NotLoggedIn extends React.PureComponent {
                                 id='copyright'
                                 className='pull-right footer-link copyright'
                             >
-                                {`© 2015-${new Date().getFullYear()} xenia, Inc.`}
+                                {`© 2015-${new Date().getFullYear()} Xenia, Inc.`}
                             </span>
                             <span className='pull-right'>
                                 {content}

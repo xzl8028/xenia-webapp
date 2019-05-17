@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {batchActions} from 'redux-batched-actions';
@@ -11,14 +11,14 @@ import {
     markChannelAsRead,
     markChannelAsViewed,
     selectChannel,
-} from 'xenia-redux/actions/channels';
-import {logout, loadMe} from 'xenia-redux/actions/users';
-import {Client4} from 'xenia-redux/client';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {getCurrentTeamId, getTeam, getMyTeams, getMyTeamMember, getTeamMemberships} from 'xenia-redux/selectors/entities/teams';
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {getCurrentChannelStats, getCurrentChannelId, getChannelByName, getMyChannelMember as selectMyChannelMember} from 'xenia-redux/selectors/entities/channels';
-import {ChannelTypes} from 'xenia-redux/action_types';
+} from 'mattermost-redux/actions/channels';
+import {logout, loadMe} from 'mattermost-redux/actions/users';
+import {Client4} from 'mattermost-redux/client';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getCurrentTeamId, getTeam, getMyTeams, getMyTeamMember, getTeamMemberships} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentChannelStats, getCurrentChannelId, getChannelByName, getMyChannelMember as selectMyChannelMember} from 'mattermost-redux/selectors/entities/channels';
+import {ChannelTypes} from 'mattermost-redux/action_types';
 
 import {browserHistory} from 'utils/browser_history';
 import {handleNewPost} from 'actions/post_actions.jsx';

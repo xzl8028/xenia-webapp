@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 
-import {getUser, makeGetDisplayName} from 'xenia-redux/selectors/entities/users';
+import {getUser, makeGetDisplayName} from 'mattermost-redux/selectors/entities/users';
 
 import UserProfile from './user_profile';
 

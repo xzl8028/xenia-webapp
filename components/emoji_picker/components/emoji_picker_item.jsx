@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 import debounce from 'lodash/debounce';
-import {getEmojiImageUrl} from 'xenia-redux/utils/emoji_utils';
+import {getEmojiImageUrl} from 'mattermost-redux/utils/emoji_utils';
 
 import imgTrans from 'images/img_trans.gif';
 

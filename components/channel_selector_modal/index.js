@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {createSelector} from 'reselect';
-import {getAllChannels as loadChannels, searchAllChannels} from 'xenia-redux/actions/channels';
+import {getAllChannels as loadChannels, searchAllChannels} from 'mattermost-redux/actions/channels';
 
 import {getChannelsForChannelSelector} from 'selectors/views/channel_selector_modal';
 import {setModalSearchTerm} from 'actions/views/search';

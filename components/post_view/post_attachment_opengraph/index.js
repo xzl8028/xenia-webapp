@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {getOpenGraphMetadataForUrl} from 'xenia-redux/selectors/entities/posts';
-import {getBool} from 'xenia-redux/selectors/entities/preferences';
-import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getOpenGraphMetadataForUrl} from 'mattermost-redux/selectors/entities/posts';
+import {getBool} from 'mattermost-redux/selectors/entities/preferences';
+import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
 
 import {editPost} from 'actions/views/posts';
 

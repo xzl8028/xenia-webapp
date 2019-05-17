@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import assert from 'assert';
@@ -26,8 +26,8 @@ describe('Markdown.Imgs', () => {
 
     it('Image with link', (done) => {
         assert.equal(
-            Markdown.format('[![xenia](../../images/icon-76x76.png)](https://github.com/mattermost/platform)').trim(),
-            '<p><a class="theme markdown__link" href="https://github.com/mattermost/platform" rel="noreferrer" target="_blank"><img src="../../images/icon-76x76.png" alt="xenia" class="markdown-inline-img"></a></p>'
+            Markdown.format('[![xenia](../../images/icon-76x76.png)](https://github.com/xzl8028/platform)').trim(),
+            '<p><a class="theme markdown__link" href="https://github.com/xzl8028/platform" rel="noreferrer" target="_blank"><img src="../../images/icon-76x76.png" alt="xenia" class="markdown-inline-img"></a></p>'
         );
 
         done();

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -6,7 +6,7 @@ import React from 'react';
 import {OverlayTrigger, Popover, Tooltip} from 'react-bootstrap';
 import {FormattedMessage, intlShape, injectIntl} from 'react-intl';
 
-import EventEmitter from 'xenia-redux/utils/event_emitter';
+import EventEmitter from 'mattermost-redux/utils/event_emitter';
 
 import LocalDateTime from 'components/local_date_time';
 import UserSettingsModal from 'components/user_settings/modal';

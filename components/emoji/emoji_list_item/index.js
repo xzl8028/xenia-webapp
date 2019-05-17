@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getUser, getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {getCurrentTeam} from 'xenia-redux/selectors/entities/teams';
+import {getUser, getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentTeam} from 'mattermost-redux/selectors/entities/teams';
 
-import {deleteCustomEmoji} from 'xenia-redux/actions/emojis';
+import {deleteCustomEmoji} from 'mattermost-redux/actions/emojis';
 
 import {getDisplayNameByUser} from 'utils/utils.jsx';
 

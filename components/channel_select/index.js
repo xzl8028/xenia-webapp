@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {createSelector} from 'reselect';
 
-import {getMyChannels} from 'xenia-redux/selectors/entities/channels';
-import {getCurrentUserLocale} from 'xenia-redux/selectors/entities/i18n';
-import {sortChannelsByTypeAndDisplayName} from 'xenia-redux/utils/channel_utils';
+import {getMyChannels} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentUserLocale} from 'mattermost-redux/selectors/entities/i18n';
+import {sortChannelsByTypeAndDisplayName} from 'mattermost-redux/utils/channel_utils';
 
 import ChannelSelect from './channel_select.jsx';
 

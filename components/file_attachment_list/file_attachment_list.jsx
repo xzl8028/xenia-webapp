@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import {sortFileInfos} from 'xenia-redux/utils/file_utils';
+import {sortFileInfos} from 'mattermost-redux/utils/file_utils';
 
 import {FileTypes} from 'utils/constants.jsx';
 import {getFileType} from 'utils/utils';

@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 import {shallow} from 'enzyme';
-import {Posts} from 'xenia-redux/constants';
+import {Posts} from 'mattermost-redux/constants';
 
 import PostMarkdown from 'components/post_markdown/post_markdown';
 

@@ -1,23 +1,23 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {getChannelAndMyMember, getChannelMembersByIds} from 'xenia-redux/actions/channels';
-import {deletePreferences as deletePreferencesRedux, savePreferences as savePreferencesRedux} from 'xenia-redux/actions/preferences';
-import {getTeamMembersByIds} from 'xenia-redux/actions/teams';
-import * as UserActions from 'xenia-redux/actions/users';
-import {Client4} from 'xenia-redux/client';
-import {bindClientFunc} from 'xenia-redux/actions/helpers';
-import {Preferences as PreferencesRedux} from 'xenia-redux/constants';
+import {getChannelAndMyMember, getChannelMembersByIds} from 'mattermost-redux/actions/channels';
+import {deletePreferences as deletePreferencesRedux, savePreferences as savePreferencesRedux} from 'mattermost-redux/actions/preferences';
+import {getTeamMembersByIds} from 'mattermost-redux/actions/teams';
+import * as UserActions from 'mattermost-redux/actions/users';
+import {Client4} from 'mattermost-redux/client';
+import {bindClientFunc} from 'mattermost-redux/actions/helpers';
+import {Preferences as PreferencesRedux} from 'mattermost-redux/constants';
 import {
     getChannel,
     getCurrentChannelId,
     getMyChannels,
     getMyChannelMember,
     getChannelMembersInChannels,
-} from 'xenia-redux/selectors/entities/channels';
-import {getBool, makeGetCategory} from 'xenia-redux/selectors/entities/preferences';
-import {getCurrentTeamId, getTeamMember} from 'xenia-redux/selectors/entities/teams';
-import * as Selectors from 'xenia-redux/selectors/entities/users';
+} from 'mattermost-redux/selectors/entities/channels';
+import {getBool, makeGetCategory} from 'mattermost-redux/selectors/entities/preferences';
+import {getCurrentTeamId, getTeamMember} from 'mattermost-redux/selectors/entities/teams';
+import * as Selectors from 'mattermost-redux/selectors/entities/users';
 
 import {browserHistory} from 'utils/browser_history';
 import {loadStatusesForProfilesList, loadStatusesForProfilesMap} from 'actions/status_actions.jsx';

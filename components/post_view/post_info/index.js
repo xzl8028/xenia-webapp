@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {removePost} from 'xenia-redux/actions/posts';
-import {isCurrentChannelReadOnly} from 'xenia-redux/selectors/entities/channels';
-import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
-import {get} from 'xenia-redux/selectors/entities/preferences';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {removePost} from 'mattermost-redux/actions/posts';
+import {isCurrentChannelReadOnly} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {get} from 'mattermost-redux/selectors/entities/preferences';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
 import {Preferences} from 'utils/constants.jsx';
 

@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {getGroupsAssociatedToTeam, unlinkGroupSyncable} from 'xenia-redux/actions/groups';
+import {getGroupsAssociatedToTeam, unlinkGroupSyncable} from 'mattermost-redux/actions/groups';
 
 import {closeModal, openModal} from 'actions/views/modals';
 

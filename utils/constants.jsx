@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 /* eslint-disable no-magic-numbers */
@@ -24,8 +24,8 @@ import defaultThemeImage from 'images/themes/organization.png';
 import windows10ThemeImage from 'images/themes/windows_dark.png';
 import logoWebhook from 'images/webhook_icon.jpg';
 
-import Permissions from 'xenia-redux/constants/permissions';
-import * as PostListUtils from 'xenia-redux/utils/post_list';
+import Permissions from 'mattermost-redux/constants/permissions';
+import * as PostListUtils from 'mattermost-redux/utils/post_list';
 
 import {t} from 'utils/i18n';
 
@@ -1181,7 +1181,7 @@ export const Constants = {
     FeatureTogglePrefix: 'feature_enabled_',
     PRE_RELEASE_FEATURES: {
         MARKDOWN_PREVIEW: {
-            label: 'markdown_preview', // github issue: https://github.com/mattermost/platform/pull/1389
+            label: 'markdown_preview', // github issue: https://github.com/xzl8028/platform/pull/1389
             description: 'Show markdown preview option in message input box',
         },
     },

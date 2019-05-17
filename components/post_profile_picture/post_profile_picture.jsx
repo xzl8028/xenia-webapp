@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import ProfilePicture from 'components/profile_picture';
-import xeniaLogo from 'components/svg/xenia_logo';
+import XeniaLogo from 'components/svg/xenia_logo';
 
 import Constants, {UserStatuses} from 'utils/constants';
 import * as PostUtils from 'utils/post_utils';
@@ -73,7 +73,7 @@ export default class PostProfilePicture extends React.PureComponent {
         const isSystemMessage = PostUtils.isSystemMessage(post);
         const fromWebhook = PostUtils.isFromWebhook(post);
         if (isSystemMessage && !compactDisplay && !fromWebhook && !isBot) {
-            return <xeniaLogo className='icon'/>;
+            return <XeniaLogo className='icon'/>;
         }
 
         const fromAutoResponder = PostUtils.fromAutoResponder(post);

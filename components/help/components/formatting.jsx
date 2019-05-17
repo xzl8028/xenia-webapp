@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -262,7 +262,7 @@ export default function HelpFormatting() {
             </p>
             <FormattedMessage
                 id='help.formatting.imagesExample'
-                defaultMessage={'![alt text](link "hover text")\n\nand\n\n[![Build Status](https://travis-ci.org/xenia/xenia-server.svg?branch=master)](https://travis-ci.org/xenia/xenia-server) [![Github](https://assets-cdn.github.com/favicon.ico)](https://github.com/mattermost/xenia-server)'}
+                defaultMessage={'![alt text](link "hover text")\n\nand\n\n[![Build Status](https://travis-ci.org/xenia/xenia-server.svg?branch=master)](https://travis-ci.org/xenia/xenia-server) [![Github](https://assets-cdn.github.com/favicon.ico)](https://github.com/xzl8028/xenia-server)'}
             >
                 {(example) => renderRawExampleWithResult(example)}
             </FormattedMessage>

@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 import {IntlProvider as BaseIntlProvider} from 'react-intl';
 
-import {Client4} from 'xenia-redux/client';
-import {setLocalizeFunction} from 'xenia-redux/utils/i18n_utils';
+import {Client4} from 'mattermost-redux/client';
+import {setLocalizeFunction} from 'mattermost-redux/utils/i18n_utils';
 
 import * as I18n from 'i18n/i18n';
 
@@ -26,7 +26,7 @@ export default class IntlProvider extends React.PureComponent {
         // Initialize browser's i18n data
         I18n.doAddLocaleData();
 
-        // Pass localization function back to xenia-redux
+        // Pass localization function back to mattermost-redux
         setLocalizeFunction(localizeMessage);
 
         this.handleLocaleChange(this.props.locale);

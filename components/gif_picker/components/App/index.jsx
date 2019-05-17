@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
-import {saveAppProps} from 'xenia-redux/actions/gifs';
+import {saveAppProps} from 'mattermost-redux/actions/gifs';
 
 import Header from 'components/gif_picker/components/Header';
 

@@ -1,16 +1,16 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {addMessageIntoHistory} from 'xenia-redux/actions/posts';
-import {Preferences, Permissions} from 'xenia-redux/constants';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {haveIChannelPermission} from 'xenia-redux/selectors/entities/roles';
-import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
-import {getCurrentChannelId} from 'xenia-redux/selectors/entities/channels';
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {getBool} from 'xenia-redux/selectors/entities/preferences';
+import {addMessageIntoHistory} from 'mattermost-redux/actions/posts';
+import {Preferences, Permissions} from 'mattermost-redux/constants';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getBool} from 'mattermost-redux/selectors/entities/preferences';
 
 import {openModal} from 'actions/views/modals';
 import {hideEditPostModal} from 'actions/post_actions';

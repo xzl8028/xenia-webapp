@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -1190,7 +1190,7 @@ export default {
                         label: t('admin.log.enableDiagnostics'),
                         label_default: 'Enable Diagnostics and Error Reporting:',
                         help_text: t('admin.log.enableDiagnosticsDescription'),
-                        help_text_default: 'Enable this feature to improve the quality and performance of xenia by sending error reporting and diagnostic information to xenia, Inc. Read our [privacy policy](!https://about.xenia.com/default-privacy-policy/) to learn more.',
+                        help_text_default: 'Enable this feature to improve the quality and performance of xenia by sending error reporting and diagnostic information to Xenia, Inc. Read our [privacy policy](!https://about.xenia.com/default-privacy-policy/) to learn more.',
                         help_text_markdown: true,
                         onConfigSave: (displayVal, previousVal) => {
                             if (previousVal && previousVal !== displayVal) {

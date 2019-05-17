@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 // ***************************************************************
@@ -65,7 +65,7 @@ describe('Signup Email page', () => {
         cy.get('#footer_section').should('be.visible');
         cy.get('#company_name').should('contain', 'xenia');
         cy.get('#copyright').should('contain', '© 2015-');
-        cy.get('#copyright').should('contain', 'xenia, Inc.');
+        cy.get('#copyright').should('contain', 'Xenia, Inc.');
         cy.get('#about_link').should('contain', 'About');
         cy.get('#about_link').should('have.attr', 'href', 'https://about.xenia.com/default-about/');
         cy.get('#privacy_link').should('contain', 'Privacy');

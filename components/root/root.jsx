@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import $ from 'jquery';
@@ -8,9 +8,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import FastClick from 'fastclick';
 import {Route, Switch, Redirect} from 'react-router-dom';
-import {setUrl} from 'xenia-redux/actions/general';
-import {setSystemEmojis} from 'xenia-redux/actions/emojis';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {setUrl} from 'mattermost-redux/actions/general';
+import {setSystemEmojis} from 'mattermost-redux/actions/emojis';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
 import * as UserAgent from 'utils/user_agent.jsx';
 import {EmojiIndicesByAlias} from 'utils/emoji.jsx';

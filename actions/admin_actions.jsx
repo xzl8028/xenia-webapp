@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import * as AdminActions from 'xenia-redux/actions/admin';
-import * as UserActions from 'xenia-redux/actions/users';
-import * as TeamActions from 'xenia-redux/actions/teams';
-import {Client4} from 'xenia-redux/client';
-import {bindClientFunc} from 'xenia-redux/actions/helpers';
+import * as AdminActions from 'mattermost-redux/actions/admin';
+import * as UserActions from 'mattermost-redux/actions/users';
+import * as TeamActions from 'mattermost-redux/actions/teams';
+import {Client4} from 'mattermost-redux/client';
+import {bindClientFunc} from 'mattermost-redux/actions/helpers';
 
 import {emitUserLoggedOutEvent} from 'actions/global_actions.jsx';
 import {getOnNavigationConfirmed} from 'selectors/views/admin';

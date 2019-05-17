@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {createSelector} from 'reselect';
-import {getBool} from 'xenia-redux/selectors/entities/preferences';
-import {patchChannel} from 'xenia-redux/actions/channels';
+import {getBool} from 'mattermost-redux/selectors/entities/preferences';
+import {patchChannel} from 'mattermost-redux/actions/channels';
 
 import Constants from 'utils/constants.jsx';
 

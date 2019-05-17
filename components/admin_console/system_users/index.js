@@ -1,15 +1,15 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getTeams, getTeamStats} from 'xenia-redux/actions/teams';
-import {getUser, getUserAccessToken, getProfiles} from 'xenia-redux/actions/users';
-import {getTeamsList} from 'xenia-redux/selectors/entities/teams';
-import {getUsers} from 'xenia-redux/selectors/entities/users';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {Stats} from 'xenia-redux/constants';
+import {getTeams, getTeamStats} from 'mattermost-redux/actions/teams';
+import {getUser, getUserAccessToken, getProfiles} from 'mattermost-redux/actions/users';
+import {getTeamsList} from 'mattermost-redux/selectors/entities/teams';
+import {getUsers} from 'mattermost-redux/selectors/entities/users';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {Stats} from 'mattermost-redux/constants';
 
 import {loadProfilesAndTeamMembers, loadProfilesWithoutTeam} from 'actions/user_actions.jsx';
 

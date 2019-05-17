@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {getUserTimezone} from 'xenia-redux/selectors/entities/timezone';
-import {getUserCurrentTimezone} from 'xenia-redux/utils/timezone_utils';
-import {getBool} from 'xenia-redux/selectors/entities/preferences';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getUserTimezone} from 'mattermost-redux/selectors/entities/timezone';
+import {getUserCurrentTimezone} from 'mattermost-redux/utils/timezone_utils';
+import {getBool} from 'mattermost-redux/selectors/entities/preferences';
 
 import {areTimezonesEnabledAndSupported} from 'selectors/general';
 

@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 import PropTypes from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 
-import {Emoji} from 'xenia-redux/constants';
+import {Emoji} from 'mattermost-redux/constants';
 
 import LoadingScreen from 'components/loading_screen.jsx';
 import SaveButton from 'components/save_button.jsx';

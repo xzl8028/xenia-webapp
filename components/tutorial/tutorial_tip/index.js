@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {getInt} from 'xenia-redux/selectors/entities/preferences';
-import {savePreferences} from 'xenia-redux/actions/preferences';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getInt} from 'mattermost-redux/selectors/entities/preferences';
+import {savePreferences} from 'mattermost-redux/actions/preferences';
 
 import {closeMenu as closeRhsMenu} from 'actions/views/rhs';
 import {Preferences} from 'utils/constants.jsx';

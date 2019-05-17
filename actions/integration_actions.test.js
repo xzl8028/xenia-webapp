@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
-import {getProfilesByIds} from 'xenia-redux/actions/users';
+import {getProfilesByIds} from 'mattermost-redux/actions/users';
 
 import * as Actions from 'actions/integration_actions.jsx';
 
-jest.mock('xenia-redux/actions/users', () => ({
+jest.mock('mattermost-redux/actions/users', () => ({
     getProfilesByIds: jest.fn(() => {
         return {type: ''};
     }),

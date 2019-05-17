@@ -1,16 +1,16 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
-import * as TeamActions from 'xenia-redux/actions/teams';
-import * as channelActions from 'xenia-redux/actions/channels';
-import * as userActions from 'xenia-redux/actions/users';
+import * as TeamActions from 'mattermost-redux/actions/teams';
+import * as channelActions from 'mattermost-redux/actions/channels';
+import * as userActions from 'mattermost-redux/actions/users';
 
 import * as Actions from 'actions/team_actions.jsx';
 import {browserHistory} from 'utils/browser_history';
 
-jest.mock('xenia-redux/actions/teams', () => ({
+jest.mock('mattermost-redux/actions/teams', () => ({
     addUsersToTeam: jest.fn(() => {
         return {
             type: 'ADD_USER',
@@ -41,7 +41,7 @@ jest.mock('xenia-redux/actions/teams', () => ({
     }),
 }));
 
-jest.mock('xenia-redux/actions/channels', () => ({
+jest.mock('mattermost-redux/actions/channels', () => ({
     viewChannel: jest.fn(() => {
         return {
             type: 'VIEW_CHANNEL',
@@ -54,7 +54,7 @@ jest.mock('xenia-redux/actions/channels', () => ({
     }),
 }));
 
-jest.mock('xenia-redux/actions/users', () => ({
+jest.mock('mattermost-redux/actions/users', () => ({
     getUser: jest.fn(() => {
         return {
             type: 'GET_USER',

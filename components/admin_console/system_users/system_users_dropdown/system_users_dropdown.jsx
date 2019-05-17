@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import * as UserUtils from 'xenia-redux/utils/user_utils';
-import {Permissions} from 'xenia-redux/constants';
+import * as UserUtils from 'mattermost-redux/utils/user_utils';
+import {Permissions} from 'mattermost-redux/constants';
 
 import {adminResetMfa} from 'actions/admin_actions.jsx';
 import {Constants} from 'utils/constants.jsx';

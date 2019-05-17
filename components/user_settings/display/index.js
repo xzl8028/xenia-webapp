@@ -1,17 +1,17 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {savePreferences} from 'xenia-redux/actions/preferences';
-import {getSupportedTimezones} from 'xenia-redux/actions/general';
-import {autoUpdateTimezone} from 'xenia-redux/actions/timezone';
-import {getConfig, getSupportedTimezones as getTimezones} from 'xenia-redux/selectors/entities/general';
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {get} from 'xenia-redux/selectors/entities/preferences';
-import {getUserTimezone} from 'xenia-redux/selectors/entities/timezone';
-import {getUserCurrentTimezone} from 'xenia-redux/utils/timezone_utils';
+import {savePreferences} from 'mattermost-redux/actions/preferences';
+import {getSupportedTimezones} from 'mattermost-redux/actions/general';
+import {autoUpdateTimezone} from 'mattermost-redux/actions/timezone';
+import {getConfig, getSupportedTimezones as getTimezones} from 'mattermost-redux/selectors/entities/general';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {get} from 'mattermost-redux/selectors/entities/preferences';
+import {getUserTimezone} from 'mattermost-redux/selectors/entities/timezone';
+import {getUserCurrentTimezone} from 'mattermost-redux/utils/timezone_utils';
 
 import {Preferences} from 'utils/constants.jsx';
 

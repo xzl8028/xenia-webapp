@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
-import {saveSearchBarText, searchTextUpdate} from 'xenia-redux/actions/gifs';
-import {getTheme} from 'xenia-redux/selectors/entities/preferences';
-import {changeOpacity, makeStyleFromTheme} from 'xenia-redux/utils/theme_utils';
+import {saveSearchBarText, searchTextUpdate} from 'mattermost-redux/actions/gifs';
+import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {changeOpacity, makeStyleFromTheme} from 'mattermost-redux/utils/theme_utils';
 
 import constants from 'components/gif_picker/utils/constants';
 import SearchBar from 'components/gif_picker/components/SearchBar';

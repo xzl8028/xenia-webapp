@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 import {Overlay} from 'react-bootstrap';
-import {Client4} from 'xenia-redux/client';
-import {displayUsername} from 'xenia-redux/utils/user_utils';
+import {Client4} from 'mattermost-redux/client';
+import {displayUsername} from 'mattermost-redux/utils/user_utils';
 
 import ProfilePopover from 'components/profile_popover';
 

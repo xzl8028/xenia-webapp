@@ -1,14 +1,14 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {sendEmailInvitesToTeam} from 'xenia-redux/actions/teams';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {getChannelsNameMapInCurrentTeam} from 'xenia-redux/selectors/entities/channels';
-import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
-import {getCurrentTeam} from 'xenia-redux/selectors/entities/teams';
+import {sendEmailInvitesToTeam} from 'mattermost-redux/actions/teams';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getChannelsNameMapInCurrentTeam} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentTeam} from 'mattermost-redux/selectors/entities/teams';
 
 import Constants from 'utils/constants';
 

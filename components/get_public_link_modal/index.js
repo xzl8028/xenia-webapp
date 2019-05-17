@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getFilePublicLink} from 'xenia-redux/actions/files';
-import * as Selectors from 'xenia-redux/selectors/entities/files';
+import {getFilePublicLink} from 'mattermost-redux/actions/files';
+import * as Selectors from 'mattermost-redux/selectors/entities/files';
 
 import GetPublicLinkModal from './get_public_link_modal.jsx';
 

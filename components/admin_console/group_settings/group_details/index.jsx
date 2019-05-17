@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {linkGroupSyncable, unlinkGroupSyncable, getGroup as fetchGroup, getGroupMembers as fetchMembers, getGroupSyncables as fetchGroupSyncables} from 'xenia-redux/actions/groups';
-import {getGroup, getGroupTeams, getGroupChannels, getGroupMembers, getGroupMemberCount} from 'xenia-redux/selectors/entities/groups';
+import {linkGroupSyncable, unlinkGroupSyncable, getGroup as fetchGroup, getGroupMembers as fetchMembers, getGroupSyncables as fetchGroupSyncables} from 'mattermost-redux/actions/groups';
+import {getGroup, getGroupTeams, getGroupChannels, getGroupMembers, getGroupMemberCount} from 'mattermost-redux/selectors/entities/groups';
 
 import GroupDetails from './group_details.jsx';
 

@@ -1,15 +1,15 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import clone from 'clone';
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
-import {Preferences} from 'xenia-redux/constants';
-import {getStatusesByIds} from 'xenia-redux/actions/users';
+import {Preferences} from 'mattermost-redux/constants';
+import {getStatusesByIds} from 'mattermost-redux/actions/users';
 
 import * as Actions from 'actions/status_actions.jsx';
 
-jest.mock('xenia-redux/actions/users', () => ({
+jest.mock('mattermost-redux/actions/users', () => ({
     getStatusesByIds: jest.fn(() => {
         return {type: ''};
     }),

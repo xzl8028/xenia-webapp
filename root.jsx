@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import './entry.js';
@@ -7,7 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {Router, Route} from 'react-router-dom';
-import {logError} from 'xenia-redux/actions/errors';
+import {logError} from 'mattermost-redux/actions/errors';
 import PDFJS from 'pdfjs-dist';
 
 // Import our styles

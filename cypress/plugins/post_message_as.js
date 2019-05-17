@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 require('@babel/polyfill');
 require('isomorphic-fetch');
 
-const {Client4} = require('xenia-redux/client');
+const {Client4} = require('mattermost-redux/client');
 const axios = require('axios');
 
 const cypressConfig = require('../../cypress.json');

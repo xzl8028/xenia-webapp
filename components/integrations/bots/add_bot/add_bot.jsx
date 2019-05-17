@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -7,8 +7,8 @@ import {Link} from 'react-router-dom';
 import {FormattedMessage} from 'react-intl';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
-import * as UserUtils from 'xenia-redux/utils/user_utils';
-import {General} from 'xenia-redux/constants';
+import * as UserUtils from 'mattermost-redux/utils/user_utils';
+import {General} from 'mattermost-redux/constants';
 
 import BotDefaultIcon from 'images/bot_default_icon.png';
 

@@ -1,6 +1,6 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
-import {GeneralTypes} from 'xenia-redux/action_types';
+import {GeneralTypes} from 'mattermost-redux/action_types';
 
 import * as Utils from 'utils/utils.jsx';
 import store from 'stores/redux_store.jsx';

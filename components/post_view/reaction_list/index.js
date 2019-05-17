@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getChannel} from 'xenia-redux/selectors/entities/channels';
-import {makeGetReactionsForPost} from 'xenia-redux/selectors/entities/posts';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getChannel} from 'mattermost-redux/selectors/entities/channels';
+import {makeGetReactionsForPost} from 'mattermost-redux/selectors/entities/posts';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
 import {addReaction} from 'actions/post_actions.jsx';
 import {scrollPostList} from 'actions/views/channel';

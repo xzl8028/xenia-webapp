@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {createSelector} from 'reselect';
-import {patchChannel} from 'xenia-redux/actions/channels';
-import {getTeam} from 'xenia-redux/selectors/entities/teams';
+import {patchChannel} from 'mattermost-redux/actions/channels';
+import {getTeam} from 'mattermost-redux/selectors/entities/teams';
 
 import {getSiteURL} from 'utils/url.jsx';
 

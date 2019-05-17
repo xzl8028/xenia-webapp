@@ -1,7 +1,7 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {Permissions} from 'xenia-redux/constants/index';
+import {Permissions} from 'mattermost-redux/constants/index';
 
 import {rolesFromMapping, mappingValueFromRoles} from 'utils/policy_roles_adapter';
 

@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getSchemeTeams as loadSchemeTeams, getSchemes as loadSchemes} from 'xenia-redux/actions/schemes';
-import {getSchemes} from 'xenia-redux/selectors/entities/schemes';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getSchemeTeams as loadSchemeTeams, getSchemes as loadSchemes} from 'mattermost-redux/actions/schemes';
+import {getSchemes} from 'mattermost-redux/selectors/entities/schemes';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
 import PermissionSchemesSettings from './permission_schemes_settings.jsx';
 

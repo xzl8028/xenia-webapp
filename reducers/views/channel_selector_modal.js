@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {combineReducers} from 'redux';
 
-import {ChannelTypes, UserTypes} from 'xenia-redux/action_types';
+import {ChannelTypes, UserTypes} from 'mattermost-redux/action_types';
 
 function channels(state = [], action) {
     switch (action.type) {

@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 
-import {getTeamByName} from 'xenia-redux/selectors/entities/teams';
-import {getRedirectChannelNameForTeam} from 'xenia-redux/selectors/entities/channels';
+import {getTeamByName} from 'mattermost-redux/selectors/entities/teams';
+import {getRedirectChannelNameForTeam} from 'mattermost-redux/selectors/entities/channels';
 
 import {getIsRhsOpen, getIsRhsMenuOpen} from 'selectors/rhs';
 import {getIsLhsOpen} from 'selectors/lhs';

@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getCustomEmojiIdsSortedByName} from 'xenia-redux/selectors/entities/emojis';
+import {getCustomEmojiIdsSortedByName} from 'mattermost-redux/selectors/entities/emojis';
 
-import {getCustomEmojis, searchCustomEmojis} from 'xenia-redux/actions/emojis';
+import {getCustomEmojis, searchCustomEmojis} from 'mattermost-redux/actions/emojis';
 
 import EmojiList from './emoji_list.jsx';
 

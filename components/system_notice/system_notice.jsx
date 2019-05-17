@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import {FormattedMessage, intlShape} from 'react-intl';
 
 import {Preferences} from 'utils/constants.jsx';
-import xeniaLogo from 'components/svg/xenia_logo';
+import XeniaLogo from 'components/svg/xenia_logo';
 
 export default class SystemNotice extends React.PureComponent {
     static propTypes = {
@@ -123,7 +123,7 @@ export default class SystemNotice extends React.PureComponent {
             >
                 <div className='system-notice__header'>
                     <div className='system-notice__logo'>
-                        <xeniaLogo/>
+                        <XeniaLogo/>
                     </div>
                     <div className='system-notice__title'>
                         {notice.title}

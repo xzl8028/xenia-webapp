@@ -1,19 +1,19 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
 
-import {SearchTypes} from 'xenia-redux/action_types';
-import * as PostActions from 'xenia-redux/actions/posts';
-import {Posts} from 'xenia-redux/constants';
+import {SearchTypes} from 'mattermost-redux/action_types';
+import * as PostActions from 'mattermost-redux/actions/posts';
+import {Posts} from 'mattermost-redux/constants';
 
 import * as Actions from 'actions/post_actions';
 import {Constants, ActionTypes, RHSStates} from 'utils/constants';
 
 const mockStore = configureStore([thunk]);
 
-jest.mock('xenia-redux/actions/posts', () => ({
+jest.mock('mattermost-redux/actions/posts', () => ({
     addReaction: (...args) => ({type: 'MOCK_ADD_REACTION', args}),
     createPost: (...args) => ({type: 'MOCK_CREATE_POST', args}),
     createPostImmediately: (...args) => ({type: 'MOCK_CREATE_POST_IMMEDIATELY', args}),

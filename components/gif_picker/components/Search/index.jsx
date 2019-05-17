@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
-import {searchIfNeededInitial, searchGfycat} from 'xenia-redux/actions/gifs';
+import {searchIfNeededInitial, searchGfycat} from 'mattermost-redux/actions/gifs';
 
 import SearchGrid from 'components/gif_picker/components/SearchGrid';
 

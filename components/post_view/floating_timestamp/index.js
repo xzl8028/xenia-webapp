@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 
-import {getPost} from 'xenia-redux/selectors/entities/posts';
-import * as PostListUtils from 'xenia-redux/utils/post_list';
+import {getPost} from 'mattermost-redux/selectors/entities/posts';
+import * as PostListUtils from 'mattermost-redux/utils/post_list';
 
 import FloatingTimestamp from './floating_timestamp';
 

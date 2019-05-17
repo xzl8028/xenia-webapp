@@ -1,18 +1,18 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
 
-import {receivedNewPost} from 'xenia-redux/actions/posts';
-import {Posts} from 'xenia-redux/constants';
+import {receivedNewPost} from 'mattermost-redux/actions/posts';
+import {Posts} from 'mattermost-redux/constants';
 
 import * as PostActionsUtils from 'actions/post_utils';
 import {Constants} from 'utils/constants';
 
 const mockStore = configureStore([thunk]);
 
-jest.mock('xenia-redux/actions/channels', () => ({
+jest.mock('mattermost-redux/actions/channels', () => ({
     markChannelAsUnread: (...args) => ({type: 'MOCK_MARK_CHANNEL_AS_UNREAD', args}),
     markChannelAsRead: (...args) => ({type: 'MOCK_MARK_CHANNEL_AS_READ', args}),
     markChannelAsViewed: (...args) => ({type: 'MOCK_MARK_CHANNEL_AS_VIEWED', args}),

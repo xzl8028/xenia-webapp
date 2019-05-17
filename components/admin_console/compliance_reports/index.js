@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {createSelector} from 'reselect';
 
-import {createComplianceReport, getComplianceReports} from 'xenia-redux/actions/admin';
-import {getComplianceReports as selectComplianceReports, getConfig} from 'xenia-redux/selectors/entities/admin';
-import {getLicense} from 'xenia-redux/selectors/entities/general';
+import {createComplianceReport, getComplianceReports} from 'mattermost-redux/actions/admin';
+import {getComplianceReports as selectComplianceReports, getConfig} from 'mattermost-redux/selectors/entities/admin';
+import {getLicense} from 'mattermost-redux/selectors/entities/general';
 
 import ComplianceReports from './compliance_reports.jsx';
 

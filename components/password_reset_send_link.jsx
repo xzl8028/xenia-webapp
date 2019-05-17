@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import $ from 'jquery';
@@ -7,7 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {FormattedMessage} from 'react-intl';
 
-import {isEmail} from 'xenia-redux/utils/helpers';
+import {isEmail} from 'mattermost-redux/utils/helpers';
 
 import {sendPasswordResetEmail} from 'actions/user_actions.jsx';
 import BackButton from 'components/common/back_button.jsx';

@@ -1,18 +1,18 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {batchActions} from 'redux-batched-actions';
 
-import {leaveChannel as leaveChannelRedux, joinChannel, unfavoriteChannel} from 'xenia-redux/actions/channels';
-import * as PostActions from 'xenia-redux/actions/posts';
-import {autocompleteUsers} from 'xenia-redux/actions/users';
-import {Posts} from 'xenia-redux/constants';
-import {getChannel, getChannelByName, getCurrentChannel, getRedirectChannelNameForTeam} from 'xenia-redux/selectors/entities/channels';
-import {getCurrentRelativeTeamUrl, getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
-import {getCurrentUserId, getUserByUsername} from 'xenia-redux/selectors/entities/users';
-import {getMyPreferences} from 'xenia-redux/selectors/entities/preferences';
-import {isFavoriteChannel} from 'xenia-redux/utils/channel_utils';
-import EventEmitter from 'xenia-redux/utils/event_emitter';
+import {leaveChannel as leaveChannelRedux, joinChannel, unfavoriteChannel} from 'mattermost-redux/actions/channels';
+import * as PostActions from 'mattermost-redux/actions/posts';
+import {autocompleteUsers} from 'mattermost-redux/actions/users';
+import {Posts} from 'mattermost-redux/constants';
+import {getChannel, getChannelByName, getCurrentChannel, getRedirectChannelNameForTeam} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentRelativeTeamUrl, getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentUserId, getUserByUsername} from 'mattermost-redux/selectors/entities/users';
+import {getMyPreferences} from 'mattermost-redux/selectors/entities/preferences';
+import {isFavoriteChannel} from 'mattermost-redux/utils/channel_utils';
+import EventEmitter from 'mattermost-redux/utils/event_emitter';
 
 import {openDirectChannelToUserId} from 'actions/channel_actions.jsx';
 import {getLastViewedChannelName} from 'selectors/local_storage';

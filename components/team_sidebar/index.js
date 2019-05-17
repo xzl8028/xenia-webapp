@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getTeams} from 'xenia-redux/actions/teams';
+import {getTeams} from 'mattermost-redux/actions/teams';
 import {withRouter} from 'react-router-dom';
 
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {getMyTeams, getJoinableTeamIds, getTeamMemberships, getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getMyTeams, getJoinableTeamIds, getTeamMemberships, getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
 
 import {getCurrentLocale} from 'selectors/i18n';
 import {getIsLhsOpen} from 'selectors/lhs';

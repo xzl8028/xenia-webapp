@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 
-import {getMyChannels, getChannel, getMyChannelMemberships} from 'xenia-redux/selectors/entities/channels';
+import {getMyChannels, getChannel, getMyChannelMemberships} from 'mattermost-redux/selectors/entities/channels';
 
-import {sortChannelsByTypeAndDisplayName} from 'xenia-redux/utils/channel_utils';
+import {sortChannelsByTypeAndDisplayName} from 'mattermost-redux/utils/channel_utils';
 
-import {ChannelTypes} from 'xenia-redux/action_types';
+import {ChannelTypes} from 'mattermost-redux/action_types';
 
 import {autocompleteChannels} from 'actions/channel_actions.jsx';
 import store from 'stores/redux_store.jsx';

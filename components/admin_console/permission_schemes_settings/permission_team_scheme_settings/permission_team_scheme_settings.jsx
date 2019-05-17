@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 import PropTypes from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 
-import Permissions from 'xenia-redux/constants/permissions';
+import Permissions from 'mattermost-redux/constants/permissions';
 
 import {PermissionsScope, ModalIdentifiers} from 'utils/constants.jsx';
 import {localizeMessage} from 'utils/utils.jsx';

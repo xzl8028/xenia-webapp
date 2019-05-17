@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getCurrentChannelId} from 'xenia-redux/selectors/entities/channels';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
 import {uploadFile, handleFileUploadEnd} from 'actions/file_actions.jsx';
 import {getCurrentLocale} from 'selectors/i18n';

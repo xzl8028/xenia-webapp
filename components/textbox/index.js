@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {getCurrentUserId, makeGetProfilesInChannel, makeGetProfilesNotInChannel} from 'xenia-redux/selectors/entities/users';
+import {getCurrentUserId, makeGetProfilesInChannel, makeGetProfilesNotInChannel} from 'mattermost-redux/selectors/entities/users';
 
 import {autocompleteUsersInChannel, scrollPostList} from 'actions/views/channel';
 

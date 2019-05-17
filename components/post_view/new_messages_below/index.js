@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {createSelector} from 'reselect';
 
-import {Posts} from 'xenia-redux/constants';
-import {getAllPosts, getPostIdsInChannel} from 'xenia-redux/selectors/entities/posts';
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {makePreparePostIdsForPostList} from 'xenia-redux/utils/post_list';
+import {Posts} from 'mattermost-redux/constants';
+import {getAllPosts, getPostIdsInChannel} from 'mattermost-redux/selectors/entities/posts';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {makePreparePostIdsForPostList} from 'mattermost-redux/utils/post_list';
 
 import NewMessagesBelow from './new_messages_below';
 

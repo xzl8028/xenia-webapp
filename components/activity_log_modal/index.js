@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getSessions, revokeSession} from 'xenia-redux/actions/users';
-import {getCurrentUserId, getUserSessions} from 'xenia-redux/selectors/entities/users';
+import {getSessions, revokeSession} from 'mattermost-redux/actions/users';
+import {getCurrentUserId, getUserSessions} from 'mattermost-redux/selectors/entities/users';
 
 import {getCurrentLocale} from 'selectors/i18n';
 

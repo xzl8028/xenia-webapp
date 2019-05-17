@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -45,7 +45,7 @@ export default function GetAndroidApp({androidAppDownloadLink, history, location
                     <span className='get-android-app__app-creator'>
                         <FormattedMessage
                             id='get_app.xeniaInc'
-                            defaultMessage='xenia, Inc'
+                            defaultMessage='Xenia, Inc'
                         />
                     </span>
                 </div>

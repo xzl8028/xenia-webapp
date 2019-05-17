@@ -1,22 +1,22 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getCurrentUserId, getStatusForUserId, getUser} from 'xenia-redux/selectors/entities/users';
+import {getCurrentUserId, getStatusForUserId, getUser} from 'mattermost-redux/selectors/entities/users';
 import {
     getCurrentTeam,
     getCurrentRelativeTeamUrl,
     getTeamMember,
-} from 'xenia-redux/selectors/entities/teams';
+} from 'mattermost-redux/selectors/entities/teams';
 import {
     getCurrentChannel,
     getChannelMembersInChannels,
     canManageAnyChannelMembersInCurrentTeam,
-} from 'xenia-redux/selectors/entities/channels';
-import {getBotAccounts} from 'xenia-redux/selectors/entities/bots';
-import {loadBot} from 'xenia-redux/actions/bots';
+} from 'mattermost-redux/selectors/entities/channels';
+import {getBotAccounts} from 'mattermost-redux/selectors/entities/bots';
+import {loadBot} from 'mattermost-redux/actions/bots';
 
 import {openDirectChannelToUserId} from 'actions/channel_actions.jsx';
 import {getMembershipForCurrentEntities} from 'actions/views/profile_popover';

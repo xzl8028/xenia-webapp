@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {batchActions} from 'redux-batched-actions';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import * as PostActions from 'xenia-redux/actions/posts';
-import * as SearchActions from 'xenia-redux/actions/search';
-import {SearchTypes} from 'xenia-redux/action_types';
+import * as PostActions from 'mattermost-redux/actions/posts';
+import * as SearchActions from 'mattermost-redux/actions/search';
+import {SearchTypes} from 'mattermost-redux/action_types';
 
 import {
     updateRhsState,
@@ -32,15 +32,15 @@ const currentChannelId = '123';
 const currentTeamId = '321';
 const currentUserId = 'user123';
 
-const UserSelectors = require('xenia-redux/selectors/entities/users');
+const UserSelectors = require('mattermost-redux/selectors/entities/users');
 UserSelectors.getCurrentUserMentionKeys = jest.fn(() => [{key: '@here'}, {key: '@xenia'}, {key: '@channel'}, {key: '@all'}]);
 
-jest.mock('xenia-redux/actions/posts', () => ({
+jest.mock('mattermost-redux/actions/posts', () => ({
     getPostThread: (...args) => ({type: 'MOCK_GET_POST_THREAD', args}),
     getProfilesAndStatusesForPosts: (...args) => ({type: 'MOCK_GET_PROFILES_AND_STATUSES_FOR_POSTS', args}),
 }));
 
-jest.mock('xenia-redux/actions/search', () => ({
+jest.mock('mattermost-redux/actions/search', () => ({
     searchPostsWithParams: (...args) => ({type: 'MOCK_SEARCH_POSTS', args}),
     getFlaggedPosts: jest.fn(),
     getPinnedPosts: jest.fn(),

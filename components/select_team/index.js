@@ -1,17 +1,17 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 
-import {getTeams} from 'xenia-redux/actions/teams';
-import {loadRolesIfNeeded} from 'xenia-redux/actions/roles';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {Permissions} from 'xenia-redux/constants';
-import {haveISystemPermission} from 'xenia-redux/selectors/entities/roles';
-import {getSortedListableTeams, getTeamMemberships} from 'xenia-redux/selectors/entities/teams';
-import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
+import {getTeams} from 'mattermost-redux/actions/teams';
+import {loadRolesIfNeeded} from 'mattermost-redux/actions/roles';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {Permissions} from 'mattermost-redux/constants';
+import {haveISystemPermission} from 'mattermost-redux/selectors/entities/roles';
+import {getSortedListableTeams, getTeamMemberships} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
 
 import {addUserToTeam} from 'actions/team_actions';
 

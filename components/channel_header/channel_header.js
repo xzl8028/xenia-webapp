@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 import PropTypes from 'prop-types';
 import {OverlayTrigger, Popover, Tooltip} from 'react-bootstrap';
 import {FormattedMessage, intlShape} from 'react-intl';
-import {Permissions} from 'xenia-redux/constants';
-import {memoizeResult} from 'xenia-redux/utils/helpers';
+import {Permissions} from 'mattermost-redux/constants';
+import {memoizeResult} from 'mattermost-redux/utils/helpers';
 
 import 'bootstrap';
 

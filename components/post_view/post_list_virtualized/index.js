@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
@@ -6,8 +6,8 @@ import {connect} from 'react-redux';
 import {
     getPostIdsInChannel,
     makeGetPostIdsAroundPost,
-} from 'xenia-redux/selectors/entities/posts';
-import {makePreparePostIdsForPostList} from 'xenia-redux/utils/post_list';
+} from 'mattermost-redux/selectors/entities/posts';
+import {makePreparePostIdsForPostList} from 'mattermost-redux/utils/post_list';
 
 import PostList from './post_list_virtualized.jsx';
 

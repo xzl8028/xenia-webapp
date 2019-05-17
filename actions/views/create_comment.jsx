@@ -1,24 +1,24 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {createSelector} from 'reselect';
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
 import {
     makeGetMessageInHistoryItem,
     makeGetCommentCountForPost,
     getPost,
     getPostIdsInChannel,
-} from 'xenia-redux/selectors/entities/posts';
-import {getCustomEmojisByName} from 'xenia-redux/selectors/entities/emojis';
+} from 'mattermost-redux/selectors/entities/posts';
+import {getCustomEmojisByName} from 'mattermost-redux/selectors/entities/emojis';
 import {
     removeReaction,
     addMessageIntoHistory,
     moveHistoryIndexBack,
     moveHistoryIndexForward,
-} from 'xenia-redux/actions/posts';
-import {Posts} from 'xenia-redux/constants';
-import {isPostPendingOrFailed} from 'xenia-redux/utils/post_utils';
+} from 'mattermost-redux/actions/posts';
+import {Posts} from 'mattermost-redux/constants';
+import {isPostPendingOrFailed} from 'mattermost-redux/utils/post_utils';
 
 import * as PostActions from 'actions/post_actions.jsx';
 import {executeCommand} from 'actions/command';

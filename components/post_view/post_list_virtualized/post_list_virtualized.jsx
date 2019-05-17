@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -6,8 +6,8 @@ import React from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import {DynamicSizeList} from 'react-window';
 
-import {debounce} from 'xenia-redux/actions/helpers';
-import EventEmitter from 'xenia-redux/utils/event_emitter';
+import {debounce} from 'mattermost-redux/actions/helpers';
+import EventEmitter from 'mattermost-redux/utils/event_emitter';
 
 import LoadingScreen from 'components/loading_screen.jsx';
 

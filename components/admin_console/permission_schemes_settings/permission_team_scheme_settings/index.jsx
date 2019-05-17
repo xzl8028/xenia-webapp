@@ -1,17 +1,17 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {loadRolesIfNeeded, editRole} from 'xenia-redux/actions/roles';
+import {loadRolesIfNeeded, editRole} from 'mattermost-redux/actions/roles';
 
-import {getRoles} from 'xenia-redux/selectors/entities/roles';
-import {getScheme, makeGetSchemeTeams} from 'xenia-redux/selectors/entities/schemes';
+import {getRoles} from 'mattermost-redux/selectors/entities/roles';
+import {getScheme, makeGetSchemeTeams} from 'mattermost-redux/selectors/entities/schemes';
 
-import {getScheme as loadScheme, patchScheme, createScheme, getSchemeTeams as loadSchemeTeams} from 'xenia-redux/actions/schemes';
+import {getScheme as loadScheme, patchScheme, createScheme, getSchemeTeams as loadSchemeTeams} from 'mattermost-redux/actions/schemes';
 
-import {updateTeamScheme} from 'xenia-redux/actions/teams';
+import {updateTeamScheme} from 'mattermost-redux/actions/teams';
 
 import {setNavigationBlocked} from 'actions/admin_actions.jsx';
 

@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {createSelector} from 'reselect';
 
-import {getCustomEmojisByName} from 'xenia-redux/selectors/entities/emojis';
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
+import {getCustomEmojisByName} from 'mattermost-redux/selectors/entities/emojis';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
 
 import LocalStorageStore from 'stores/local_storage_store';
 

@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import PluginState from 'xenia-redux/constants/plugins';
+import PluginState from 'mattermost-redux/constants/plugins';
 
 import PluginManagement from 'components/admin_console/plugin_management/plugin_management.jsx';
 

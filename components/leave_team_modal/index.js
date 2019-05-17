@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
-import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
-import {removeUserFromTeam as leaveTeam} from 'xenia-redux/actions/teams';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {removeUserFromTeam as leaveTeam} from 'mattermost-redux/actions/teams';
 
 import {toggleSideBarRightMenuAction} from 'actions/global_actions.jsx';
 import {ModalIdentifiers} from 'utils/constants';

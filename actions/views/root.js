@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {getClientConfig, getLicenseConfig} from 'xenia-redux/actions/general';
-import * as UserActions from 'xenia-redux/actions/users';
-import {Client4} from 'xenia-redux/client';
+import {getClientConfig, getLicenseConfig} from 'mattermost-redux/actions/general';
+import * as UserActions from 'mattermost-redux/actions/users';
+import {Client4} from 'mattermost-redux/client';
 
 import {ActionTypes} from 'utils/constants';
 import en from 'i18n/en.json';

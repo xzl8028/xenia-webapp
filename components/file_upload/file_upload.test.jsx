@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 
-import {General} from 'xenia-redux/constants';
+import {General} from 'mattermost-redux/constants';
 
 import {clearFileInput} from 'utils/utils';
 import {shallowWithIntl} from 'tests/helpers/intl-test-helper';

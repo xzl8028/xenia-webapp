@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -7,7 +7,7 @@ import {Modal} from 'react-bootstrap';
 import {FormattedMessage} from 'react-intl';
 
 import FormattedMarkdownMessage from 'components/formatted_markdown_message';
-import xeniaLogo from 'components/svg/xenia_logo';
+import XeniaLogo from 'components/svg/xenia_logo';
 
 export default class AboutBuildModal extends React.PureComponent {
     static defaultProps = {
@@ -218,7 +218,7 @@ export default class AboutBuildModal extends React.PureComponent {
                 <Modal.Body>
                     <div className='about-modal__content'>
                         <div className='about-modal__logo'>
-                            <xeniaLogo/>
+                            <XeniaLogo/>
                         </div>
                         <div>
                             <h3 className='about-modal__title'>{'xenia'} {title}</h3>
@@ -256,7 +256,7 @@ export default class AboutBuildModal extends React.PureComponent {
                             <div className='about-modal__copyright'>
                                 <FormattedMessage
                                     id='about.copyright'
-                                    defaultMessage='Copyright 2015 - {currentYear} xenia, Inc. All rights reserved'
+                                    defaultMessage='Copyright 2015 - {currentYear} Xenia, Inc. All rights reserved'
                                     values={{
                                         currentYear: new Date().getFullYear(),
                                     }}

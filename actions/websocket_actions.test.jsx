@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {
     getProfilesAndStatusesForPosts,
     receivedNewPost,
-} from 'xenia-redux/actions/posts';
-import {UserTypes} from 'xenia-redux/action_types';
+} from 'mattermost-redux/actions/posts';
+import {UserTypes} from 'mattermost-redux/action_types';
 
 import {handleNewPost} from 'actions/post_actions';
 import {closeRightHandSide} from 'actions/views/rhs';
@@ -23,8 +23,8 @@ import {
     handleUserRemovedEvent,
 } from './websocket_actions';
 
-jest.mock('xenia-redux/actions/posts', () => ({
-    ...jest.requireActual('xenia-redux/actions/posts'),
+jest.mock('mattermost-redux/actions/posts', () => ({
+    ...jest.requireActual('mattermost-redux/actions/posts'),
     getProfilesAndStatusesForPosts: jest.fn(),
 }));
 

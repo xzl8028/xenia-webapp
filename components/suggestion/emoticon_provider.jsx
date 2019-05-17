@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 
-import {autocompleteCustomEmojis} from 'xenia-redux/actions/emojis';
-import {getEmojiImageUrl} from 'xenia-redux/utils/emoji_utils';
+import {autocompleteCustomEmojis} from 'mattermost-redux/actions/emojis';
+import {getEmojiImageUrl} from 'mattermost-redux/utils/emoji_utils';
 
 import {getEmojiMap, getRecentEmojis} from 'selectors/emojis';
 

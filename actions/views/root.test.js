@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import thunk from 'redux-thunk';
@@ -8,8 +8,8 @@ import * as Actions from 'actions/views/root';
 
 const mockStore = configureStore([thunk]);
 
-jest.mock('xenia-redux/actions/general', () => {
-    const original = require.requireActual('xenia-redux/actions/general');
+jest.mock('mattermost-redux/actions/general', () => {
+    const original = require.requireActual('mattermost-redux/actions/general');
     return {
         ...original,
         getClientConfig: () => ({type: 'MOCK_GET_CLIENT_CONFIG'}),
@@ -17,8 +17,8 @@ jest.mock('xenia-redux/actions/general', () => {
     };
 });
 
-jest.mock('xenia-redux/actions/users', () => {
-    const original = require.requireActual('xenia-redux/actions/users');
+jest.mock('mattermost-redux/actions/users', () => {
+    const original = require.requireActual('mattermost-redux/actions/users');
     return {
         ...original,
         loadMe: () => ({type: 'MOCK_LOAD_ME'}),

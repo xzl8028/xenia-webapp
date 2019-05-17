@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 
-import {haveIChannelPermission} from 'xenia-redux/selectors/entities/roles';
+import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
 
 import ChannelPermissionGate from './channel_permission_gate.jsx';
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -6,9 +6,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {FormattedMessage} from 'react-intl';
 
-import {isUserActivityPost} from 'xenia-redux/utils/post_utils';
-import {debounce} from 'xenia-redux/actions/helpers';
-import EventEmitter from 'xenia-redux/utils/event_emitter';
+import {isUserActivityPost} from 'mattermost-redux/utils/post_utils';
+import {debounce} from 'mattermost-redux/actions/helpers';
+import EventEmitter from 'mattermost-redux/utils/event_emitter';
 
 import Constants, {PostTypes, EventTypes} from 'utils/constants.jsx';
 import DelayedAction from 'utils/delayed_action.jsx';

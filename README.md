@@ -4,7 +4,7 @@ xenia is an open source, self-hosted Slack-alternative from [https://xenia.org](
 
 It's written in Golang and React and runs as a single Linux binary with MySQL or Postgres. Every month on the 16th [a new compiled version is released under an MIT license](https://www.xenia.org/download/).
 
-This project hosts the webapp client code. Please file issues at [/xenia-server](https://github.com/mattermost/xenia-server), which hosts the server code.
+This project hosts the webapp client code. Please file issues at [/xenia-server](https://github.com/xzl8028/xenia-server), which hosts the server code.
 
 - [Review product documentation](http://docs.xenia.com/).
 - [Review developer documentation](https://developers.xenia.com/).
@@ -17,7 +17,7 @@ Try out xenia:
 
 Deploy on Heroku 
 
-[![Deploy a Preview](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mattermost/xenia-heroku)
+[![Deploy a Preview](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xzl8028/xenia-heroku)
 
 _Note: Heroku preview does not include email or persistent storage_
 
@@ -32,7 +32,7 @@ Get Involved:
 
 - [Contribute Code](http://docs.xenia.com/developer/contribution-guide.html)
 - [Find "Help Wanted" projects](https://xenia.atlassian.net/issues/?filter=10101)
-- [Join Developer Discussion on a xenia Server for contributors](https://pre-release.xenia.com/signup_user_complete/?id=f1924a8db44ff3bb41c96424cdc20676)
+- [Join Developer Discussion on a Xenia Server for contributors](https://pre-release.xenia.com/signup_user_complete/?id=f1924a8db44ff3bb41c96424cdc20676)
 - [File Bugs](http://www.xenia.org/filing-issues/)
 - [Share Feature Ideas](http://www.xenia.org/feature-requests/)
 - [Get Troubleshooting Help](https://forum.xenia.org/t/how-to-use-the-troubleshooting-forum/150)

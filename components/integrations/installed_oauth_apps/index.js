@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as Actions from 'xenia-redux/actions/integrations';
-import {getOAuthApps} from 'xenia-redux/selectors/entities/integrations';
-import {haveISystemPermission} from 'xenia-redux/selectors/entities/roles';
-import {Permissions} from 'xenia-redux/constants';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
+import * as Actions from 'mattermost-redux/actions/integrations';
+import {getOAuthApps} from 'mattermost-redux/selectors/entities/integrations';
+import {haveISystemPermission} from 'mattermost-redux/selectors/entities/roles';
+import {Permissions} from 'mattermost-redux/constants';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
 import {loadOAuthAppsAndProfiles} from 'actions/integration_actions';
 

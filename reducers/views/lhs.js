@@ -1,8 +1,8 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {combineReducers} from 'redux';
-import {TeamTypes} from 'xenia-redux/action_types';
+import {TeamTypes} from 'mattermost-redux/action_types';
 
 import {ActionTypes} from 'utils/constants.jsx';
 

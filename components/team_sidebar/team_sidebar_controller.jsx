@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 import Scrollbars from 'react-custom-scrollbars';
 import {FormattedMessage} from 'react-intl';
-import Permissions from 'xenia-redux/constants/permissions';
+import Permissions from 'mattermost-redux/constants/permissions';
 import classNames from 'classnames';
 
 import {filterAndSortTeamsByDisplayName} from 'utils/team_utils.jsx';

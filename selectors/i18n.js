@@ -1,8 +1,8 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {getCurrentUserLocale} from 'xenia-redux/selectors/entities/i18n';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getCurrentUserLocale} from 'mattermost-redux/selectors/entities/i18n';
 
 import * as I18n from 'i18n/i18n';
 

@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import * as PostActions from 'xenia-redux/actions/posts';
+import * as PostActions from 'mattermost-redux/actions/posts';
 
-import {logError} from 'xenia-redux/actions/errors';
+import {logError} from 'mattermost-redux/actions/errors';
 
 import {ActionTypes, AnnouncementBarTypes} from 'utils/constants.jsx';
 

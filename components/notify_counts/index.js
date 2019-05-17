@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 
-import {getUnreadsInCurrentTeam} from 'xenia-redux/selectors/entities/channels';
+import {getUnreadsInCurrentTeam} from 'mattermost-redux/selectors/entities/channels';
 
 import NotifyCounts from './notify_counts.jsx';
 

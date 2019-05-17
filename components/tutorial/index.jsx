@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 import {connect} from 'react-redux';
 
-import {Permissions} from 'xenia-redux/constants';
-import {getChannelsNameMapInCurrentTeam} from 'xenia-redux/selectors/entities/channels';
-import {getLicense, getConfig} from 'xenia-redux/selectors/entities/general';
-import {haveITeamPermission} from 'xenia-redux/selectors/entities/roles';
-import {getCurrentTeam} from 'xenia-redux/selectors/entities/teams';
+import {Permissions} from 'mattermost-redux/constants';
+import {getChannelsNameMapInCurrentTeam} from 'mattermost-redux/selectors/entities/channels';
+import {getLicense, getConfig} from 'mattermost-redux/selectors/entities/general';
+import {haveITeamPermission} from 'mattermost-redux/selectors/entities/roles';
+import {getCurrentTeam} from 'mattermost-redux/selectors/entities/teams';
 
 import Constants from 'utils/constants.jsx';
 

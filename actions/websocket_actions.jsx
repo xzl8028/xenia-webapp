@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {batchActions} from 'redux-batched-actions';
@@ -13,15 +13,15 @@ import {
     AdminTypes,
     IntegrationTypes,
     PreferenceTypes,
-} from 'xenia-redux/action_types';
-import {WebsocketEvents, General} from 'xenia-redux/constants';
+} from 'mattermost-redux/action_types';
+import {WebsocketEvents, General} from 'mattermost-redux/constants';
 import {
     getChannelAndMyMember,
     getChannelStats,
     viewChannel,
     markChannelAsRead,
-} from 'xenia-redux/actions/channels';
-import {setServerVersion} from 'xenia-redux/actions/general';
+} from 'mattermost-redux/actions/channels';
+import {setServerVersion} from 'mattermost-redux/actions/general';
 import {
     getCustomEmojiForReaction,
     getPosts,
@@ -29,16 +29,16 @@ import {
     postDeleted,
     receivedNewPost,
     receivedPost,
-} from 'xenia-redux/actions/posts';
-import {clearErrors, logError} from 'xenia-redux/actions/errors';
+} from 'mattermost-redux/actions/posts';
+import {clearErrors, logError} from 'mattermost-redux/actions/errors';
 
-import * as TeamActions from 'xenia-redux/actions/teams';
-import {getMe, getStatusesByIds, getProfilesByIds} from 'xenia-redux/actions/users';
-import {Client4} from 'xenia-redux/client';
-import {getCurrentUser, getCurrentUserId, getStatusForUserId, getUser} from 'xenia-redux/selectors/entities/users';
-import {getMyTeams, getCurrentRelativeTeamUrl, getCurrentTeamId, getCurrentTeamUrl} from 'xenia-redux/selectors/entities/teams';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {getChannel, getCurrentChannel, getCurrentChannelId, getRedirectChannelNameForTeam} from 'xenia-redux/selectors/entities/channels';
+import * as TeamActions from 'mattermost-redux/actions/teams';
+import {getMe, getStatusesByIds, getProfilesByIds} from 'mattermost-redux/actions/users';
+import {Client4} from 'mattermost-redux/client';
+import {getCurrentUser, getCurrentUserId, getStatusForUserId, getUser} from 'mattermost-redux/selectors/entities/users';
+import {getMyTeams, getCurrentRelativeTeamUrl, getCurrentTeamId, getCurrentTeamUrl} from 'mattermost-redux/selectors/entities/teams';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getChannel, getCurrentChannel, getCurrentChannelId, getRedirectChannelNameForTeam} from 'mattermost-redux/selectors/entities/channels';
 
 import {getSelectedChannelId} from 'selectors/rhs';
 

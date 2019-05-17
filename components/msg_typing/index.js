@@ -1,8 +1,8 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
-import {makeGetUsersTypingByChannelAndPost} from 'xenia-redux/selectors/entities/typing';
+import {makeGetUsersTypingByChannelAndPost} from 'mattermost-redux/selectors/entities/typing';
 
 import MsgTyping from './msg_typing.jsx';
 

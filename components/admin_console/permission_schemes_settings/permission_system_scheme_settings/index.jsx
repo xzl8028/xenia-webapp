@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {loadRolesIfNeeded, editRole} from 'xenia-redux/actions/roles';
+import {loadRolesIfNeeded, editRole} from 'mattermost-redux/actions/roles';
 
-import {getRoles} from 'xenia-redux/selectors/entities/roles';
+import {getRoles} from 'mattermost-redux/selectors/entities/roles';
 
 import {setNavigationBlocked} from 'actions/admin_actions.jsx';
 

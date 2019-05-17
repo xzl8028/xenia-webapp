@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
-import {getFileDownloadUrl} from 'xenia-redux/utils/file_utils';
+import {getFileDownloadUrl} from 'mattermost-redux/utils/file_utils';
 
 import AttachmentIcon from 'components/svg/attachment_icon';
 import {trimFilename} from 'utils/file_utils';

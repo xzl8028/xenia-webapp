@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {setStatus} from 'xenia-redux/actions/users';
-import {Client4} from 'xenia-redux/client';
-import {getCurrentUser, getStatusForUserId} from 'xenia-redux/selectors/entities/users';
-import {Preferences} from 'xenia-redux/constants';
-import {get} from 'xenia-redux/selectors/entities/preferences';
+import {setStatus} from 'mattermost-redux/actions/users';
+import {Client4} from 'mattermost-redux/client';
+import {getCurrentUser, getStatusForUserId} from 'mattermost-redux/selectors/entities/users';
+import {Preferences} from 'mattermost-redux/constants';
+import {get} from 'mattermost-redux/selectors/entities/preferences';
 
 import {openModal} from 'actions/views/modals';
 

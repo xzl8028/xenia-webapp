@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
-import {requestCategoriesList, requestCategoriesListIfNeeded, saveSearchBarText, saveSearchScrollPosition, searchTextUpdate} from 'xenia-redux/actions/gifs';
-import {getTheme} from 'xenia-redux/selectors/entities/preferences';
-import {changeOpacity, makeStyleFromTheme} from 'xenia-redux/utils/theme_utils';
+import {requestCategoriesList, requestCategoriesListIfNeeded, saveSearchBarText, saveSearchScrollPosition, searchTextUpdate} from 'mattermost-redux/actions/gifs';
+import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {changeOpacity, makeStyleFromTheme} from 'mattermost-redux/utils/theme_utils';
 
 import {trackEvent} from 'actions/diagnostics_actions.jsx';
 import * as PostUtils from 'utils/post_utils.jsx';

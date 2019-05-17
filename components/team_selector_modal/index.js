@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getTeams as loadTeams, searchTeams} from 'xenia-redux/actions/teams';
-import {getTeams} from 'xenia-redux/selectors/entities/teams';
+import {getTeams as loadTeams, searchTeams} from 'mattermost-redux/actions/teams';
+import {getTeams} from 'mattermost-redux/selectors/entities/teams';
 
 import {setModalSearchTerm} from 'actions/views/search';
 

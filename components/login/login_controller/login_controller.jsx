@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -6,7 +6,7 @@ import React from 'react';
 import {FormattedMessage, injectIntl, intlShape} from 'react-intl';
 import {Link} from 'react-router-dom';
 
-import {Client4} from 'xenia-redux/client';
+import {Client4} from 'mattermost-redux/client';
 
 import * as GlobalActions from 'actions/global_actions.jsx';
 import LocalStorageStore from 'stores/local_storage_store';

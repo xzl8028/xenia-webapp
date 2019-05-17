@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {autoUpdateTimezone} from 'xenia-redux/actions/timezone';
-import {getCurrentChannelId} from 'xenia-redux/selectors/entities/channels';
-import {getLicense, getConfig} from 'xenia-redux/selectors/entities/general';
-import {getCurrentUser, shouldShowTermsOfService} from 'xenia-redux/selectors/entities/users';
+import {autoUpdateTimezone} from 'mattermost-redux/actions/timezone';
+import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
+import {getLicense, getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getCurrentUser, shouldShowTermsOfService} from 'mattermost-redux/selectors/entities/users';
 
 import {checkIfMFARequired} from 'utils/route';
 

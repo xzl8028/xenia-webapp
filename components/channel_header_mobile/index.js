@@ -1,16 +1,16 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {createSelector} from 'reselect';
-import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
+import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
 import {
     getCurrentChannel,
     getMyCurrentChannelMembership,
     isCurrentChannelReadOnly,
-} from 'xenia-redux/selectors/entities/channels';
-import {isChannelMuted} from 'xenia-redux/utils/channel_utils';
+} from 'mattermost-redux/selectors/entities/channels';
+import {isChannelMuted} from 'mattermost-redux/utils/channel_utils';
 
 import {
     closeRightHandSide as closeRhs,

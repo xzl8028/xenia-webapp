@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import request from 'superagent';
-import * as IntegrationActions from 'xenia-redux/actions/integrations';
-import {getProfilesByIds} from 'xenia-redux/actions/users';
-import {getUser} from 'xenia-redux/selectors/entities/users';
+import * as IntegrationActions from 'mattermost-redux/actions/integrations';
+import {getProfilesByIds} from 'mattermost-redux/actions/users';
+import {getUser} from 'mattermost-redux/selectors/entities/users';
 
 import {ModalIdentifiers} from 'utils/constants';
 import {openModal} from 'actions/views/modals';

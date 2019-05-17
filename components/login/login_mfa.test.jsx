@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -43,7 +43,7 @@ describe('components/login/LoginMfa', () => {
         wrapper.instance().handleSubmit({preventDefault: jest.fn()});
         expect(wrapper.state('serverError')).toEqual('');
         expect(wrapper.state('saving')).toEqual(true);
-        expect(submit).toBeCalled(); // This is not a bug. See https://github.com/mattermost/xenia-server/pull/8881
+        expect(submit).toBeCalled(); // This is not a bug. See https://github.com/xzl8028/xenia-server/pull/8881
         expect(submit).toBeCalledWith(props.loginId, props.password, '');
 
         wrapper.setState({token: '123456', serverError: ''});

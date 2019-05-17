@@ -1,13 +1,13 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getConfig, getLicense} from 'xenia-redux/selectors/entities/general';
-import {getTeamByName, getMyTeamMember} from 'xenia-redux/selectors/entities/teams';
-import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
-import {RequestStatus} from 'xenia-redux/constants';
+import {getConfig, getLicense} from 'mattermost-redux/selectors/entities/general';
+import {getTeamByName, getMyTeamMember} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {RequestStatus} from 'mattermost-redux/constants';
 
 import {addUserToTeamFromInvite} from 'actions/team_actions';
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {bindActionCreators} from 'redux';
@@ -8,26 +8,26 @@ import {
     favoriteChannel,
     unfavoriteChannel,
     updateChannelNotifyProps,
-} from 'xenia-redux/actions/channels';
-import {getCustomEmojisInText} from 'xenia-redux/actions/emojis';
-import {General} from 'xenia-redux/constants';
+} from 'mattermost-redux/actions/channels';
+import {getCustomEmojisInText} from 'mattermost-redux/actions/emojis';
+import {General} from 'mattermost-redux/constants';
 import {
     getCurrentChannel,
     getMyCurrentChannelMembership,
     isCurrentChannelFavorite,
     isCurrentChannelMuted,
     isCurrentChannelReadOnly,
-} from 'xenia-redux/selectors/entities/channels';
-import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
 import {
     getCurrentUser,
     getUser,
-} from 'xenia-redux/selectors/entities/users';
-import {getUserIdFromChannelName} from 'xenia-redux/utils/channel_utils';
+} from 'mattermost-redux/selectors/entities/users';
+import {getUserIdFromChannelName} from 'mattermost-redux/utils/channel_utils';
 
-import {loadBot} from 'xenia-redux/actions/bots';
+import {loadBot} from 'mattermost-redux/actions/bots';
 
-import {getBotAccounts} from 'xenia-redux/selectors/entities/bots';
+import {getBotAccounts} from 'mattermost-redux/selectors/entities/bots';
 
 import {goToLastViewedChannel} from 'actions/views/channel';
 import {openModal, closeModal} from 'actions/views/modals';

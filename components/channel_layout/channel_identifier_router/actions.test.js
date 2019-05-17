@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
 
-import {joinChannel} from 'xenia-redux/actions/channels';
-import {getUserByEmail} from 'xenia-redux/actions/users';
+import {joinChannel} from 'mattermost-redux/actions/channels';
+import {getUserByEmail} from 'mattermost-redux/actions/users';
 
 import {emitChannelClickEvent} from 'actions/global_actions.jsx';
 import {
@@ -20,11 +20,11 @@ jest.mock('actions/global_actions.jsx', () => ({
     emitChannelClickEvent: jest.fn(),
 }));
 
-jest.mock('xenia-redux/actions/channels', () => ({
+jest.mock('mattermost-redux/actions/channels', () => ({
     joinChannel: jest.fn(() => ({type: '', data: {channel: {id: 'channel_id3', name: 'achannel3', team_id: 'team_id1', type: 'O'}}})),
 }));
 
-jest.mock('xenia-redux/actions/users', () => ({
+jest.mock('mattermost-redux/actions/users', () => ({
     getUserByEmail: jest.fn(() => ({type: '', data: {id: 'user_id3', email: 'user3@bladekick.com', username: 'user3'}})),
 }));
 

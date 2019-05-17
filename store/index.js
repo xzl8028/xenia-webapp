@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 /* eslint max-nested-callbacks: ["error", 3] */
@@ -7,9 +7,9 @@ import Observable from 'zen-observable';
 import localForage from 'localforage';
 import {extendPrototype} from 'localforage-observable';
 import {createTransform, persistStore} from 'redux-persist';
-import {General, RequestStatus} from 'xenia-redux/constants';
-import configureServiceStore from 'xenia-redux/store';
-import reduxInitialState from 'xenia-redux/store/initial_state';
+import {General, RequestStatus} from 'mattermost-redux/constants';
+import configureServiceStore from 'mattermost-redux/store';
+import reduxInitialState from 'mattermost-redux/store/initial_state';
 
 import {storageRehydrate} from 'actions/storage';
 import {clearUserCookie} from 'actions/views/root';

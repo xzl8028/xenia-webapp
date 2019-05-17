@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -6,7 +6,7 @@ import {shallow} from 'enzyme';
 import {Modal} from 'react-bootstrap';
 import {Provider} from 'react-redux';
 import configureStore from 'redux-mock-store';
-import {Permissions} from 'xenia-redux/constants';
+import {Permissions} from 'mattermost-redux/constants';
 
 import {mountWithIntl} from 'tests/helpers/intl-test-helper.jsx';
 import Constants from 'utils/constants.jsx';

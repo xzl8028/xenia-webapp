@@ -33,7 +33,7 @@ package: build ## Packages app
 	rmdir tmp
 
 package-ci: ## used in the CI to build the package and bypass the npm install
-	@echo Building xenia Webapp
+	@echo Building Xenia Webapp
 
 	rm -rf dist
 	npm run build
@@ -47,19 +47,19 @@ package-ci: ## used in the CI to build the package and bypass the npm install
 	rmdir tmp
 
 build: node_modules ## Builds the app
-	@echo Building xenia Webapp
+	@echo Building Xenia Webapp
 
 	rm -rf dist
 
 	npm run build
 
 run: node_modules ## Runs app
-	@echo Running xenia Webapp for development
+	@echo Running Xenia Webapp for development
 
 	npm run run &
 
 run-fullmap: node_modules ## Legacy alias to run
-	@echo Running xenia Webapp for development
+	@echo Running Xenia Webapp for development
 
 	npm run run &
 

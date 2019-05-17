@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {sendVerificationEmail} from 'xenia-redux/actions/users';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
+import {sendVerificationEmail} from 'mattermost-redux/actions/users';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
 
 import UserSettingsModal from './user_settings_modal.jsx';
 

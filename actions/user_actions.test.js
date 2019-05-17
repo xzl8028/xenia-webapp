@@ -1,17 +1,17 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
 
-import {Preferences} from 'xenia-redux/constants';
+import {Preferences} from 'mattermost-redux/constants';
 
 import * as UserActions from 'actions/user_actions';
 
 const mockStore = configureStore([thunk]);
 
-jest.mock('xenia-redux/actions/users', () => {
-    const original = require.requireActual('xenia-redux/actions/users');
+jest.mock('mattermost-redux/actions/users', () => {
+    const original = require.requireActual('mattermost-redux/actions/users');
     return {
         ...original,
         getProfilesInTeam: (...args) => ({type: 'MOCK_GET_PROFILES_IN_TEAM', args}),
@@ -19,24 +19,24 @@ jest.mock('xenia-redux/actions/users', () => {
     };
 });
 
-jest.mock('xenia-redux/actions/teams', () => {
-    const original = require.requireActual('xenia-redux/actions/teams');
+jest.mock('mattermost-redux/actions/teams', () => {
+    const original = require.requireActual('mattermost-redux/actions/teams');
     return {
         ...original,
         getTeamMembersByIds: (...args) => ({type: 'MOCK_GET_TEAM_MEMBERS_BY_IDS', args}),
     };
 });
 
-jest.mock('xenia-redux/actions/channels', () => {
-    const original = require.requireActual('xenia-redux/actions/channels');
+jest.mock('mattermost-redux/actions/channels', () => {
+    const original = require.requireActual('mattermost-redux/actions/channels');
     return {
         ...original,
         getChannelMembersByIds: (...args) => ({type: 'MOCK_GET_CHANNEL_MEMBERS_BY_IDS', args}),
     };
 });
 
-jest.mock('xenia-redux/actions/preferences', () => {
-    const original = require.requireActual('xenia-redux/actions/preferences');
+jest.mock('mattermost-redux/actions/preferences', () => {
+    const original = require.requireActual('mattermost-redux/actions/preferences');
     return {
         ...original,
         deletePreferences: (...args) => ({type: 'MOCK_DELETE_PREFERENCES', args}),

@@ -1,15 +1,15 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {createSelector} from 'reselect';
 import {bindActionCreators} from 'redux';
-import {makeGetCategory} from 'xenia-redux/selectors/entities/preferences';
-import {getConfig, getLicense} from 'xenia-redux/selectors/entities/general';
-import {haveISystemPermission} from 'xenia-redux/selectors/entities/roles';
-import {savePreferences} from 'xenia-redux/actions/preferences';
-import {Permissions} from 'xenia-redux/constants';
-import {getStandardAnalytics} from 'xenia-redux/actions/admin';
+import {makeGetCategory} from 'mattermost-redux/selectors/entities/preferences';
+import {getConfig, getLicense} from 'mattermost-redux/selectors/entities/general';
+import {haveISystemPermission} from 'mattermost-redux/selectors/entities/roles';
+import {savePreferences} from 'mattermost-redux/actions/preferences';
+import {Permissions} from 'mattermost-redux/constants';
+import {getStandardAnalytics} from 'mattermost-redux/actions/admin';
 
 import {dismissNotice} from 'actions/views/notice';
 import {Preferences} from 'utils/constants.jsx';

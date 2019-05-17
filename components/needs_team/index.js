@@ -1,17 +1,17 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 
-import {fetchMyChannelsAndMembers, markChannelAsRead, viewChannel} from 'xenia-redux/actions/channels';
-import {getMyTeamUnreads, getTeamByName, selectTeam} from 'xenia-redux/actions/teams';
-import {getTheme} from 'xenia-redux/selectors/entities/preferences';
-import {getLicense, getConfig} from 'xenia-redux/selectors/entities/general';
-import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
-import {getCurrentTeamId, getMyTeams} from 'xenia-redux/selectors/entities/teams';
-import {getCurrentChannelId} from 'xenia-redux/selectors/entities/channels';
+import {fetchMyChannelsAndMembers, markChannelAsRead, viewChannel} from 'mattermost-redux/actions/channels';
+import {getMyTeamUnreads, getTeamByName, selectTeam} from 'mattermost-redux/actions/teams';
+import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getLicense, getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentTeamId, getMyTeams} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
 
 import {loadStatusesForChannelAndSidebar} from 'actions/status_actions';
 import {setPreviousTeamId} from 'actions/local_storage';

@@ -1,11 +1,11 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getGroupsNotAssociatedToTeam, linkGroupSyncable, getAllGroupsAssociatedToTeam} from 'xenia-redux/actions/groups';
-import {getGroupsNotAssociatedToTeam as selectGroupsNotAssociatedToTeam} from 'xenia-redux/selectors/entities/groups';
-import {getCurrentTeam} from 'xenia-redux/selectors/entities/teams';
+import {getGroupsNotAssociatedToTeam, linkGroupSyncable, getAllGroupsAssociatedToTeam} from 'mattermost-redux/actions/groups';
+import {getGroupsNotAssociatedToTeam as selectGroupsNotAssociatedToTeam} from 'mattermost-redux/selectors/entities/groups';
+import {getCurrentTeam} from 'mattermost-redux/selectors/entities/teams';
 
 import {setModalSearchTerm} from 'actions/views/search';
 

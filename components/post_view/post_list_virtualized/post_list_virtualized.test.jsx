@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import {DATE_LINE} from 'xenia-redux/utils/post_list';
+import {DATE_LINE} from 'mattermost-redux/utils/post_list';
 
 import LoadingScreen from 'components/loading_screen';
 import {PostListRowListIds} from 'utils/constants';

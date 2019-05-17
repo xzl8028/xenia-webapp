@@ -35,7 +35,7 @@ exports[`components/GetAndroidApp should match snapshot 1`] = `
         className="get-android-app__app-creator"
       >
         <FormattedMessage
-          defaultMessage="xenia, Inc"
+          defaultMessage="Xenia, Inc"
           id="get_app.xeniaInc"
           values={Object {}}
         />

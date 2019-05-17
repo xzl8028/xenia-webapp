@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 import {FormattedDate, FormattedMessage, FormattedTime} from 'react-intl';
-import {General} from 'xenia-redux/constants';
+import {General} from 'mattermost-redux/constants';
 
 import {localizeMessage} from 'utils/utils.jsx';
 import {getMonthLong, t} from 'utils/i18n';

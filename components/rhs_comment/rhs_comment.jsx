@@ -1,14 +1,14 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import {Posts} from 'xenia-redux/constants/index';
+import {Posts} from 'mattermost-redux/constants/index';
 import {
     isPostEphemeral,
     isPostPendingOrFailed,
-} from 'xenia-redux/utils/post_utils';
+} from 'mattermost-redux/utils/post_utils';
 
 import Constants, {Locations} from 'utils/constants.jsx';
 import * as PostUtils from 'utils/post_utils.jsx';

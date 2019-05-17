@@ -1,12 +1,12 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {deleteScheme} from 'xenia-redux/actions/schemes';
+import {deleteScheme} from 'mattermost-redux/actions/schemes';
 
-import {makeGetSchemeTeams} from 'xenia-redux/selectors/entities/schemes';
+import {makeGetSchemeTeams} from 'mattermost-redux/selectors/entities/schemes';
 
 import PermissionsSchemeSummary from './permissions_scheme_summary.jsx';
 

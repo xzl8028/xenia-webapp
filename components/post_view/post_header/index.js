@@ -1,9 +1,9 @@
-// Copyright (c) 2015-present xenia, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
-import {getConfig} from 'xenia-redux/selectors/entities/general';
-import {getUser} from 'xenia-redux/selectors/entities/users';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getUser} from 'mattermost-redux/selectors/entities/users';
 
 import PostHeader from './post_header.jsx';
 
