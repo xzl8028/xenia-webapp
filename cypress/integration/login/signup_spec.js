@@ -2,23 +2,42 @@
 // See LICENSE.txt for license information.
 
 // ***************************************************************
-// - [number] indicates a test step (e.g. 1. Go to a page)
+// - [#] indicates a test step (e.g. 1. Go to a page)
 // - [*] indicates an assertion (e.g. * Check the title)
 // - Use element ID when selecting an element. Create one if none.
 // ***************************************************************
 
+/* eslint max-nested-callbacks: ["error", 4] */
+
+let config;
+
 describe('Signup Email page', () => {
     before(() => {
-        // 1. Go to signup email page
+        // Disable other auth options
+        const newSettings = {
+            Office365Settings: {Enable: false},
+            LdapSettings: {Enable: false},
+        };
+        cy.apiUpdateConfig(newSettings);
+
+        cy.apiGetConfig().then((response) => {
+            config = response.body;
+        });
+        cy.apiLogout();
+
+        // # Go to signup email page
         cy.visit('/signup_email');
     });
 
     it('should render', () => {
+        // * check the initialUrl
+        cy.url().should('include', '/signup_email');
+
         // * Check that the login section is loaded
         cy.get('#signup_email_section').should('be.visible');
 
         // * Check the title
-        cy.title().should('include', 'xenia');
+        cy.title().should('include', config.TeamSettings.SiteName);
     });
 
     it('should match elements, back button', () => {
@@ -32,7 +51,7 @@ describe('Signup Email page', () => {
     it('should match elements, body', () => {
         // * Check elements in the body
         cy.get('#signup_email_section').should('be.visible');
-        cy.get('#site_name').should('contain', 'xenia');
+        cy.get('#site_name').should('contain', config.TeamSettings.SiteName);
         cy.get('#site_description').should('contain', 'All team communication in one place, searchable and accessible anywhere');
         cy.get('#create_account').should('contain', 'Let\'s create your account');
         cy.get('#signin_account').should('contain', 'Already have an account?');
@@ -52,27 +71,27 @@ describe('Signup Email page', () => {
         cy.get('#password_label').should('contain', 'Choose your password');
         cy.get('#password').should('be.visible');
 
-        cy.get('#createAccountButton').should('be.visible');
+        cy.get('#createAccountButton').scrollIntoView().should('be.visible');
         cy.get('#createAccountButton').should('contain', 'Create Account');
 
-        cy.get('#signup_agreement').should('contain', 'By proceeding to create your account and use xenia, you agree to our Terms of Service and Privacy Policy. If you do not agree, you cannot use xenia.');
-        cy.get('#signup_agreement > span > [href="https://about.xenia.com/default-terms/"]').should('be.visible');
-        cy.get('#signup_agreement > span > [href="https://about.xenia.com/default-privacy-policy/"]').should('be.visible');
+        cy.get('#signup_agreement').should('contain', `By proceeding to create your account and use ${config.TeamSettings.SiteName}, you agree to our Terms of Service and Privacy Policy. If you do not agree, you cannot use ${config.TeamSettings.SiteName}.`);
+        cy.get(`#signup_agreement > span > [href="${config.SupportSettings.TermsOfServiceLink}"]`).should('be.visible');
+        cy.get(`#signup_agreement > span > [href="${config.SupportSettings.PrivacyPolicyLink}"]`).should('be.visible');
     });
 
     it('should match elements, footer', () => {
         // * Check elements in the footer
-        cy.get('#footer_section').should('be.visible');
-        cy.get('#company_name').should('contain', 'xenia');
+        cy.get('#footer_section').scrollIntoView().should('be.visible');
+        cy.get('#company_name').should('contain', 'Xenia');
         cy.get('#copyright').should('contain', '© 2015-');
         cy.get('#copyright').should('contain', 'Xenia, Inc.');
         cy.get('#about_link').should('contain', 'About');
-        cy.get('#about_link').should('have.attr', 'href', 'https://about.xenia.com/default-about/');
+        cy.get('#about_link').should('have.attr', 'href', config.SupportSettings.AboutLink);
         cy.get('#privacy_link').should('contain', 'Privacy');
-        cy.get('#privacy_link').should('have.attr', 'href', 'https://about.xenia.com/default-privacy-policy/');
+        cy.get('#privacy_link').should('have.attr', 'href', config.SupportSettings.PrivacyPolicyLink);
         cy.get('#terms_link').should('contain', 'Terms');
-        cy.get('#terms_link').should('have.attr', 'href', 'https://about.xenia.com/default-terms/');
+        cy.get('#terms_link').should('have.attr', 'href', config.SupportSettings.TermsOfServiceLink);
         cy.get('#help_link').should('contain', 'Help');
-        cy.get('#help_link').should('have.attr', 'href', 'https://about.xenia.com/default-help/');
+        cy.get('#help_link').should('have.attr', 'href', config.SupportSettings.HelpLink);
     });
 });

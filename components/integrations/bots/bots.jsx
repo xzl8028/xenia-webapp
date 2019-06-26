@@ -30,6 +30,8 @@ export default class Bots extends React.PureComponent {
         */
         owners: PropTypes.object.isRequired,
 
+        createBots: PropTypes.bool,
+
         actions: PropTypes.shape({
 
             /**
@@ -181,7 +183,7 @@ export default class Bots extends React.PureComponent {
                         defaultMessage='Bot Accounts'
                     />
                 }
-                addText={
+                addText={this.props.createBots &&
                     <FormattedMessage
                         id='bots.manage.add'
                         defaultMessage='Add Bot Account'
@@ -204,7 +206,7 @@ export default class Bots extends React.PureComponent {
                 helpText={
                     <FormattedMessage
                         id='bots.manage.help'
-                        defaultMessage='Use {botAccounts} to integrate with xenia through plugins or the API. Bot accounts are available to everyone on your server.'
+                        defaultMessage='Use {botAccounts} to integrate with Xenia through plugins or the API. Bot accounts are available to everyone on your server.'
                         values={{
                             botAccounts: (
                                 <a

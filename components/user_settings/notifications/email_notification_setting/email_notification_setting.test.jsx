@@ -23,7 +23,7 @@ describe('components/user_settings/notifications/EmailNotificationSetting', () =
         saving: false,
         sendEmailNotifications: true,
         enableEmailBatching: false,
-        siteName: 'xenia',
+        siteName: 'Xenia',
         actions: {
             savePreferences: jest.fn(),
         },

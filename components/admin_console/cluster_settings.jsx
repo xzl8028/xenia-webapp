@@ -105,7 +105,7 @@ export default class ClusterSettings extends AdminSettings {
                     <WarningIcon/>
                     <FormattedMarkdownMessage
                         id='admin.cluster.should_not_change'
-                        defaultMessage='WARNING: These settings may not sync with the other servers in the cluster. High Availability inter-node communication will not start until you modify the config.json to be identical on all servers and restart xenia. Please see the [documentation](!http://docs.xenia.com/deployment/cluster.html) on how to add or remove a server from the cluster. If you are accessing the System Console through a load balancer and experiencing issues, please see the Troubleshooting Guide in our [documentation](!http://docs.xenia.com/deployment/cluster.html).'
+                        defaultMessage='WARNING: These settings may not sync with the other servers in the cluster. High Availability inter-node communication will not start until you modify the config.json to be identical on all servers and restart Xenia. Please see the [documentation](!http://docs.xenia.com/deployment/cluster.html) on how to add or remove a server from the cluster. If you are accessing the System Console through a load balancer and experiencing issues, please see the Troubleshooting Guide in our [documentation](!http://docs.xenia.com/deployment/cluster.html).'
                     />
                 </div>
             );
@@ -138,7 +138,7 @@ export default class ClusterSettings extends AdminSettings {
                     helpText={
                         <FormattedMarkdownMessage
                             id='admin.cluster.enableDescription'
-                            defaultMessage='When true, xenia will run in High Availability mode. Please see [documentation](!http://docs.xenia.com/deployment/cluster.html) to learn more about configuring High Availability for xenia.'
+                            defaultMessage='When true, Xenia will run in High Availability mode. Please see [documentation](!http://docs.xenia.com/deployment/cluster.html) to learn more about configuring High Availability for Xenia.'
                         />
                     }
                     value={this.state.Enable}

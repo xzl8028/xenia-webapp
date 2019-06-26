@@ -40,9 +40,13 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
       id="aboutModalLabel"
     >
       <FormattedMessage
-        defaultMessage="About xenia"
+        defaultMessage="About {appTitle}"
         id="about.title"
-        values={Object {}}
+        values={
+          Object {
+            "appTitle": "Xenia",
+          }
+        }
       />
     </ModalTitle>
   </ModalHeader>
@@ -62,7 +66,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
         <h3
           className="about-modal__title"
         >
-          xenia
+          Xenia
            
           <FormattedMessage
             defaultMessage="Enterprise Edition"
@@ -84,7 +88,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
         >
           <div>
             <FormattedMessage
-              defaultMessage="xenia Version:"
+              defaultMessage="Xenia Version:"
               id="about.version"
               values={Object {}}
             />
@@ -197,7 +201,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
     >
       <p>
         <InjectIntl(FormattedMarkdownMessage)
-          defaultMessage="xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps."
+          defaultMessage="Xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps."
           id="about.notice"
         />
       </p>
@@ -284,9 +288,13 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
       id="aboutModalLabel"
     >
       <FormattedMessage
-        defaultMessage="About xenia"
+        defaultMessage="About {appTitle}"
         id="about.title"
-        values={Object {}}
+        values={
+          Object {
+            "appTitle": "Xenia",
+          }
+        }
       />
     </ModalTitle>
   </ModalHeader>
@@ -306,7 +314,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
         <h3
           className="about-modal__title"
         >
-          xenia
+          Xenia
            
           <FormattedMessage
             defaultMessage="Team Edition"
@@ -328,7 +336,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
         >
           <div>
             <FormattedMessage
-              defaultMessage="xenia Version:"
+              defaultMessage="Xenia Version:"
               id="about.version"
               values={Object {}}
             />
@@ -366,7 +374,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
     >
       <div>
         <FormattedMessage
-          defaultMessage="Join the xenia community at "
+          defaultMessage="Join the Xenia community at "
           id="about.teamEditionLearn"
           values={Object {}}
         />
@@ -430,7 +438,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
     >
       <p>
         <InjectIntl(FormattedMarkdownMessage)
-          defaultMessage="xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps."
+          defaultMessage="Xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps."
           id="about.notice"
         />
       </p>
@@ -516,9 +524,13 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
       id="aboutModalLabel"
     >
       <FormattedMessage
-        defaultMessage="About xenia"
+        defaultMessage="About {appTitle}"
         id="about.title"
-        values={Object {}}
+        values={
+          Object {
+            "appTitle": "Xenia",
+          }
+        }
       />
     </ModalTitle>
   </ModalHeader>
@@ -538,7 +550,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
         <h3
           className="about-modal__title"
         >
-          xenia
+          Xenia
            
           <FormattedMessage
             defaultMessage="Team Edition"
@@ -560,7 +572,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
         >
           <div>
             <FormattedMessage
-              defaultMessage="xenia Version:"
+              defaultMessage="Xenia Version:"
               id="about.version"
               values={Object {}}
             />
@@ -610,7 +622,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
     >
       <div>
         <FormattedMessage
-          defaultMessage="Join the xenia community at "
+          defaultMessage="Join the Xenia community at "
           id="about.teamEditionLearn"
           values={Object {}}
         />
@@ -674,7 +686,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
     >
       <p>
         <InjectIntl(FormattedMarkdownMessage)
-          defaultMessage="xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps."
+          defaultMessage="Xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps."
           id="about.notice"
         />
       </p>
@@ -760,9 +772,13 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
       id="aboutModalLabel"
     >
       <FormattedMessage
-        defaultMessage="About xenia"
+        defaultMessage="About {appTitle}"
         id="about.title"
-        values={Object {}}
+        values={
+          Object {
+            "appTitle": "Xenia",
+          }
+        }
       />
     </ModalTitle>
   </ModalHeader>
@@ -782,7 +798,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
         <h3
           className="about-modal__title"
         >
-          xenia
+          Xenia
            
           <FormattedMessage
             defaultMessage="Team Edition"
@@ -804,7 +820,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
         >
           <div>
             <FormattedMessage
-              defaultMessage="xenia Version:"
+              defaultMessage="Xenia Version:"
               id="about.version"
               values={Object {}}
             />
@@ -842,7 +858,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
     >
       <div>
         <FormattedMessage
-          defaultMessage="Join the xenia community at "
+          defaultMessage="Join the Xenia community at "
           id="about.teamEditionLearn"
           values={Object {}}
         />
@@ -906,7 +922,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
     >
       <p>
         <InjectIntl(FormattedMarkdownMessage)
-          defaultMessage="xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps."
+          defaultMessage="Xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps."
           id="about.notice"
         />
       </p>

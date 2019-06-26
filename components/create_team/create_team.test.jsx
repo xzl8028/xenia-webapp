@@ -15,7 +15,7 @@ describe('/components/create_team', () => {
     const defaultProps = {
         currentChannel: {name: 'test-channel'},
         currentTeam: {name: 'test-team'},
-        siteName: 'xenia',
+        siteName: 'Xenia',
         customBrand: true,
         enableCustomBrand: true,
         customDescriptionText: 'Welcome to our custom branded site!',

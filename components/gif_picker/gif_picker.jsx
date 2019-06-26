@@ -17,7 +17,7 @@ export const appProps = {
     basePath: '/xenia',
     itemTapType: constants.ItemTapAction.SHARE,
     appClassName: 'gfycat',
-    shareEvent: 'sharexenia',
+    shareEvent: 'shareXenia',
     appId: 'xeniawebviews',
     enableHistory: true,
     header: {

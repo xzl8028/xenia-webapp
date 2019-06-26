@@ -1,4 +1,4 @@
-module xenia
+module Xenia
   class UnicodeEmojiHelper
     GENDER_MALE = "\u{2642}"
     GENDER_FEMALE = "\u{2640}"

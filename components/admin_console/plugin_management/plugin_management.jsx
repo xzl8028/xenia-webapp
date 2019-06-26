@@ -204,7 +204,7 @@ const PluginItem = ({
             <span>
                 {' - '}
                 <Link
-                    to={'/admin_console/integrations/plugin_' + pluginStatus.id}
+                    to={'/admin_console/plugins/plugin_' + pluginStatus.id}
                 >
                     <FormattedMessage
                         id='admin.plugin.settingsButton'
@@ -610,6 +610,33 @@ export default class PluginManagement extends AdminSettings {
         );
     }
 
+    renderEnablePluginsSetting = () => {
+        const hideEnablePlugins = this.props.config.ExperimentalSettings.RestrictSystemAdmin;
+        if (!hideEnablePlugins) {
+            return (
+                <BooleanSetting
+                    id='enable'
+                    label={
+                        <FormattedMessage
+                            id='admin.plugins.settings.enable'
+                            defaultMessage='Enable Plugins: '
+                        />
+                    }
+                    helpText={
+                        <FormattedMarkdownMessage
+                            id='admin.plugins.settings.enableDesc'
+                            defaultMessage='When true, enables plugins on your Xenia server. Use plugins to integrate with third-party systems, extend functionality, or customize the user interface of your Xenia server. See [documentation](https://about.xenia.com/default-plugin-uploads) to learn more.'
+                        />
+                    }
+                    value={this.state.enable}
+                    onChange={this.handleChange}
+                    setByEnv={this.isSetByEnv('PluginSettings.Enable')}
+                />
+            );
+        }
+        return null;
+    }
+
     renderSettings() {
         const {enableUploads} = this.state;
         const enable = this.props.config.PluginSettings.Enable;
@@ -714,7 +741,7 @@ export default class PluginManagement extends AdminSettings {
                         <p className='help-text'>
                             <FormattedHTMLMessage
                                 id='admin.plugin.installedDesc'
-                                defaultMessage='Installed plugins on your xenia server. Pre-packaged plugins are installed by default, and can be disabled but not removed.'
+                                defaultMessage='Installed plugins on your Xenia server. Pre-packaged plugins are installed by default, and can be disabled but not removed.'
                             />
                         </p>
                         <br/>
@@ -730,7 +757,7 @@ export default class PluginManagement extends AdminSettings {
             uploadHelpText = (
                 <FormattedMarkdownMessage
                     id='admin.plugin.uploadDesc'
-                    defaultMessage='Upload a plugin for your xenia server. See [documentation](!https://about.xenia.com/default-plugin-uploads) to learn more.'
+                    defaultMessage='Upload a plugin for your Xenia server. See [documentation](!https://about.xenia.com/default-plugin-uploads) to learn more.'
                 />
             );
         } else if (enable === true && enableUploads === false) {
@@ -754,75 +781,63 @@ export default class PluginManagement extends AdminSettings {
         const overwritePluginModal = this.state.confirmModal && this.renderOverwritePluginModal();
 
         return (
-            <div className='wrapper--fixed'>
-                <SettingsGroup id={'PluginSettings'}>
-                    <BooleanSetting
-                        id='enable'
-                        label={
-                            <FormattedMessage
-                                id='admin.plugins.settings.enable'
-                                defaultMessage='Enable Plugins: '
-                            />
-                        }
-                        helpText={
-                            <FormattedMarkdownMessage
-                                id='admin.plugins.settings.enableDesc'
-                                defaultMessage='When true, enables plugins on your xenia server. Use plugins to integrate with third-party systems, extend functionality or customize the user interface of your xenia server. See [documentation](https://about.xenia.com/default-plugin-uploads) to learn more.'
-                            />
-                        }
-                        value={this.state.enable}
-                        onChange={this.handleChange}
-                        setByEnv={this.isSetByEnv('PluginSettings.Enable')}
-                    />
+            <div className='admin-console__wrapper'>
+                <div className='admin-console__content'>
+                    <SettingsGroup
+                        id={'PluginSettings'}
+                        container={false}
+                    >
+                        {this.renderEnablePluginsSetting()}
 
-                    <div className='form-group'>
-                        <label
-                            className='control-label col-sm-4'
-                        >
-                            <FormattedMessage
-                                id='admin.plugin.uploadTitle'
-                                defaultMessage='Upload Plugin: '
-                            />
-                        </label>
-                        <div className='col-sm-8'>
-                            <div className='file__upload'>
-                                <button
-                                    className={uploadBtnClass}
-                                    disabled={!enableUploads || !enable}
-                                >
-                                    <FormattedMessage
-                                        id='admin.plugin.choose'
-                                        defaultMessage='Choose File'
-                                    />
-                                </button>
-                                <input
-                                    ref='fileInput'
-                                    type='file'
-                                    accept='.gz'
-                                    onChange={this.handleUpload}
-                                    disabled={!enableUploads || !enable}
-                                />
-                            </div>
-                            <button
-                                className={btnClass}
-                                disabled={!this.state.fileSelected}
-                                onClick={this.handleSubmitUpload}
+                        <div className='form-group'>
+                            <label
+                                className='control-label col-sm-4'
                             >
-                                {uploadButtonText}
-                            </button>
-                            <div className='help-text no-margin'>
-                                {fileName}
+                                <FormattedMessage
+                                    id='admin.plugin.uploadTitle'
+                                    defaultMessage='Upload Plugin: '
+                                />
+                            </label>
+                            <div className='col-sm-8'>
+                                <div className='file__upload'>
+                                    <button
+                                        className={uploadBtnClass}
+                                        disabled={!enableUploads || !enable}
+                                    >
+                                        <FormattedMessage
+                                            id='admin.plugin.choose'
+                                            defaultMessage='Choose File'
+                                        />
+                                    </button>
+                                    <input
+                                        ref='fileInput'
+                                        type='file'
+                                        accept='.gz'
+                                        onChange={this.handleUpload}
+                                        disabled={!enableUploads || !enable}
+                                    />
+                                </div>
+                                <button
+                                    className={btnClass}
+                                    disabled={!this.state.fileSelected}
+                                    onClick={this.handleSubmitUpload}
+                                >
+                                    {uploadButtonText}
+                                </button>
+                                <div className='help-text no-margin'>
+                                    {fileName}
+                                </div>
+                                {serverError}
+                                {lastMessage}
+                                <p className='help-text'>
+                                    {uploadHelpText}
+                                </p>
                             </div>
-                            {serverError}
-                            {lastMessage}
-                            <p className='help-text'>
-                                {uploadHelpText}
-                            </p>
                         </div>
-                    </div>
-                    {pluginsContainer}
-                </SettingsGroup>
-                {overwritePluginModal}
+                        {pluginsContainer}
+                    </SettingsGroup>
+                    {overwritePluginModal}
+                </div>
             </div>
         );
     }

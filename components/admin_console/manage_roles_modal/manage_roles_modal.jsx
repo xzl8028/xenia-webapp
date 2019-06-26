@@ -196,7 +196,7 @@ export default class ManageRolesModal extends React.PureComponent {
                             </strong>
                             <FormattedMessage
                                 id='admin.manage_roles.postAllRole'
-                                defaultMessage='Access to post to all xenia channels including direct messages.'
+                                defaultMessage='Access to post to all Xenia channels including direct messages.'
                             />
                         </label>
                     </div>
@@ -217,7 +217,7 @@ export default class ManageRolesModal extends React.PureComponent {
                             </strong>
                             <FormattedMessage
                                 id='admin.manage_roles.postAllPublicRole'
-                                defaultMessage='Access to post to all xenia public channels.'
+                                defaultMessage='Access to post to all Xenia public channels.'
                             />
                         </label>
                     </div>
@@ -276,6 +276,7 @@ export default class ManageRolesModal extends React.PureComponent {
             <div>
                 <div className='manage-teams__user'>
                     <img
+                        alt={''}
                         className='manage-teams__profile-picture'
                         src={Client4.getProfilePictureUrl(user.id, user.last_picture_update)}
                     />

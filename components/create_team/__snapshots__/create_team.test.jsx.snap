@@ -14,7 +14,7 @@ exports[`/components/create_team should match snapshot 1`] = `
     >
       <SiteNameAndDescription
         customDescriptionText="Welcome to our custom branded site!"
-        siteName="xenia"
+        siteName="Xenia"
       />
       <div
         className="signup__content"

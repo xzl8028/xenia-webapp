@@ -8,7 +8,7 @@ exports[`components/GetAndroidApp should match snapshot 1`] = `
     className="get-app__header"
   >
     <FormattedMessage
-      defaultMessage="xenia works best if you switch to our Android app"
+      defaultMessage="Xenia works best if you switch to our Android app"
       id="get_app.androidHeader"
       values={Object {}}
     />
@@ -16,6 +16,7 @@ exports[`components/GetAndroidApp should match snapshot 1`] = `
   <hr />
   <div>
     <img
+      alt="android app icon"
       className="get-android-app__icon"
       src="mockup.png"
     />
@@ -26,7 +27,7 @@ exports[`components/GetAndroidApp should match snapshot 1`] = `
         className="get-android-app__app-name"
       >
         <FormattedMessage
-          defaultMessage="xenia for Android"
+          defaultMessage="Xenia for Android"
           id="get_app.androidAppName"
           values={Object {}}
         />
@@ -53,6 +54,7 @@ exports[`components/GetAndroidApp should match snapshot 1`] = `
     />
   </a>
   <img
+    alt="get app screenshot"
     className="get-app__screenshot"
     src="mockup.png"
   />

@@ -29,6 +29,7 @@ export default class TeamMembersDropdown extends React.Component {
             getMyTeamMembers: PropTypes.func.isRequired,
             getMyTeamUnreads: PropTypes.func.isRequired,
             getUser: PropTypes.func.isRequired,
+            getTeamMember: PropTypes.func.isRequired,
             getTeamStats: PropTypes.func.isRequired,
             getChannelStats: PropTypes.func.isRequired,
             updateTeamMemberSchemeRoles: PropTypes.func.isRequired,
@@ -58,6 +59,7 @@ export default class TeamMembersDropdown extends React.Component {
                 this.setState({serverError: error.message});
             } else {
                 this.props.actions.getUser(this.props.user.id);
+                this.props.actions.getTeamMember(this.props.teamMember.team_id, this.props.user.id);
                 if (this.props.user.id === me.id) {
                     await this.props.actions.getMyTeamMembers();
                     this.props.actions.getMyTeamUnreads();
@@ -83,6 +85,7 @@ export default class TeamMembersDropdown extends React.Component {
                 this.setState({serverError: error.message});
             } else {
                 this.props.actions.getUser(this.props.user.id);
+                this.props.actions.getTeamMember(this.props.teamMember.team_id, this.props.user.id);
             }
         }
     }
@@ -184,7 +187,7 @@ export default class TeamMembersDropdown extends React.Component {
                 <div>
                     <FormattedMessage
                         id='team_members_dropdown.confirmDemoteDescription'
-                        defaultMessage="If you demote yourself from the System Admin role and there is not another user with System Admin privileges, you'll need to re-assign a System Admin by accessing the xenia server through a terminal and running the following command."
+                        defaultMessage="If you demote yourself from the System Admin role and there is not another user with System Admin privileges, you'll need to re-assign a System Admin by accessing the Xenia server through a terminal and running the following command."
                     />
                     <br/>
                     <br/>

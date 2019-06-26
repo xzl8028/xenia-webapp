@@ -34,8 +34,8 @@ custom_aliases.each do |custom, original|
 end
 
 ### Extract and create all of the emoji skin tones ###
-unicode_emoji_helper = xenia::UnicodeEmojiHelper.new
-apple_extractor = xenia::AppleEmojiExtractor.new(64)
+unicode_emoji_helper = Xenia::UnicodeEmojiHelper.new
+apple_extractor = Xenia::AppleEmojiExtractor.new(64)
 emoji_added = []
 
 Emoji.all.clone.each do |emoji|
@@ -49,7 +49,7 @@ Emoji.all.clone.each do |emoji|
     next unless pngbytes
 
     modifier = sequence.split('')[1]
-    short_name = xenia::UnicodeEmojiHelper::SKIN_TONE_MAP[modifier]
+    short_name = Xenia::UnicodeEmojiHelper::SKIN_TONE_MAP[modifier]
     new_name = "#{emoji.name}_#{short_name.gsub(/[\s-]/, '_')}"
     new_emoji = Emoji.create(new_name) do |char|
       char.category = 'skintone'

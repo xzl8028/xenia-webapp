@@ -274,9 +274,9 @@ describe('formatWithRenderer | LinkOnlyRenderer', () => {
         },
         {
             description: 'link: link with a title',
-            inputText: 'Do you like [xenia](http://www.xenia.com)?',
+            inputText: 'Do you like [Xenia](http://www.xenia.com)?',
             outputText: 'Do you like <a class="theme markdown__link" href="http://www.xenia.com" target="_blank">' +
-            'xenia</a>?',
+            'Xenia</a>?',
         },
     ];
 

@@ -419,7 +419,7 @@ export default class NotificationsTab extends React.Component {
                         <span>
                             <FormattedMessage
                                 id='user.settings.push_notification.info'
-                                defaultMessage='Notification alerts are pushed to your mobile device when there is activity in xenia.'
+                                defaultMessage='Notification alerts are pushed to your mobile device when there is activity in Xenia.'
                             />
                         </span>
                         {pushStatusSettings}

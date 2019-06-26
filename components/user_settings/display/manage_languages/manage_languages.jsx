@@ -115,7 +115,7 @@ export default class ManageLanguage extends React.Component {
                     <br/>
                     <FormattedMarkdownMessage
                         id='user.settings.languages.promote'
-                        defaultMessage='Select which language xenia displays in the user interface.\n \nWould you like to help with translations? Join the [xenia Translation Server](!http://translate.xenia.com/) to contribute.'
+                        defaultMessage='Select which language Xenia displays in the user interface.\n \nWould you like to help with translations? Join the [Xenia Translation Server](!http://translate.xenia.com/) to contribute.'
                     />
                 </div>
             </div>

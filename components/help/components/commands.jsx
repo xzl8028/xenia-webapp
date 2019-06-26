@@ -22,14 +22,14 @@ export default function HelpCommands() {
             <p>
                 <FormattedMarkdownMessage
                     id='help.commands.intro1'
-                    defaultMessage='Slash commands perform operations in xenia by typing into the text input box. Enter a `/` followed by a command and some arguments to perform actions.'
+                    defaultMessage='Slash commands perform operations in Xenia by typing into the text input box. Enter a `/` followed by a command and some arguments to perform actions.'
                 />
             </p>
 
             <p>
                 <FormattedMarkdownMessage
                     id='help.commands.intro2'
-                    defaultMessage='Built-in slash commands come with all xenia installations and custom slash commands are configurable to interact with external applications. Learn about configuring custom slash commands on the [developer slash command documentation page](!http://docs.xenia.com/developer/slash-commands.html).'
+                    defaultMessage='Built-in slash commands come with all Xenia installations and custom slash commands are configurable to interact with external applications. Learn about configuring custom slash commands on the [developer slash command documentation page](!http://docs.xenia.com/developer/slash-commands.html).'
                 />
             </p>
 
@@ -43,7 +43,7 @@ export default function HelpCommands() {
             <p>
                 <FormattedMessage
                     id='help.commands.builtin.description'
-                    defaultMessage='The following slash commands are available on all xenia installations:'
+                    defaultMessage='The following slash commands are available on all Xenia installations:'
                 />
             </p>
 

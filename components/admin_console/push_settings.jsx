@@ -114,8 +114,8 @@ export default class PushSettings extends AdminSettings {
     renderTitle() {
         return (
             <FormattedMessage
-                id='admin.environment.pushNotifications'
-                defaultMessage='Push Notifications'
+                id='admin.environment.pushNotificationServer'
+                defaultMessage='Push Notification Server'
             />
         );
     }
@@ -142,14 +142,14 @@ export default class PushSettings extends AdminSettings {
             pushServerHelpText = (
                 <FormattedMarkdownMessage
                     id='admin.email.mhpnsHelp'
-                    defaultMessage='Download [xenia iOS app](!https://about.xenia.com/xenia-ios-app/) from iTunes. Download [xenia Android app](!https://about.xenia.com/xenia-android-app/) from Google Play. Learn more about the [xenia Hosted Push Notification Service](!https://about.xenia.com/default-hpns/).'
+                    defaultMessage='Download [Xenia iOS app](!https://about.xenia.com/xenia-ios-app/) from iTunes. Download [Xenia Android app](!https://about.xenia.com/xenia-android-app/) from Google Play. Learn more about the [Xenia Hosted Push Notification Service](!https://about.xenia.com/default-hpns/).'
                 />
             );
         } else if (this.state.pushNotificationServerType === PUSH_NOTIFICATIONS_MTPNS) {
             pushServerHelpText = (
                 <FormattedMarkdownMessage
                     id='admin.email.mtpnsHelp'
-                    defaultMessage='Download [xenia iOS app](!https://about.xenia.com/xenia-ios-app/) from iTunes. Download [xenia Android app](!https://about.xenia.com/xenia-android-app/) from Google Play. Learn more about the [xenia Test Push Notification Service](!https://about.xenia.com/default-tpns/).'
+                    defaultMessage='Download [Xenia iOS app](!https://about.xenia.com/xenia-ios-app/) from iTunes. Download [Xenia Android app](!https://about.xenia.com/xenia-android-app/) from Google Play. Learn more about the [Xenia Test Push Notification Service](!https://about.xenia.com/default-tpns/).'
                 />
             );
         } else {
@@ -175,7 +175,7 @@ export default class PushSettings extends AdminSettings {
                         />
                         <FormattedMarkdownMessage
                             id='admin.email.agreeHPNS'
-                            defaultMessage=' I understand and accept the xenia Hosted Push Notification Service [Terms of Service](!https://about.xenia.com/hpns-terms/) and [Privacy Policy](!https://about.xenia.com/hpns-privacy/).'
+                            defaultMessage=' I understand and accept the Xenia Hosted Push Notification Service [Terms of Service](!https://about.xenia.com/hpns-terms/) and [Privacy Policy](!https://about.xenia.com/hpns-privacy/).'
                         />
                     </div>
                 </div>

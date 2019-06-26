@@ -14,7 +14,7 @@ describe('components/DoVerifyEmail', () => {
                 email: 'test@example.com',
             },
         },
-        siteName: 'xenia',
+        siteName: 'Xenia',
         actions: {
             verifyUserEmail: jest.fn().mockResolvedValue({data: true}),
             getMe: jest.fn().mockResolvedValue({data: true}),

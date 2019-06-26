@@ -72,7 +72,7 @@ export default class ConfirmIntegration extends React.Component {
                 <p>
                     <FormattedMarkdownMessage
                         id='add_command.doneHelp'
-                        defaultMessage='Your slash command has been set up. The following token will be sent in the outgoing payload. Please use it to verify the request came from your xenia team (see [documentation](!https://docs.xenia.com/developer/slash-commands.html) for further details).'
+                        defaultMessage='Your slash command has been set up. The following token will be sent in the outgoing payload. Please use it to verify the request came from your Xenia team (see [documentation](!https://docs.xenia.com/developer/slash-commands.html) for further details).'
                     />
                 </p>
             );
@@ -136,7 +136,7 @@ export default class ConfirmIntegration extends React.Component {
                 <p>
                     <FormattedMarkdownMessage
                         id='add_outgoing_webhook.doneHelp'
-                        defaultMessage='Your outgoing webhook has been set up. The following token will be sent in the outgoing payload. Please use it to verify the request came from your xenia team (see [documentation](!https://docs.xenia.com/developer/webhooks-outgoing.html) for further details).'
+                        defaultMessage='Your outgoing webhook has been set up. The following token will be sent in the outgoing payload. Please use it to verify the request came from your Xenia team (see [documentation](!https://docs.xenia.com/developer/webhooks-outgoing.html) for further details).'
                     />
                 </p>
             );
@@ -255,6 +255,12 @@ export default class ConfirmIntegration extends React.Component {
                     />
                     <CopyText
                         value={botToken}
+                    />
+                    <br/>
+                    <br/>
+                    <FormattedMarkdownMessage
+                        id='add_outgoing_webhook.token.message'
+                        defaultMessage='Make sure to add this bot account to teams and channels you want it to interact in. See [documentation](https://xenia.com/pl/default-bot-accounts) to learn more.'
                     />
                 </p>
             );

@@ -21,7 +21,7 @@ exports[`components/HeaderFooterTemplate should match snapshot with about link 1
           className="pull-right footer-site-name"
           id="company_name"
         >
-          xenia
+          Xenia
         </span>
       </div>
       <div
@@ -77,7 +77,7 @@ exports[`components/HeaderFooterTemplate should match snapshot with all links 1`
           className="pull-right footer-site-name"
           id="company_name"
         >
-          xenia
+          Xenia
         </span>
       </div>
       <div
@@ -176,7 +176,7 @@ exports[`components/HeaderFooterTemplate should match snapshot with children 1`]
           className="pull-right footer-site-name"
           id="company_name"
         >
-          xenia
+          Xenia
         </span>
       </div>
       <div
@@ -218,7 +218,7 @@ exports[`components/HeaderFooterTemplate should match snapshot with help link 1`
           className="pull-right footer-site-name"
           id="company_name"
         >
-          xenia
+          Xenia
         </span>
       </div>
       <div
@@ -274,7 +274,7 @@ exports[`components/HeaderFooterTemplate should match snapshot with privacy poli
           className="pull-right footer-site-name"
           id="company_name"
         >
-          xenia
+          Xenia
         </span>
       </div>
       <div
@@ -330,7 +330,7 @@ exports[`components/HeaderFooterTemplate should match snapshot with term of serv
           className="pull-right footer-site-name"
           id="company_name"
         >
-          xenia
+          Xenia
         </span>
       </div>
       <div
@@ -386,7 +386,7 @@ exports[`components/HeaderFooterTemplate should match snapshot without children 
           className="pull-right footer-site-name"
           id="company_name"
         >
-          xenia
+          Xenia
         </span>
       </div>
       <div

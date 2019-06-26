@@ -2,6 +2,7 @@
 // See LICENSE.txt for license information.
 
 const childProcess = require('child_process');
+
 const path = require('path');
 const url = require('url');
 
@@ -11,6 +12,7 @@ const nodeExternals = require('webpack-node-externals');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const NPM_TARGET = process.env.npm_lifecycle_event; //eslint-disable-line no-process-env
 
@@ -271,10 +273,10 @@ var config = {
         // Generate manifest.json, honouring any configured publicPath. This also handles injecting
         // <link rel="apple-touch-icon" ... /> and <meta name="apple-*" ... /> tags into root.html.
         new WebpackPwaManifest({
-            name: 'xenia',
-            short_name: 'xenia',
+            name: 'Xenia',
+            short_name: 'Xenia',
             start_url: '..',
-            description: 'xenia is an open source, self-hosted Slack-alternative',
+            description: 'Xenia is an open source, self-hosted Slack-alternative',
             background_color: '#ffffff',
             inject: true,
             ios: true,
@@ -356,6 +358,9 @@ if (!DEV) {
 const env = {};
 if (DEV) {
     env.PUBLIC_PATH = JSON.stringify(publicPath);
+    if (process.env.MM_LIVE_RELOAD) { //eslint-disable-line no-process-env
+        config.plugins.push(new LiveReloadPlugin());
+    }
 } else {
     env.NODE_ENV = JSON.stringify('production');
 }

@@ -22,8 +22,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -79,6 +88,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -124,6 +134,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -169,6 +180,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -264,8 +276,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -321,6 +342,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -366,6 +388,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -411,6 +434,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -506,8 +530,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -563,6 +596,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -608,6 +642,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -653,6 +688,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -748,8 +784,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -805,6 +850,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -850,6 +896,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -895,6 +942,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should match snapshot,
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -998,8 +1046,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -1055,6 +1112,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -1100,6 +1158,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -1145,6 +1204,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -1240,8 +1300,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -1297,6 +1366,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -1342,6 +1412,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -1387,6 +1458,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -1486,8 +1558,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -1543,6 +1624,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -1588,6 +1670,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -1633,6 +1716,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -1728,8 +1812,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -1785,6 +1878,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -1830,6 +1924,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -1875,6 +1970,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -1970,8 +2066,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -2027,6 +2132,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -2072,6 +2178,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -2117,6 +2224,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>
@@ -2212,8 +2320,17 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
     />
   </div>
   <div
+    aria-labelledby="lhs_list_aria_label"
     className="sidebar--left__list"
+    id="lhsList"
+    tabIndex="-1"
   >
+    <h1
+      className="hidden-label"
+      id="lhs_list_aria_label"
+    >
+      channel sidebar region
+    </h1>
     <UnreadChannelIndicator
       content={
         <FormattedMessage
@@ -2269,6 +2386,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
       >
         <ul
           className="nav nav-pills nav-stacked"
+          id="publicChannelList"
           key="public"
         >
           <li>
@@ -2314,6 +2432,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="privateChannelList"
           key="private"
         >
           <li>
@@ -2359,6 +2478,7 @@ exports[`component/sidebar/sidebar_channel/SidebarChannel should show/hide corre
         </ul>
         <ul
           className="nav nav-pills nav-stacked"
+          id="directChannelList"
           key="direct"
         >
           <li>

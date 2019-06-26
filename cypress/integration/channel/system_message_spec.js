@@ -2,7 +2,7 @@
 // See LICENSE.txt for license information.
 
 // ***************************************************************
-// - [number] indicates a test step (e.g. 1. Go to a page)
+// - [#] indicates a test step (e.g. 1. Go to a page)
 // - [*] indicates an assertion (e.g. * Check the title)
 // - Use element ID when selecting an element. Create one if none.
 // ***************************************************************
@@ -54,16 +54,7 @@ describe('System Message', () => {
         cy.apiLogin('user-1');
         cy.visit('/');
 
-        cy.getCookie('MMUSERID').then((cookie) => {
-            const preference = {
-                user_id: cookie.value,
-                category: 'display_settings',
-                name: 'name_format',
-                value: 'username',
-            };
-
-            cy.apiSaveUserPreference([preference]);
-        });
+        cy.apiSaveTeammateNameDisplayPreference('username');
     });
 
     it('MM-14636 - Validate that system message is wrapping properly', () => {

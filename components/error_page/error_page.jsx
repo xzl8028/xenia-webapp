@@ -57,7 +57,7 @@ export default class ErrorPage extends React.PureComponent {
                 <Link to={returnTo}>
                     <FormattedMessage
                         id='error.generic.link'
-                        defaultMessage='Back to xenia'
+                        defaultMessage='Back to Xenia'
                     />
                 </Link>
             );

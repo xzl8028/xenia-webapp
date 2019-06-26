@@ -24,7 +24,7 @@ export default [
         title: (
             <FormattedMarkdownMessage
                 id='system_notice.title'
-                defaultMessage='**Notice**\nfrom xenia'
+                defaultMessage='**Notice**\nfrom Xenia'
             />
         ),
         icon: xeniaIcon,
@@ -48,7 +48,7 @@ export default [
         title: (
             <FormattedMarkdownMessage
                 id='system_notice.title'
-                defaultMessage='**Notice**\nfrom xenia'
+                defaultMessage='**Notice**\nfrom Xenia'
             />
         ),
         icon: xeniaIcon,
@@ -78,7 +78,7 @@ export default [
         title: (
             <FormattedMarkdownMessage
                 id='system_notice.title'
-                defaultMessage='**Notice**\nfrom xenia'
+                defaultMessage='**Notice**\nfrom Xenia'
             />
         ),
         icon: xeniaIcon,

@@ -26,7 +26,7 @@ describe('components/select_team/SelectTeam', () => {
             {id: 'team_id_1', delete_at: 0, name: 'team-a', display_name: 'Team A', allow_open_invite: true},
             {id: 'team_id_2', delete_at: 0, name: 'b-team', display_name: 'B Team', allow_open_invite: true},
         ],
-        siteName: 'xenia',
+        siteName: 'Xenia',
         canCreateTeams: false,
         canManageSystem: true,
         canJoinPublicTeams: true,

@@ -12,7 +12,7 @@ export default class SiteNameAndDescription extends React.PureComponent {
     };
 
     static defaultProps = {
-        siteName: 'xenia',
+        siteName: 'Xenia',
     };
 
     render() {

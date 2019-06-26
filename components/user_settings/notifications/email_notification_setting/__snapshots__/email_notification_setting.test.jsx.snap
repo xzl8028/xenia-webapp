@@ -45,7 +45,7 @@ exports[`components/user_settings/notifications/EmailNotificationSetting should 
   saving={false}
   sendEmailNotifications={true}
   serverError=""
-  siteName="xenia"
+  siteName="Xenia"
   updateSection={[MockFunction]}
 >
   <SettingItemMax
@@ -108,7 +108,7 @@ exports[`components/user_settings/notifications/EmailNotificationSetting should 
               id="user.settings.notifications.emailInfo"
               values={
                 Object {
-                  "siteName": "xenia",
+                  "siteName": "Xenia",
                 }
               }
             />
@@ -211,12 +211,12 @@ exports[`components/user_settings/notifications/EmailNotificationSetting should 
                   id="user.settings.notifications.emailInfo"
                   values={
                     Object {
-                      "siteName": "xenia",
+                      "siteName": "Xenia",
                     }
                   }
                 >
                   <span>
-                    Email notifications are sent for mentions and direct messages when you are offline or away from xenia for more than 5 minutes.
+                    Email notifications are sent for mentions and direct messages when you are offline or away from Xenia for more than 5 minutes.
                   </span>
                 </FormattedMessage>
                  
@@ -365,7 +365,7 @@ exports[`components/user_settings/notifications/EmailNotificationSetting should 
   saving={false}
   sendEmailNotifications={true}
   serverError=""
-  siteName="xenia"
+  siteName="Xenia"
   updateSection={[MockFunction]}
 >
   <SettingItemMax
@@ -474,7 +474,7 @@ exports[`components/user_settings/notifications/EmailNotificationSetting should 
               id="user.settings.notifications.emailInfo"
               values={
                 Object {
-                  "siteName": "xenia",
+                  "siteName": "Xenia",
                 }
               }
             />
@@ -636,12 +636,12 @@ exports[`components/user_settings/notifications/EmailNotificationSetting should 
                   id="user.settings.notifications.emailInfo"
                   values={
                     Object {
-                      "siteName": "xenia",
+                      "siteName": "Xenia",
                     }
                   }
                 >
                   <span>
-                    Email notifications are sent for mentions and direct messages when you are offline or away from xenia for more than 5 minutes.
+                    Email notifications are sent for mentions and direct messages when you are offline or away from Xenia for more than 5 minutes.
                   </span>
                 </FormattedMessage>
                  
@@ -792,7 +792,7 @@ exports[`components/user_settings/notifications/EmailNotificationSetting should 
             id="user.settings.notifications.emailInfo"
             values={
               Object {
-                "siteName": "xenia",
+                "siteName": "Xenia",
               }
             }
           />

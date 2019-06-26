@@ -1,6 +1,6 @@
-# xenia
+# Xenia
 
-xenia is an open source, self-hosted Slack-alternative from [https://xenia.org](https://xenia.org).
+Xenia is an open source, self-hosted Slack-alternative from [https://xenia.org](https://xenia.org).
 
 It's written in Golang and React and runs as a single Linux binary with MySQL or Postgres. Every month on the 16th [a new compiled version is released under an MIT license](https://www.xenia.org/download/).
 
@@ -10,10 +10,10 @@ This project hosts the webapp client code. Please file issues at [/xenia-server]
 - [Review developer documentation](https://developers.xenia.com/).
 - [Download compiled version](https://xenia.org/download).
 
-Try out xenia: 
+Try out Xenia: 
 
-- [Join the xenia Contributor's server](https://pre-release.xenia.com/) (latest nightly builds, unstable)
-- [Join the xenia Demo server](https://demo.xenia.com) (latest stable version)
+- [Join the Xenia Contributor's server](https://pre-release.xenia.com/) (latest nightly builds, unstable)
+- [Join the Xenia Demo server](https://demo.xenia.com) (latest stable version)
 
 Deploy on Heroku 
 
@@ -44,7 +44,7 @@ Learn More:
 
 Get the Latest News:
 
-- **Twitter** - Follow [xeniaHQ](https://twitter.com/xeniahq)
+- **Twitter** - Follow [XeniaHQ](https://twitter.com/xeniahq)
 - **Email** - Subscribe to our [newsletter](http://xenia.us11.list-manage.com/subscribe?u=6cdba22349ae374e188e7ab8e&id=2add1c8034) (1 or 2 per month)
 - **IRC** - Join the #matterbridge channel on [Freenode](https://freenode.net/) (thanks to [matterircd](https://github.com/42wim/matterircd))
 

@@ -112,16 +112,16 @@ export default class Authorize extends React.Component {
                     <div className='prompt__heading'>
                         <div className='prompt__app-icon'>
                             <img
+                                alt={'prompt icon'}
                                 src={icon}
                                 width='50'
                                 height='50'
-                                alt=''
                             />
                         </div>
                         <div className='text'>
                             <FormattedMarkdownMessage
                                 id='authorize.title'
-                                defaultMessage='**{appName}** would like to connect to your **xenia** user account'
+                                defaultMessage='**{appName}** would like to connect to your **Xenia** user account'
                                 values={{
                                     appName: app.name,
                                 }}

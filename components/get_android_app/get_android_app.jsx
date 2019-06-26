@@ -6,7 +6,7 @@ import {FormattedMessage} from 'react-intl';
 import PropTypes from 'prop-types';
 
 import {useSafeUrl} from 'utils/url';
-import xeniaIcon from 'images/favicon/android-chrome-192x192.png';
+import XeniaIcon from 'images/favicon/android-chrome-192x192.png';
 import Nexus6Mockup from 'images/nexus-6p-mockup.png';
 
 export default function GetAndroidApp({androidAppDownloadLink, history, location}) {
@@ -26,20 +26,21 @@ export default function GetAndroidApp({androidAppDownloadLink, history, location
             <h1 className='get-app__header'>
                 <FormattedMessage
                     id='get_app.androidHeader'
-                    defaultMessage='xenia works best if you switch to our Android app'
+                    defaultMessage='Xenia works best if you switch to our Android app'
                 />
             </h1>
             <hr/>
             <div>
                 <img
+                    alt={'android app icon'}
                     className='get-android-app__icon'
-                    src={xeniaIcon}
+                    src={XeniaIcon}
                 />
                 <div className='get-android-app__app-info'>
                     <span className='get-android-app__app-name'>
                         <FormattedMessage
                             id='get_app.androidAppName'
-                            defaultMessage='xenia for Android'
+                            defaultMessage='Xenia for Android'
                         />
                     </span>
                     <span className='get-android-app__app-creator'>
@@ -60,6 +61,7 @@ export default function GetAndroidApp({androidAppDownloadLink, history, location
                 />
             </a>
             <img
+                alt={'get app screenshot'}
                 className='get-app__screenshot'
                 src={Nexus6Mockup}
             />

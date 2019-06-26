@@ -10,7 +10,7 @@ exports[`components/error_page/ErrorTitle should match snapshot, channel_not_fou
 
 exports[`components/error_page/ErrorTitle should match snapshot, local_storage type 1`] = `
 <FormattedMessage
-  defaultMessage="Cannot Load xenia"
+  defaultMessage="Cannot Load Xenia"
   id="error.local_storage.title"
   values={Object {}}
 />
@@ -30,7 +30,7 @@ exports[`components/error_page/ErrorTitle should match snapshot, oauth_access_de
 
 exports[`components/error_page/ErrorTitle should match snapshot, oauth_missing_code type 1`] = `
 <FormattedMessage
-  defaultMessage="xenia needs your help"
+  defaultMessage="Xenia needs your help"
   id="error.oauth_missing_code.title"
   values={Object {}}
 />

@@ -205,7 +205,7 @@ export default class MessageExportSettings extends AdminSettings {
         const dropdownHelpText = (
             <FormattedMarkdownMessage
                 id='admin.complianceExport.exportFormat.description'
-                defaultMessage='Format of the compliance export. Corresponds to the system that you want to import the data into.\n \nFor Actiance XML, compliance export files are written to the \"exports\" subdirectory of the configured [Local Storage Directory]({siteURL}/admin_console/files/storage). For Global Relay EML, they are emailed to the configured email address.'
+                defaultMessage='Format of the compliance export. Corresponds to the system that you want to import the data into.\n \nFor Actiance XML, compliance export files are written to the \"exports\" subdirectory of the configured [Local Storage Directory]({siteURL}/admin_console/environment/file_storage). For Global Relay EML, they are emailed to the configured email address.'
                 values={{siteURL: getSiteURL()}}
             />
         );
@@ -223,7 +223,7 @@ export default class MessageExportSettings extends AdminSettings {
                     helpText={
                         <FormattedMarkdownMessage
                             id='admin.service.complianceExportDesc'
-                            defaultMessage='When true, xenia will export all messages that were posted in the last 24 hours. The export task is scheduled to run once per day. See [the documentation](!https://about.xenia.com/default-compliance-export-documentation) to learn more.'
+                            defaultMessage='When true, Xenia will export all messages that were posted in the last 24 hours. The export task is scheduled to run once per day. See [the documentation](!https://about.xenia.com/default-compliance-export-documentation) to learn more.'
                         />
                     }
                     value={this.state.enableComplianceExport}

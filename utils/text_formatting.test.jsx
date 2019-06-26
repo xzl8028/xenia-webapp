@@ -141,17 +141,17 @@ describe('linkOnlyMarkdown', () => {
             'https://www.xenia.com</a>?');
     });
     test('link with a title', () => {
-        const text = 'Do you like [xenia](https://www.xenia.com)?';
+        const text = 'Do you like [Xenia](https://www.xenia.com)?';
         const output = formatText(text, options);
         expect(output).toBe(
             'Do you like <a class="theme markdown__link" href="https://www.xenia.com" target="_blank">' +
-            'xenia</a>?');
+            'Xenia</a>?');
     });
     test('link with header signs to skip', () => {
-        const text = '#### Do you like [xenia](https://www.xenia.com)?';
+        const text = '#### Do you like [Xenia](https://www.xenia.com)?';
         const output = formatText(text, options);
         expect(output).toBe(
             'Do you like <a class="theme markdown__link" href="https://www.xenia.com" target="_blank">' +
-            'xenia</a>?');
+            'Xenia</a>?');
     });
 });

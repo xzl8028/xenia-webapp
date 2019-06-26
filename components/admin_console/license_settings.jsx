@@ -99,8 +99,8 @@ export default class LicenseSettings extends React.Component {
 
         if (license.IsLicensed === 'true') {
             // Note: DO NOT LOCALISE THESE STRINGS. Legally we can not since the license is in English.
-            const sku = license.SkuShortName ? <React.Fragment>{`Edition: xenia Enterprise Edition ${license.SkuShortName}`}<br/></React.Fragment> : null;
-            edition = 'xenia Enterprise Edition. Enterprise features on this server have been unlocked with a license key and a valid subscription.';
+            const sku = license.SkuShortName ? <React.Fragment>{`Edition: Xenia Enterprise Edition ${license.SkuShortName}`}<br/></React.Fragment> : null;
+            edition = 'Xenia Enterprise Edition. Enterprise features on this server have been unlocked with a license key and a valid subscription.';
             licenseType = (
                 <div>
                     <p>
@@ -153,7 +153,7 @@ export default class LicenseSettings extends React.Component {
             // Note: DO NOT LOCALISE THESE STRINGS. Legally we can not since the license is in English.
             edition = (
                 <p>
-                    {'xenia Enterprise Edition. Unlock enterprise features in this software through the purchase of a subscription from '}
+                    {'Xenia Enterprise Edition. Unlock enterprise features in this software through the purchase of a subscription from '}
                     <a
                         target='_blank'
                         rel='noopener noreferrer'
@@ -225,7 +225,7 @@ export default class LicenseSettings extends React.Component {
                     <p className='help-text no-margin'>
                         <FormattedMarkdownMessage
                             id='admin.license.uploadDesc'
-                            defaultMessage='Upload a license key for xenia Enterprise Edition to upgrade this server. [Visit us online](!http://xenia.com) to learn more about the benefits of Enterprise Edition or to purchase a key.'
+                            defaultMessage='Upload a license key for Xenia Enterprise Edition to upgrade this server. [Visit us online](!http://xenia.com) to learn more about the benefits of Enterprise Edition or to purchase a key.'
                         />
                     </p>
                 </div>
@@ -238,48 +238,53 @@ export default class LicenseSettings extends React.Component {
                     id='admin.license.title'
                     defaultMessage='Edition and License'
                 />
-                <form
-                    className='form-horizontal'
-                    role='form'
-                >
-                    <div className='form-group'>
-                        <label
-                            className='control-label col-sm-4'
+
+                <div className='admin-console__wrapper'>
+                    <div className='admin-console__content'>
+                        <form
+                            className='form-horizontal'
+                            role='form'
                         >
-                            <FormattedMessage
-                                id='admin.license.edition'
-                                defaultMessage='Edition: '
-                            />
-                        </label>
-                        <div className='col-sm-8'>
-                            {edition}
-                        </div>
+                            <div className='form-group'>
+                                <label
+                                    className='control-label col-sm-4'
+                                >
+                                    <FormattedMessage
+                                        id='admin.license.edition'
+                                        defaultMessage='Edition: '
+                                    />
+                                </label>
+                                <div className='col-sm-8'>
+                                    {edition}
+                                </div>
+                            </div>
+                            <div className='form-group'>
+                                <label
+                                    className='control-label col-sm-4'
+                                >
+                                    <FormattedMessage
+                                        id='admin.license.type'
+                                        defaultMessage='License: '
+                                    />
+                                </label>
+                                <div className='col-sm-8'>
+                                    {licenseType}
+                                </div>
+                            </div>
+                            <div className='form-group'>
+                                <label
+                                    className='control-label col-sm-4'
+                                >
+                                    <FormattedMessage
+                                        id='admin.license.key'
+                                        defaultMessage='License Key: '
+                                    />
+                                </label>
+                                {licenseKey}
+                            </div>
+                        </form>
                     </div>
-                    <div className='form-group'>
-                        <label
-                            className='control-label col-sm-4'
-                        >
-                            <FormattedMessage
-                                id='admin.license.type'
-                                defaultMessage='License: '
-                            />
-                        </label>
-                        <div className='col-sm-8'>
-                            {licenseType}
-                        </div>
-                    </div>
-                    <div className='form-group'>
-                        <label
-                            className='control-label col-sm-4'
-                        >
-                            <FormattedMessage
-                                id='admin.license.key'
-                                defaultMessage='License Key: '
-                            />
-                        </label>
-                        {licenseKey}
-                    </div>
-                </form>
+                </div>
             </div>
         );
     }

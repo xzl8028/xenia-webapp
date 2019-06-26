@@ -26,7 +26,7 @@ export default function GetIosApp({iosAppDownloadLink, history, location}) {
             <h1 className='get-app__header'>
                 <FormattedMessage
                     id='get_app.iosHeader'
-                    defaultMessage='xenia works best if you switch to our iPhone app'
+                    defaultMessage='Xenia works best if you switch to our iPhone app'
                 />
             </h1>
             <hr/>
@@ -35,9 +35,13 @@ export default function GetIosApp({iosAppDownloadLink, history, location}) {
                 href={useSafeUrl(iosAppDownloadLink)}
                 rel='noopener noreferrer'
             >
-                <img src={AppStoreButton}/>
+                <img
+                    alt={'app store button'}
+                    src={AppStoreButton}
+                />
             </a>
             <img
+                alt={'get app screenshot'}
                 className='get-app__screenshot'
                 src={IPhone6Mockup}
             />
@@ -52,8 +56,8 @@ export default function GetIosApp({iosAppDownloadLink, history, location}) {
                 href='xenia://'
             >
                 <FormattedMessage
-                    id='get_app.openxenia'
-                    defaultMessage='Open xenia'
+                    id='get_app.openXenia'
+                    defaultMessage='Open Xenia'
                 />
             </a>
             <span className='get-app__continue-with-browser'>

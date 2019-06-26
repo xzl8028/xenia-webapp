@@ -14,7 +14,7 @@ export default class NotLoggedIn extends React.PureComponent {
         children: PropTypes.object,
 
         /*
-         * xenia configuration
+         * Xenia configuration
          */
         config: PropTypes.object,
     };
@@ -106,7 +106,7 @@ export default class NotLoggedIn extends React.PureComponent {
                                 id='company_name'
                                 className='pull-right footer-site-name'
                             >
-                                {'xenia'}
+                                {'Xenia'}
                             </span>
                         </div>
                         <div className='col-xs-12'>

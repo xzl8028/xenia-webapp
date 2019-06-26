@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require_relative './apple_emoji_extractor.rb'
 require 'fastimage'
 
-module xenia
+module Xenia
   class AppleEmojiExtractorTest < Minitest::Test
     def setup
       @extractor = AppleEmojiExtractor.new(64)

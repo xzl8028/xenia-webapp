@@ -73,7 +73,7 @@ export default class AboutBuildModal extends React.PureComponent {
             <div>
                 <FormattedMessage
                     id='about.teamEditionLearn'
-                    defaultMessage='Join the xenia community at '
+                    defaultMessage='Join the Xenia community at '
                 />
                 <a
                     target='_blank'
@@ -211,7 +211,8 @@ export default class AboutBuildModal extends React.PureComponent {
                     >
                         <FormattedMessage
                             id='about.title'
-                            defaultMessage='About xenia'
+                            values={{appTitle: config.SiteName || 'Xenia'}}
+                            defaultMessage='About {appTitle}'
                         />
                     </Modal.Title>
                 </Modal.Header>
@@ -221,13 +222,13 @@ export default class AboutBuildModal extends React.PureComponent {
                             <XeniaLogo/>
                         </div>
                         <div>
-                            <h3 className='about-modal__title'>{'xenia'} {title}</h3>
+                            <h3 className='about-modal__title'>{'Xenia'} {title}</h3>
                             <p className='about-modal__subtitle padding-bottom'>{subTitle}</p>
                             <div className='form-group less'>
                                 <div>
                                     <FormattedMessage
                                         id='about.version'
-                                        defaultMessage='xenia Version:'
+                                        defaultMessage='Xenia Version:'
                                     />
                                     <span id='versionString'>{'\u00a0' + mmversion}</span>
                                 </div>
@@ -273,7 +274,7 @@ export default class AboutBuildModal extends React.PureComponent {
                         <p>
                             <FormattedMarkdownMessage
                                 id='about.notice'
-                                defaultMessage='xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps.'
+                                defaultMessage='Xenia is made possible by the open source software used in our [server](!https://about.xenia.com/platform-notice-txt/), [desktop](!https://about.xenia.com/desktop-notice-txt/) and [mobile](!https://about.xenia.com/mobile-notice-txt/) apps.'
                             />
                         </p>
                     </div>

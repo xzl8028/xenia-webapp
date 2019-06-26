@@ -64,7 +64,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -268,7 +268,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -393,7 +393,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -518,7 +518,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -643,7 +643,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -767,7 +767,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -789,10 +789,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test1"
+      xenia_group_id={null}
       name="test1"
       onCheckToggle={[Function]}
       primary_key="test1"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -804,10 +804,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={false}
       key="test2"
+      xenia_group_id="group-id-1"
       name="test2"
       onCheckToggle={[Function]}
       primary_key="test2"
-      xenia_group_id="group-id-1"
     />
     <GroupRow
       actions={
@@ -819,10 +819,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={true}
       key="test3"
+      xenia_group_id="group-id-2"
       name="test3"
       onCheckToggle={[Function]}
       primary_key="test3"
-      xenia_group_id="group-id-2"
     />
   </div>
   <div
@@ -929,7 +929,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -951,10 +951,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test1"
+      xenia_group_id={null}
       name="test1"
       onCheckToggle={[Function]}
       primary_key="test1"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -966,10 +966,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={false}
       key="test2"
+      xenia_group_id="group-id-1"
       name="test2"
       onCheckToggle={[Function]}
       primary_key="test2"
-      xenia_group_id="group-id-1"
     />
     <GroupRow
       actions={
@@ -981,10 +981,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={true}
       key="test3"
+      xenia_group_id="group-id-2"
       name="test3"
       onCheckToggle={[Function]}
       primary_key="test3"
-      xenia_group_id="group-id-2"
     />
     <GroupRow
       actions={
@@ -996,10 +996,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test4"
+      xenia_group_id={null}
       name="test4"
       onCheckToggle={[Function]}
       primary_key="test4"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1011,10 +1011,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test5"
+      xenia_group_id={null}
       name="test5"
       onCheckToggle={[Function]}
       primary_key="test5"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1026,10 +1026,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test6"
+      xenia_group_id={null}
       name="test6"
       onCheckToggle={[Function]}
       primary_key="test6"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1041,10 +1041,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test7"
+      xenia_group_id={null}
       name="test7"
       onCheckToggle={[Function]}
       primary_key="test7"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1056,10 +1056,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test8"
+      xenia_group_id={null}
       name="test8"
       onCheckToggle={[Function]}
       primary_key="test8"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1071,10 +1071,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test9"
+      xenia_group_id={null}
       name="test9"
       onCheckToggle={[Function]}
       primary_key="test9"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1086,10 +1086,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test10"
+      xenia_group_id={null}
       name="test10"
       onCheckToggle={[Function]}
       primary_key="test10"
-      xenia_group_id={null}
     />
   </div>
   <div
@@ -1196,7 +1196,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -1218,10 +1218,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test1"
+      xenia_group_id={null}
       name="test1"
       onCheckToggle={[Function]}
       primary_key="test1"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1233,10 +1233,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={false}
       key="test2"
+      xenia_group_id="group-id-1"
       name="test2"
       onCheckToggle={[Function]}
       primary_key="test2"
-      xenia_group_id="group-id-1"
     />
     <GroupRow
       actions={
@@ -1248,10 +1248,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={true}
       key="test3"
+      xenia_group_id="group-id-2"
       name="test3"
       onCheckToggle={[Function]}
       primary_key="test3"
-      xenia_group_id="group-id-2"
     />
     <GroupRow
       actions={
@@ -1263,10 +1263,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test4"
+      xenia_group_id={null}
       name="test4"
       onCheckToggle={[Function]}
       primary_key="test4"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1278,10 +1278,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test5"
+      xenia_group_id={null}
       name="test5"
       onCheckToggle={[Function]}
       primary_key="test5"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1293,10 +1293,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test6"
+      xenia_group_id={null}
       name="test6"
       onCheckToggle={[Function]}
       primary_key="test6"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1308,10 +1308,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test7"
+      xenia_group_id={null}
       name="test7"
       onCheckToggle={[Function]}
       primary_key="test7"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1323,10 +1323,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test8"
+      xenia_group_id={null}
       name="test8"
       onCheckToggle={[Function]}
       primary_key="test8"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1338,10 +1338,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test9"
+      xenia_group_id={null}
       name="test9"
       onCheckToggle={[Function]}
       primary_key="test9"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1353,10 +1353,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test10"
+      xenia_group_id={null}
       name="test10"
       onCheckToggle={[Function]}
       primary_key="test10"
-      xenia_group_id={null}
     />
   </div>
   <div
@@ -1463,7 +1463,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -1485,10 +1485,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={null}
       key="test1"
+      xenia_group_id={null}
       name="test1"
       onCheckToggle={[Function]}
       primary_key="test1"
-      xenia_group_id={null}
     />
     <GroupRow
       actions={
@@ -1500,10 +1500,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={false}
       key="test2"
+      xenia_group_id="group-id-1"
       name="test2"
       onCheckToggle={[Function]}
       primary_key="test2"
-      xenia_group_id="group-id-1"
     />
     <GroupRow
       actions={
@@ -1515,10 +1515,10 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       checked={false}
       has_syncables={true}
       key="test3"
+      xenia_group_id="group-id-2"
       name="test3"
       onCheckToggle={[Function]}
       primary_key="test3"
-      xenia_group_id="group-id-2"
     />
   </div>
   <div
@@ -1625,7 +1625,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />
@@ -1751,7 +1751,7 @@ exports[`components/admin_console/group_settings/GroupsList should match snapsho
       className="group-description"
     >
       <FormattedMessage
-        defaxeniassage="xenia Linking"
+        defaultMessage="Xenia Linking"
         id="admin.group_settings.groups_list.mappingHeader"
         values={Object {}}
       />

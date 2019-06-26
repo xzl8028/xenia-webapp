@@ -19,7 +19,7 @@ export default function ErrorMessage({type, message, service}) {
                 <div>
                     <FormattedMessage
                         id='error.local_storage.message'
-                        defaultMessage='xenia was unable to load because a setting in your browser prevents the use of its local storage features. To allow xenia to load, try the following actions:'
+                        defaultMessage='Xenia was unable to load because a setting in your browser prevents the use of its local storage features. To allow Xenia to load, try the following actions:'
                     />
                     <ul>
                         <li>
@@ -104,7 +104,7 @@ export default function ErrorMessage({type, message, service}) {
                     <p>
                         <FormattedMessage
                             id='error.oauth_missing_code.office365'
-                            defaultMessage='For {link} make sure the administrator of your Microsoft organization has enabled the xenia app.'
+                            defaultMessage='For {link} make sure the administrator of your Microsoft organization has enabled the Xenia app.'
                             values={{
                                 link: (
                                     <ErrorLink
@@ -154,7 +154,7 @@ export default function ErrorMessage({type, message, service}) {
                 <p>
                     <FormattedMessage
                         id='error.oauth_access_denied'
-                        defaultMessage='You must authorize xenia to log in with {service}.'
+                        defaultMessage='You must authorize Xenia to log in with {service}.'
                         values={{
                             service,
                         }}

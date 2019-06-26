@@ -30,7 +30,7 @@ export default class BackstageNavbar extends React.Component {
                     <BackIcon/>
                     <span>
                         <FormattedMessage
-                            id='backstage_navbar.backToxenia'
+                            id='backstage_navbar.backToXenia'
                             defaultMessage='Back to {siteName}'
                             values={{
                                 siteName: this.props.siteName,

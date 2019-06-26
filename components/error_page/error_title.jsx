@@ -16,7 +16,7 @@ export default function ErrorTitle({type, title}) {
             errorTitle = (
                 <FormattedMessage
                     id='error.local_storage.title'
-                    defaultMessage='Cannot Load xenia'
+                    defaultMessage='Cannot Load Xenia'
                 />
             );
             break;
@@ -40,7 +40,7 @@ export default function ErrorTitle({type, title}) {
             errorTitle = (
                 <FormattedMessage
                     id='error.oauth_missing_code.title'
-                    defaultMessage='xenia needs your help'
+                    defaultMessage='Xenia needs your help'
                 />
             );
             break;
