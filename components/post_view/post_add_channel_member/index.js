@@ -3,11 +3,11 @@
 
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {addChannelMember} from 'mattermost-redux/actions/channels';
-import {removePost} from 'mattermost-redux/actions/posts';
-import {getPost} from 'mattermost-redux/selectors/entities/posts';
-import {getChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {addChannelMember} from 'xenia-redux/actions/channels';
+import {removePost} from 'xenia-redux/actions/posts';
+import {getPost} from 'xenia-redux/selectors/entities/posts';
+import {getChannel} from 'xenia-redux/selectors/entities/channels';
+import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
 
 import PostAddChannelMember from './post_add_channel_member.jsx';
 

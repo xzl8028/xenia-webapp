@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
-import {Posts} from 'mattermost-redux/constants';
-import * as ReduxPostUtils from 'mattermost-redux/utils/post_utils';
+import {Posts} from 'xenia-redux/constants';
+import * as ReduxPostUtils from 'xenia-redux/utils/post_utils';
 
 import Constants, {Locations} from 'utils/constants.jsx';
 import * as PostUtils from 'utils/post_utils.jsx';
@@ -204,7 +204,7 @@ export default class RhsRootPost extends React.PureComponent {
                 );
             }
 
-            botIndicator = <BotBadge className='col col__name'/>;
+            botIndicator = <BotBadge/>;
         } else {
             userProfile = (
                 <UserProfile
@@ -323,8 +323,10 @@ export default class RhsRootPost extends React.PureComponent {
                     </div>
                     <div>
                         <div className='post__header'>
-                            <div className='col__name'>{userProfile}</div>
-                            {botIndicator}
+                            <div className='col__name'>
+                                {userProfile}
+                                {botIndicator}
+                            </div>
                             <div className='col'>
                                 {this.renderPostTime(isEphemeral)}
                                 {pinnedBadge}

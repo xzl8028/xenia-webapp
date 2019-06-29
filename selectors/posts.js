@@ -2,11 +2,11 @@
 // See LICENSE.txt for license information.
 
 import {createSelector} from 'reselect';
-import {getPost} from 'mattermost-redux/selectors/entities/posts';
-import {getBool as getBoolPreference} from 'mattermost-redux/selectors/entities/preferences';
-import {memoizeResult} from 'mattermost-redux/utils/helpers';
-import {isUserActivityPost} from 'mattermost-redux/utils/post_utils';
-import * as PostListUtils from 'mattermost-redux/utils/post_list';
+import {getPost} from 'xenia-redux/selectors/entities/posts';
+import {getBool as getBoolPreference} from 'xenia-redux/selectors/entities/preferences';
+import {memoizeResult} from 'xenia-redux/utils/helpers';
+import {isUserActivityPost} from 'xenia-redux/utils/post_utils';
+import * as PostListUtils from 'xenia-redux/utils/post_list';
 
 import {getGlobalItem} from 'selectors/storage';
 import {Preferences, StoragePrefixes} from 'utils/constants';

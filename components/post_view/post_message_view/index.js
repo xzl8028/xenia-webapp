@@ -2,8 +2,8 @@
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
-import {Preferences} from 'mattermost-redux/constants';
-import {getTheme, getBool} from 'mattermost-redux/selectors/entities/preferences';
+import {Preferences} from 'xenia-redux/constants';
+import {getTheme, getBool} from 'xenia-redux/selectors/entities/preferences';
 
 import {getIsRhsExpanded, getIsRhsOpen} from 'selectors/rhs';
 

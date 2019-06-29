@@ -2,8 +2,8 @@
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
-import {getCurrentRelativeTeamUrl} from 'mattermost-redux/selectors/entities/teams';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getCurrentRelativeTeamUrl} from 'xenia-redux/selectors/entities/teams';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
 
 import {getSelectedPostCard} from 'selectors/rhs.jsx';
 

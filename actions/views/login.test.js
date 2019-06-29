@@ -1,9 +1,9 @@
 // Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-jest.mock('mattermost-redux/actions/users');
+jest.mock('xenia-redux/actions/users');
 
-import * as UserActions from 'mattermost-redux/actions/users';
+import * as UserActions from 'xenia-redux/actions/users';
 
 import {
     login,

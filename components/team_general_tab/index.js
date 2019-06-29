@@ -4,10 +4,10 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {patchTeam, removeTeamIcon, setTeamIcon, regenerateTeamInviteId} from 'mattermost-redux/actions/teams';
-import {Permissions} from 'mattermost-redux/constants';
-import {haveITeamPermission} from 'mattermost-redux/selectors/entities/roles';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {patchTeam, removeTeamIcon, setTeamIcon, regenerateTeamInviteId} from 'xenia-redux/actions/teams';
+import {Permissions} from 'xenia-redux/constants';
+import {haveITeamPermission} from 'xenia-redux/selectors/entities/roles';
 
 import TeamGeneralTab from './team_general_tab.jsx';
 

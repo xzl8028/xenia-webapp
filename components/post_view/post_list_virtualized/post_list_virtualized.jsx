@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import {DynamicSizeList} from 'react-window';
-import {isDateLine, isStartOfNewMessages} from 'mattermost-redux/utils/post_list';
+import {isDateLine, isStartOfNewMessages} from 'xenia-redux/utils/post_list';
 
-import {debounce} from 'mattermost-redux/actions/helpers';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {debounce} from 'xenia-redux/actions/helpers';
+import EventEmitter from 'xenia-redux/utils/event_emitter';
 
 import LoadingScreen from 'components/loading_screen.jsx';
 

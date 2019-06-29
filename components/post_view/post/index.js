@@ -5,11 +5,11 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {createSelector} from 'reselect';
 
-import {Posts} from 'mattermost-redux/constants';
-import {getPost, makeIsPostCommentMention} from 'mattermost-redux/selectors/entities/posts';
-import {get} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
-import {isPostEphemeral, isSystemMessage} from 'mattermost-redux/utils/post_utils';
+import {Posts} from 'xenia-redux/constants';
+import {getPost, makeIsPostCommentMention} from 'xenia-redux/selectors/entities/posts';
+import {get} from 'xenia-redux/selectors/entities/preferences';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
+import {isPostEphemeral, isSystemMessage} from 'xenia-redux/utils/post_utils';
 
 import {selectPost, selectPostCard} from 'actions/views/rhs';
 import {Preferences} from 'utils/constants.jsx';

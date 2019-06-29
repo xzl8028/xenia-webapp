@@ -6,8 +6,8 @@ import {createSelector} from 'reselect';
 import {
     getCurrentUser,
     getUserStatuses,
-} from 'mattermost-redux/selectors/entities/users';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+} from 'xenia-redux/selectors/entities/users';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
 import {
     getCurrentChannel,
     isCurrentChannelDefault,
@@ -16,7 +16,7 @@ import {
     isCurrentChannelArchived,
     isCurrentChannelReadOnly,
     getRedirectChannelNameForTeam,
-} from 'mattermost-redux/selectors/entities/channels';
+} from 'xenia-redux/selectors/entities/channels';
 
 import {getPenultimateViewedChannelName} from 'selectors/local_storage';
 

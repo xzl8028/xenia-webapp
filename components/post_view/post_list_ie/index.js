@@ -3,8 +3,8 @@
 
 import {connect} from 'react-redux';
 
-import {makeGetPostsAroundPost, makeGetPostsInChannel} from 'mattermost-redux/selectors/entities/posts';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {makeGetPostsAroundPost, makeGetPostsInChannel} from 'xenia-redux/selectors/entities/posts';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
 
 import {makeCombineUserActivityFromPosts} from 'selectors/posts';
 

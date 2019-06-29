@@ -8,11 +8,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import FastClick from 'fastclick';
 import {Route, Switch, Redirect} from 'react-router-dom';
-import {setUrl} from 'mattermost-redux/actions/general';
-import {setSystemEmojis} from 'mattermost-redux/actions/emojis';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getCurrentChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getMostRecentPostIdInChannel, makeGetPostsForThread} from 'mattermost-redux/selectors/entities/posts';
+import {setUrl} from 'xenia-redux/actions/general';
+import {setSystemEmojis} from 'xenia-redux/actions/emojis';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getCurrentChannel} from 'xenia-redux/selectors/entities/channels';
+import {getMostRecentPostIdInChannel, makeGetPostsForThread} from 'xenia-redux/selectors/entities/posts';
 
 import * as UserAgent from 'utils/user_agent.jsx';
 import {EmojiIndicesByAlias} from 'utils/emoji.jsx';

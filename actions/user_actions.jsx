@@ -1,21 +1,21 @@
 // Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {getChannelAndMyMember, getChannelMembersByIds} from 'mattermost-redux/actions/channels';
-import {savePreferences as savePreferencesRedux} from 'mattermost-redux/actions/preferences';
-import {getTeamMembersByIds} from 'mattermost-redux/actions/teams';
-import * as UserActions from 'mattermost-redux/actions/users';
-import {Preferences as PreferencesRedux} from 'mattermost-redux/constants';
+import {getChannelAndMyMember, getChannelMembersByIds} from 'xenia-redux/actions/channels';
+import {savePreferences as savePreferencesRedux} from 'xenia-redux/actions/preferences';
+import {getTeamMembersByIds} from 'xenia-redux/actions/teams';
+import * as UserActions from 'xenia-redux/actions/users';
+import {Preferences as PreferencesRedux} from 'xenia-redux/constants';
 import {
     getChannel,
     getCurrentChannelId,
     getMyChannels,
     getMyChannelMember,
     getChannelMembersInChannels,
-} from 'mattermost-redux/selectors/entities/channels';
-import {getBool} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentTeamId, getTeamMember} from 'mattermost-redux/selectors/entities/teams';
-import * as Selectors from 'mattermost-redux/selectors/entities/users';
+} from 'xenia-redux/selectors/entities/channels';
+import {getBool} from 'xenia-redux/selectors/entities/preferences';
+import {getCurrentTeamId, getTeamMember} from 'xenia-redux/selectors/entities/teams';
+import * as Selectors from 'xenia-redux/selectors/entities/users';
 
 import {loadStatusesForProfilesList, loadStatusesForProfilesMap} from 'actions/status_actions.jsx';
 import store from 'stores/redux_store.jsx';

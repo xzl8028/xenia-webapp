@@ -4,13 +4,13 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getMorePostsForSearch} from 'mattermost-redux/actions/search';
-import {getChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getSearchMatches, getSearchResults} from 'mattermost-redux/selectors/entities/posts';
-import * as PreferenceSelectors from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
-import {getCurrentSearchForCurrentTeam} from 'mattermost-redux/selectors/entities/search';
+import {getMorePostsForSearch} from 'xenia-redux/actions/search';
+import {getChannel} from 'xenia-redux/selectors/entities/channels';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getSearchMatches, getSearchResults} from 'xenia-redux/selectors/entities/posts';
+import * as PreferenceSelectors from 'xenia-redux/selectors/entities/preferences';
+import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
+import {getCurrentSearchForCurrentTeam} from 'xenia-redux/selectors/entities/search';
 
 import {
     getSearchResultsTerms,

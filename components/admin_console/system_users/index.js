@@ -4,17 +4,17 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getTeams, getTeamStats} from 'mattermost-redux/actions/teams';
+import {getTeams, getTeamStats} from 'xenia-redux/actions/teams';
 import {
     getUser,
     getUserAccessToken,
     getProfiles,
     searchProfiles,
-} from 'mattermost-redux/actions/users';
-import {getTeamsList} from 'mattermost-redux/selectors/entities/teams';
-import {getUsers} from 'mattermost-redux/selectors/entities/users';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {Stats} from 'mattermost-redux/constants';
+} from 'xenia-redux/actions/users';
+import {getTeamsList} from 'xenia-redux/selectors/entities/teams';
+import {getUsers} from 'xenia-redux/selectors/entities/users';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {Stats} from 'xenia-redux/constants';
 
 import {loadProfilesAndTeamMembers, loadProfilesWithoutTeam} from 'actions/user_actions.jsx';
 

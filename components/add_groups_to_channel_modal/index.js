@@ -3,9 +3,9 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getGroupsNotAssociatedToChannel, linkGroupSyncable, getAllGroupsAssociatedToChannel} from 'mattermost-redux/actions/groups';
-import {getGroupsNotAssociatedToChannel as selectGroupsNotAssociatedToChannel} from 'mattermost-redux/selectors/entities/groups';
-import {getCurrentChannel} from 'mattermost-redux/selectors/entities/channels';
+import {getGroupsNotAssociatedToChannel, linkGroupSyncable, getAllGroupsAssociatedToChannel} from 'xenia-redux/actions/groups';
+import {getGroupsNotAssociatedToChannel as selectGroupsNotAssociatedToChannel} from 'xenia-redux/selectors/entities/groups';
+import {getCurrentChannel} from 'xenia-redux/selectors/entities/channels';
 
 import {setModalSearchTerm} from 'actions/views/search';
 

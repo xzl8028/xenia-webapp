@@ -4,13 +4,13 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {updateUserRoles, uploadProfileImage, setDefaultProfileImage, createUserAccessToken} from 'mattermost-redux/actions/users';
-import {createBot, patchBot} from 'mattermost-redux/actions/bots';
-import {getBotAccounts} from 'mattermost-redux/selectors/entities/bots';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getUsers} from 'mattermost-redux/selectors/entities/common';
-import {haveISystemPermission} from 'mattermost-redux/selectors/entities/roles';
-import {Permissions} from 'mattermost-redux/constants';
+import {updateUserRoles, uploadProfileImage, setDefaultProfileImage, createUserAccessToken} from 'xenia-redux/actions/users';
+import {createBot, patchBot} from 'xenia-redux/actions/bots';
+import {getBotAccounts} from 'xenia-redux/selectors/entities/bots';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getUsers} from 'xenia-redux/selectors/entities/common';
+import {haveISystemPermission} from 'xenia-redux/selectors/entities/roles';
+import {Permissions} from 'xenia-redux/constants';
 
 import AddBot from './add_bot.jsx';
 

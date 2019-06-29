@@ -3,9 +3,9 @@
 
 import {connect} from 'react-redux';
 
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
-import {getUserTimezone} from 'mattermost-redux/selectors/entities/timezone';
-import {getUserCurrentTimezone} from 'mattermost-redux/utils/timezone_utils';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
+import {getUserTimezone} from 'xenia-redux/selectors/entities/timezone';
+import {getUserCurrentTimezone} from 'xenia-redux/utils/timezone_utils';
 
 import {areTimezonesEnabledAndSupported} from 'selectors/general';
 

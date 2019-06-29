@@ -3,11 +3,11 @@
 
 import {connect} from 'react-redux';
 
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {isCurrentChannelReadOnly} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentTeam} from 'mattermost-redux/selectors/entities/teams';
-import {getProfilesInCurrentChannel, getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
-import {get} from 'mattermost-redux/selectors/entities/preferences';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {isCurrentChannelReadOnly} from 'xenia-redux/selectors/entities/channels';
+import {getCurrentTeam} from 'xenia-redux/selectors/entities/teams';
+import {getProfilesInCurrentChannel, getCurrentUserId} from 'xenia-redux/selectors/entities/users';
+import {get} from 'xenia-redux/selectors/entities/preferences';
 
 import {Preferences} from 'utils/constants.jsx';
 import {getCurrentLocale} from 'selectors/i18n';

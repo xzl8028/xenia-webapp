@@ -1,7 +1,7 @@
 // Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {Posts} from 'mattermost-redux/constants';
+import {Posts} from 'xenia-redux/constants';
 
 import {isFirstReply, makeGetReplyCount} from './index';
 

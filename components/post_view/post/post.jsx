@@ -3,8 +3,8 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
-import {Posts} from 'mattermost-redux/constants';
-import {isMeMessage as checkIsMeMessage} from 'mattermost-redux/utils/post_utils';
+import {Posts} from 'xenia-redux/constants';
+import {isMeMessage as checkIsMeMessage} from 'xenia-redux/utils/post_utils';
 
 import * as PostUtils from 'utils/post_utils.jsx';
 import PostProfilePicture from 'components/post_profile_picture';

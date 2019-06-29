@@ -1318,14 +1318,14 @@ This software is provided by the copyright holders and contributors “as is” 
 
 ---
 
-## mattermost-redux
+## xenia-redux
 
-This product contains 'mattermost-redux' by Xenia.
+This product contains 'xenia-redux' by Xenia.
 
 Common code (API client, Redux stores, logic, utility functions) for building a Xenia client
 
 * HOMEPAGE:
-  * https://github.com/xzl8028/mattermost-redux
+  * https://github.com/xzl8028/xenia-redux
 
 * LICENSE: Apache-2.0
 

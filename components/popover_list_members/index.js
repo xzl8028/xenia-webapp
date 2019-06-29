@@ -3,10 +3,10 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getProfilesInChannel} from 'mattermost-redux/actions/users';
-import {getAllChannelStats} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentRelativeTeamUrl} from 'mattermost-redux/selectors/entities/teams';
-import {getCurrentUserId, getUserStatuses, makeGetProfilesInChannel} from 'mattermost-redux/selectors/entities/users';
+import {getProfilesInChannel} from 'xenia-redux/actions/users';
+import {getAllChannelStats} from 'xenia-redux/selectors/entities/channels';
+import {getCurrentRelativeTeamUrl} from 'xenia-redux/selectors/entities/teams';
+import {getCurrentUserId, getUserStatuses, makeGetProfilesInChannel} from 'xenia-redux/selectors/entities/users';
 
 import {openDirectChannelToUserId} from 'actions/channel_actions.jsx';
 import {openModal} from 'actions/views/modals';

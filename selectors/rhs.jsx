@@ -2,7 +2,7 @@
 // See LICENSE.txt for license information.
 
 import {createSelector} from 'reselect';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
 
 import {makeGetGlobalItem} from 'selectors/storage';
 import {PostTypes} from 'utils/constants.jsx';
@@ -10,6 +10,10 @@ import {localizeMessage} from 'utils/utils.jsx';
 
 export function getSelectedPostId(state) {
     return state.views.rhs.selectedPostId;
+}
+
+export function getSelectedPostFocussedAt(state) {
+    return state.views.rhs.selectedPostFocussedAt;
 }
 
 export function getSelectedPostCardId(state) {

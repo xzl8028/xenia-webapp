@@ -6,7 +6,7 @@ import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import {Link} from 'react-router-dom';
 
-import {Permissions} from 'mattermost-redux/constants';
+import {Permissions} from 'xenia-redux/constants';
 
 import {emitUserLoggedOutEvent} from 'actions/global_actions.jsx';
 

@@ -3,11 +3,11 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getChannelStats, updateChannelMemberSchemeRoles, removeChannelMember} from 'mattermost-redux/actions/channels';
-import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
-import {getLicense} from 'mattermost-redux/selectors/entities/general';
-import {Permissions} from 'mattermost-redux/constants';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getChannelStats, updateChannelMemberSchemeRoles, removeChannelMember} from 'xenia-redux/actions/channels';
+import {haveIChannelPermission} from 'xenia-redux/selectors/entities/roles';
+import {getLicense} from 'xenia-redux/selectors/entities/general';
+import {Permissions} from 'xenia-redux/constants';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
 
 import {canManageMembers} from 'utils/channel_utils.jsx';
 

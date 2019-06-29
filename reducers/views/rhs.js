@@ -6,7 +6,7 @@ import {
     PostTypes,
     TeamTypes,
     SearchTypes,
-} from 'mattermost-redux/action_types';
+} from 'xenia-redux/action_types';
 
 import {ActionTypes, RHSStates} from 'utils/constants.jsx';
 
@@ -23,6 +23,17 @@ function selectedPostId(state = '', action) {
         return state;
     case ActionTypes.UPDATE_RHS_STATE:
         return '';
+    default:
+        return state;
+    }
+}
+
+// selectedPostFocussedAt keeps track of the last time a post was selected, whether or not it
+// is currently selected.
+function selectedPostFocussedAt(state = 0, action) {
+    switch (action.type) {
+    case ActionTypes.SELECT_POST:
+        return action.timestamp || 0;
     default:
         return state;
     }
@@ -217,6 +228,7 @@ function isMenuOpen(state = false, action) {
 
 export default combineReducers({
     selectedPostId,
+    selectedPostFocussedAt,
     selectedPostCardId,
     selectedChannelId,
     previousRhsState,

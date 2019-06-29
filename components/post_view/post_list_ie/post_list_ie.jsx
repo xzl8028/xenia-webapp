@@ -6,9 +6,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {FormattedMessage} from 'react-intl';
 
-import {isCombinedUserActivityPost} from 'mattermost-redux/utils/post_list';
-import {debounce} from 'mattermost-redux/actions/helpers';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {isCombinedUserActivityPost} from 'xenia-redux/utils/post_list';
+import {debounce} from 'xenia-redux/actions/helpers';
+import EventEmitter from 'xenia-redux/utils/event_emitter';
 
 import Constants, {PostTypes, EventTypes} from 'utils/constants.jsx';
 import DelayedAction from 'utils/delayed_action.jsx';

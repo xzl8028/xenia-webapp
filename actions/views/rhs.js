@@ -3,20 +3,20 @@
 
 import {batchActions} from 'redux-batched-actions';
 
-import {SearchTypes} from 'mattermost-redux/action_types';
+import {SearchTypes} from 'xenia-redux/action_types';
 import {
     getFlaggedPosts,
     getPinnedPosts,
     searchPostsWithParams,
-} from 'mattermost-redux/actions/search';
-import * as PostActions from 'mattermost-redux/actions/posts';
-import {getCurrentUserId, getCurrentUserMentionKeys} from 'mattermost-redux/selectors/entities/users';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
-import {getPost} from 'mattermost-redux/selectors/entities/posts';
-import {getUserTimezone} from 'mattermost-redux/selectors/entities/timezone';
-import {getUserCurrentTimezone} from 'mattermost-redux/utils/timezone_utils';
+} from 'xenia-redux/actions/search';
+import * as PostActions from 'xenia-redux/actions/posts';
+import {getCurrentUserId, getCurrentUserMentionKeys} from 'xenia-redux/selectors/entities/users';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getCurrentChannelId} from 'xenia-redux/selectors/entities/channels';
+import {getPost} from 'xenia-redux/selectors/entities/posts';
+import {getUserTimezone} from 'xenia-redux/selectors/entities/timezone';
+import {getUserCurrentTimezone} from 'xenia-redux/utils/timezone_utils';
 
 import {trackEvent} from 'actions/diagnostics_actions.jsx';
 import {getSearchTerms, getRhsState} from 'selectors/rhs';
@@ -50,6 +50,7 @@ export function selectPostFromRightHandSideSearch(post) {
             postId: postRootId,
             channelId: post.channel_id,
             previousRhsState: getRhsState(getState()),
+            timestamp: Date.now(),
         });
     };
 }
@@ -219,6 +220,7 @@ export function closeRightHandSide() {
                 type: ActionTypes.SELECT_POST,
                 postId: '',
                 channelId: '',
+                timestamp: 0,
             },
         ]));
     };
@@ -250,7 +252,12 @@ export function toggleRhsExpanded() {
 }
 
 export function selectPost(post) {
-    return {type: ActionTypes.SELECT_POST, postId: post.root_id || post.id, channelId: post.channel_id};
+    return {
+        type: ActionTypes.SELECT_POST,
+        postId: post.root_id || post.id,
+        channelId: post.channel_id,
+        timestamp: Date.now(),
+    };
 }
 
 export function selectPostCard(post) {

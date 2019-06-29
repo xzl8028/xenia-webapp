@@ -3,11 +3,11 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {savePreferences} from 'mattermost-redux/actions/preferences';
-import {setStatus} from 'mattermost-redux/actions/users';
-import {Preferences} from 'mattermost-redux/constants';
-import {get} from 'mattermost-redux/selectors/entities/preferences';
-import {getStatusForUserId} from 'mattermost-redux/selectors/entities/users';
+import {savePreferences} from 'xenia-redux/actions/preferences';
+import {setStatus} from 'xenia-redux/actions/users';
+import {Preferences} from 'xenia-redux/constants';
+import {get} from 'xenia-redux/selectors/entities/preferences';
+import {getStatusForUserId} from 'xenia-redux/selectors/entities/users';
 
 import {autoResetStatus} from 'actions/user_actions.jsx';
 

@@ -4,12 +4,12 @@
 import clone from 'clone';
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
-import {Preferences} from 'mattermost-redux/constants';
-import {getStatusesByIds} from 'mattermost-redux/actions/users';
+import {Preferences} from 'xenia-redux/constants';
+import {getStatusesByIds} from 'xenia-redux/actions/users';
 
 import * as Actions from 'actions/status_actions.jsx';
 
-jest.mock('mattermost-redux/actions/users', () => ({
+jest.mock('xenia-redux/actions/users', () => ({
     getStatusesByIds: jest.fn(() => {
         return {type: ''};
     }),

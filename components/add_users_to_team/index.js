@@ -3,9 +3,9 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getProfilesNotInTeam, searchProfiles} from 'mattermost-redux/actions/users';
-import {getCurrentTeam} from 'mattermost-redux/selectors/entities/teams';
-import {searchProfilesNotInCurrentTeam, getProfilesNotInCurrentTeam} from 'mattermost-redux/selectors/entities/users';
+import {getProfilesNotInTeam, searchProfiles} from 'xenia-redux/actions/users';
+import {getCurrentTeam} from 'xenia-redux/selectors/entities/teams';
+import {searchProfilesNotInCurrentTeam, getProfilesNotInCurrentTeam} from 'xenia-redux/selectors/entities/users';
 
 import {loadStatusesForProfilesList} from 'actions/status_actions.jsx';
 import {addUsersToTeam} from 'actions/team_actions.jsx';

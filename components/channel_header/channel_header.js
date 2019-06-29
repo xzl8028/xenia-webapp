@@ -5,8 +5,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {OverlayTrigger, Popover, Tooltip} from 'react-bootstrap';
 import {FormattedMessage, intlShape} from 'react-intl';
-import {Permissions} from 'mattermost-redux/constants';
-import {memoizeResult} from 'mattermost-redux/utils/helpers';
+import {Permissions} from 'xenia-redux/constants';
+import {memoizeResult} from 'xenia-redux/utils/helpers';
 
 import 'bootstrap';
 
@@ -595,6 +595,7 @@ export default class ChannelHeader extends React.PureComponent {
                                 aria-hidden='true'
                             />
                         }
+                        ariaLabel={true}
                         buttonClass={'style--none ' + pinnedIconClass}
                         buttonId={'channelHeaderPinButton'}
                         onClick={this.showPinnedPosts}
@@ -627,6 +628,7 @@ export default class ChannelHeader extends React.PureComponent {
                                 aria-hidden='true'
                             />
                         }
+                        ariaLabel={true}
                         buttonId={'channelHeaderMentionButton'}
                         onClick={this.searchMentions}
                         tooltipKey={'recentMentions'}
@@ -635,6 +637,7 @@ export default class ChannelHeader extends React.PureComponent {
                         iconComponent={
                             <FlagIcon className='icon icon__flag'/>
                         }
+                        ariaLabel={true}
                         buttonId={'channelHeaderFlagButton'}
                         onClick={this.getFlagged}
                         tooltipKey={'flaggedPosts'}

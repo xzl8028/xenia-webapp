@@ -1,14 +1,14 @@
 // Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {Client4} from 'mattermost-redux/client';
-import {getLicense, getConfig} from 'mattermost-redux/selectors/entities/general';
-import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
-import {getChannel} from 'mattermost-redux/selectors/entities/channels';
-import {Permissions} from 'mattermost-redux/constants';
-import * as PostListUtils from 'mattermost-redux/utils/post_list';
-import {canEditPost as canEditPostRedux} from 'mattermost-redux/utils/post_utils';
+import {Client4} from 'xenia-redux/client';
+import {getLicense, getConfig} from 'xenia-redux/selectors/entities/general';
+import {haveIChannelPermission} from 'xenia-redux/selectors/entities/roles';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
+import {getChannel} from 'xenia-redux/selectors/entities/channels';
+import {Permissions} from 'xenia-redux/constants';
+import * as PostListUtils from 'xenia-redux/utils/post_list';
+import {canEditPost as canEditPostRedux} from 'xenia-redux/utils/post_utils';
 
 import store from 'stores/redux_store.jsx';
 
@@ -236,7 +236,7 @@ function isIdNotPost(postId) {
 }
 
 // getOldestPostId returns the oldest valid post ID in the given list of post IDs. This function is copied from
-// mattermost-redux, except it also includes additional special IDs that are only used in the web app.
+// xenia-redux, except it also includes additional special IDs that are only used in the web app.
 export function getOldestPostId(postIds) {
     for (let i = postIds.length - 1; i >= 0; i--) {
         const item = postIds[i];
@@ -284,7 +284,7 @@ export function getPreviousPostId(postIds, startIndex) {
 }
 
 // getLatestPostId returns the most recent valid post ID in the given list of post IDs. This function is copied from
-// mattermost-redux, except it also includes additional special IDs that are only used in the web app.
+// xenia-redux, except it also includes additional special IDs that are only used in the web app.
 export function getLatestPostId(postIds) {
     for (let i = 0; i < postIds.length; i++) {
         const item = postIds[i];

@@ -3,13 +3,13 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getConfig, getEnvironmentConfig} from 'mattermost-redux/actions/admin';
-import {loadRolesIfNeeded, editRole} from 'mattermost-redux/actions/roles';
-import * as Selectors from 'mattermost-redux/selectors/entities/admin';
+import {getConfig, getEnvironmentConfig} from 'xenia-redux/actions/admin';
+import {loadRolesIfNeeded, editRole} from 'xenia-redux/actions/roles';
+import * as Selectors from 'xenia-redux/selectors/entities/admin';
 import {withRouter} from 'react-router-dom';
-import {getConfig as getGeneralConfig, getLicense} from 'mattermost-redux/selectors/entities/general';
-import {getRoles} from 'mattermost-redux/selectors/entities/roles';
-import {isCurrentUserSystemAdmin} from 'mattermost-redux/selectors/entities/users';
+import {getConfig as getGeneralConfig, getLicense} from 'xenia-redux/selectors/entities/general';
+import {getRoles} from 'xenia-redux/selectors/entities/roles';
+import {isCurrentUserSystemAdmin} from 'xenia-redux/selectors/entities/users';
 
 import {setNavigationBlocked, deferNavigation, cancelNavigation, confirmNavigation} from 'actions/admin_actions.jsx';
 import {getNavigationBlocked, showNavigationPrompt} from 'selectors/views/admin';

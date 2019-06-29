@@ -4,11 +4,11 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {savePreferences} from 'mattermost-redux/actions/preferences';
-import {Preferences} from 'mattermost-redux/constants';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {get as getPreference, getSidebarPreferences} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {savePreferences} from 'xenia-redux/actions/preferences';
+import {Preferences} from 'xenia-redux/constants';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {get as getPreference, getSidebarPreferences} from 'xenia-redux/selectors/entities/preferences';
+import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
 
 import UserSettingsSidebar from './user_settings_sidebar.jsx';
 

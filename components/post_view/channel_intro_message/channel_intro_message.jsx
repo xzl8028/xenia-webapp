@@ -5,7 +5,7 @@ import React from 'react';
 import {FormattedDate, FormattedMessage} from 'react-intl';
 import PropTypes from 'prop-types';
 
-import {Permissions} from 'mattermost-redux/constants';
+import {Permissions} from 'xenia-redux/constants';
 
 import * as GlobalActions from 'actions/global_actions.jsx';
 import {Constants} from 'utils/constants';

@@ -4,7 +4,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import {debounce} from 'mattermost-redux/actions/helpers';
+import {debounce} from 'xenia-redux/actions/helpers';
 
 import {getStandardAnalytics} from 'actions/admin_actions.jsx';
 import {Constants, UserSearchOptions, SearchUserTeamFilter, SearchUserOptionsFilter} from 'utils/constants.jsx';

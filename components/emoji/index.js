@@ -4,8 +4,8 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getCurrentTeam} from 'mattermost-redux/selectors/entities/teams';
-import {loadRolesIfNeeded} from 'mattermost-redux/actions/roles';
+import {getCurrentTeam} from 'xenia-redux/selectors/entities/teams';
+import {loadRolesIfNeeded} from 'xenia-redux/actions/roles';
 
 import EmojiPage from './emoji_page.jsx';
 

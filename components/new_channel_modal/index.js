@@ -2,9 +2,9 @@
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
-import {Preferences} from 'mattermost-redux/constants';
-import {getBool} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {Preferences} from 'xenia-redux/constants';
+import {getBool} from 'xenia-redux/selectors/entities/preferences';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
 
 import NewChannelModal from './new_channel_modal.jsx';
 

@@ -6,17 +6,17 @@ import {
     markChannelAsRead,
     markChannelAsUnread,
     markChannelAsViewed,
-} from 'mattermost-redux/actions/channels';
-import * as PostActions from 'mattermost-redux/actions/posts';
-import {WebsocketEvents} from 'mattermost-redux/constants';
-import * as PostSelectors from 'mattermost-redux/selectors/entities/posts';
-import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+} from 'xenia-redux/actions/channels';
+import * as PostActions from 'xenia-redux/actions/posts';
+import {WebsocketEvents} from 'xenia-redux/constants';
+import * as PostSelectors from 'xenia-redux/selectors/entities/posts';
+import {getCurrentChannelId} from 'xenia-redux/selectors/entities/channels';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
 import {
     isFromWebhook,
     isSystemMessage,
     shouldIgnorePost,
-} from 'mattermost-redux/utils/post_utils';
+} from 'xenia-redux/utils/post_utils';
 
 import {sendDesktopNotification} from 'actions/notification_actions.jsx';
 

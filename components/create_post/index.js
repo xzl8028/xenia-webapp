@@ -3,13 +3,13 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
 
-import {getCurrentChannel, getCurrentChannelStats} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentUserId, isCurrentUserSystemAdmin, getStatusForUserId} from 'mattermost-redux/selectors/entities/users';
-import {getChannelTimezones} from 'mattermost-redux/actions/channels';
-import {get, getInt, getBool} from 'mattermost-redux/selectors/entities/preferences';
+import {getCurrentChannel, getCurrentChannelStats} from 'xenia-redux/selectors/entities/channels';
+import {getCurrentUserId, isCurrentUserSystemAdmin, getStatusForUserId} from 'xenia-redux/selectors/entities/users';
+import {getChannelTimezones} from 'xenia-redux/actions/channels';
+import {get, getInt, getBool} from 'xenia-redux/selectors/entities/preferences';
 import {
     getCurrentUsersLatestPost,
     getLatestReplyablePostId,
@@ -17,14 +17,14 @@ import {
     getPost,
     makeGetCommentCountForPost,
     makeGetMessageInHistoryItem,
-} from 'mattermost-redux/selectors/entities/posts';
+} from 'xenia-redux/selectors/entities/posts';
 import {
     addMessageIntoHistory,
     moveHistoryIndexBack,
     moveHistoryIndexForward,
     removeReaction,
-} from 'mattermost-redux/actions/posts';
-import {Posts, Preferences as PreferencesRedux} from 'mattermost-redux/constants';
+} from 'xenia-redux/actions/posts';
+import {Posts, Preferences as PreferencesRedux} from 'xenia-redux/constants';
 
 import {connectionErrorCount} from 'selectors/views/system';
 

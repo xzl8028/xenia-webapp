@@ -4,16 +4,16 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {removeReaction} from 'mattermost-redux/actions/posts';
-import {getMissingProfilesByIds} from 'mattermost-redux/actions/users';
-import {getCurrentUserId, makeGetProfilesForReactions, getCurrentUser} from 'mattermost-redux/selectors/entities/users';
-import {getChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getCustomEmojisByName} from 'mattermost-redux/selectors/entities/emojis';
-import {getEmojiImageUrl} from 'mattermost-redux/utils/emoji_utils';
-import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
-import Permissions from 'mattermost-redux/constants/permissions';
-import Constants from 'mattermost-redux/constants/general';
-import {getConfig, getLicense} from 'mattermost-redux/selectors/entities/general';
+import {removeReaction} from 'xenia-redux/actions/posts';
+import {getMissingProfilesByIds} from 'xenia-redux/actions/users';
+import {getCurrentUserId, makeGetProfilesForReactions, getCurrentUser} from 'xenia-redux/selectors/entities/users';
+import {getChannel} from 'xenia-redux/selectors/entities/channels';
+import {getCustomEmojisByName} from 'xenia-redux/selectors/entities/emojis';
+import {getEmojiImageUrl} from 'xenia-redux/utils/emoji_utils';
+import {haveIChannelPermission} from 'xenia-redux/selectors/entities/roles';
+import Permissions from 'xenia-redux/constants/permissions';
+import Constants from 'xenia-redux/constants/general';
+import {getConfig, getLicense} from 'xenia-redux/selectors/entities/general';
 
 import {addReaction} from 'actions/post_actions.jsx';
 

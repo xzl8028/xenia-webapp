@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
-import {Posts} from 'mattermost-redux/constants/index';
+import {Posts} from 'xenia-redux/constants/index';
 import {
     isPostEphemeral,
     isPostPendingOrFailed,
-} from 'mattermost-redux/utils/post_utils';
+} from 'xenia-redux/utils/post_utils';
 
 import Constants, {Locations} from 'utils/constants.jsx';
 import * as PostUtils from 'utils/post_utils.jsx';
@@ -396,9 +396,9 @@ export default class RhsComment extends React.PureComponent {
                     <div>
                         <div className='post__header'>
                             <div className='col col__name'>
-                                <strong>{userProfile}</strong>
+                                {userProfile}
+                                {botIndicator}
                             </div>
-                            {botIndicator}
                             <div className='col'>
                                 {postTime}
                                 {pinnedBadge}

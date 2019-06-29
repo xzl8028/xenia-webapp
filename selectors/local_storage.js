@@ -1,8 +1,8 @@
 // Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {getCurrentTeamId, getTeamByName} from 'mattermost-redux/selectors/entities/teams';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentTeamId, getTeamByName} from 'xenia-redux/selectors/entities/teams';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
 
 import localStorageStore from 'stores/local_storage_store';
 

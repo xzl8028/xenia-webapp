@@ -7,9 +7,9 @@ import {
     getPostIdsInChannel,
     makeGetPostIdsAroundPost,
     getPost,
-} from 'mattermost-redux/selectors/entities/posts';
-import {makePreparePostIdsForPostList} from 'mattermost-redux/utils/post_list';
-import {memoizeResult} from 'mattermost-redux/utils/helpers';
+} from 'xenia-redux/selectors/entities/posts';
+import {makePreparePostIdsForPostList} from 'xenia-redux/utils/post_list';
+import {memoizeResult} from 'xenia-redux/utils/helpers';
 
 import {getLatestPostId} from 'utils/post_utils.jsx';
 

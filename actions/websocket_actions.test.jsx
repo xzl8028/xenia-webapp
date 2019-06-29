@@ -4,8 +4,8 @@
 import {
     getProfilesAndStatusesForPosts,
     receivedNewPost,
-} from 'mattermost-redux/actions/posts';
-import {UserTypes} from 'mattermost-redux/action_types';
+} from 'xenia-redux/actions/posts';
+import {UserTypes} from 'xenia-redux/action_types';
 
 import {handleNewPost} from 'actions/post_actions';
 import {closeRightHandSide} from 'actions/views/rhs';
@@ -25,8 +25,8 @@ import {
     reconnect,
 } from './websocket_actions';
 
-jest.mock('mattermost-redux/actions/posts', () => ({
-    ...jest.requireActual('mattermost-redux/actions/posts'),
+jest.mock('xenia-redux/actions/posts', () => ({
+    ...jest.requireActual('xenia-redux/actions/posts'),
     getProfilesAndStatusesForPosts: jest.fn(),
 }));
 

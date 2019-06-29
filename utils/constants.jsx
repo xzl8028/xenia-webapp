@@ -24,8 +24,8 @@ import defaultThemeImage from 'images/themes/organization.png';
 import windows10ThemeImage from 'images/themes/windows_dark.png';
 import logoWebhook from 'images/webhook_icon.jpg';
 
-import Permissions from 'mattermost-redux/constants/permissions';
-import * as PostListUtils from 'mattermost-redux/utils/post_list';
+import Permissions from 'xenia-redux/constants/permissions';
+import * as PostListUtils from 'xenia-redux/utils/post_list';
 
 import {t} from 'utils/i18n';
 

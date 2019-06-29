@@ -4,12 +4,12 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {updateUserActive, revokeAllSessionsForUser} from 'mattermost-redux/actions/users';
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
-import {getBotAccounts} from 'mattermost-redux/selectors/entities/bots';
-import {loadBots} from 'mattermost-redux/actions/bots';
+import {updateUserActive, revokeAllSessionsForUser} from 'xenia-redux/actions/users';
+import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
+import {getBotAccounts} from 'xenia-redux/selectors/entities/bots';
+import {loadBots} from 'xenia-redux/actions/bots';
 
-import * as Selectors from 'mattermost-redux/selectors/entities/admin';
+import * as Selectors from 'xenia-redux/selectors/entities/admin';
 
 import SystemUsersDropdown from './system_users_dropdown.jsx';
 

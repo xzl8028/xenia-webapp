@@ -4,9 +4,9 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getTeamStats} from 'mattermost-redux/actions/teams';
-import {getProfilesNotInChannel, searchProfiles} from 'mattermost-redux/actions/users';
-import {getProfilesNotInCurrentChannel} from 'mattermost-redux/selectors/entities/users';
+import {getTeamStats} from 'xenia-redux/actions/teams';
+import {getProfilesNotInChannel, searchProfiles} from 'xenia-redux/actions/users';
+import {getProfilesNotInCurrentChannel} from 'xenia-redux/selectors/entities/users';
 
 import {addUsersToChannel} from 'actions/channel_actions';
 

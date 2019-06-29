@@ -3,7 +3,7 @@
 
 import {connect} from 'react-redux';
 
-import {saveSearchScrollPosition} from 'mattermost-redux/actions/gifs';
+import {saveSearchScrollPosition} from 'xenia-redux/actions/gifs';
 
 import SearchGrid from './SearchGrid';
 

@@ -1,9 +1,9 @@
 // Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
-import {getRedirectChannelNameForTeam as getRedirectChannelNameForTeamRedux} from 'mattermost-redux/selectors/entities/channels';
-import Permissions from 'mattermost-redux/constants/permissions';
+import {haveIChannelPermission} from 'xenia-redux/selectors/entities/roles';
+import {getRedirectChannelNameForTeam as getRedirectChannelNameForTeamRedux} from 'xenia-redux/selectors/entities/channels';
+import Permissions from 'xenia-redux/constants/permissions';
 
 import store from 'stores/redux_store.jsx';
 import Constants from 'utils/constants.jsx';

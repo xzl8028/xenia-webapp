@@ -2,10 +2,10 @@
 // See LICENSE.txt for license information.
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
-import {getCurrentTeam} from 'mattermost-redux/selectors/entities/teams';
-import {getInt} from 'mattermost-redux/selectors/entities/preferences';
-import {savePreferences} from 'mattermost-redux/actions/preferences';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
+import {getCurrentTeam} from 'xenia-redux/selectors/entities/teams';
+import {getInt} from 'xenia-redux/selectors/entities/preferences';
+import {savePreferences} from 'xenia-redux/actions/preferences';
 
 import {Preferences} from 'utils/constants.jsx';
 

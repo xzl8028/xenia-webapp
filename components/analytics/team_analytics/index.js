@@ -3,9 +3,9 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getTeams} from 'mattermost-redux/actions/teams';
-import {getProfilesInTeam} from 'mattermost-redux/actions/users';
-import {getTeamsList} from 'mattermost-redux/selectors/entities/teams';
+import {getTeams} from 'xenia-redux/actions/teams';
+import {getProfilesInTeam} from 'xenia-redux/actions/users';
+import {getTeamsList} from 'xenia-redux/selectors/entities/teams';
 
 import BrowserStore from 'stores/browser_store.jsx';
 import {getCurrentLocale} from 'selectors/i18n';

@@ -4,9 +4,9 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {deleteScheme} from 'mattermost-redux/actions/schemes';
+import {deleteScheme} from 'xenia-redux/actions/schemes';
 
-import {makeGetSchemeTeams} from 'mattermost-redux/selectors/entities/schemes';
+import {makeGetSchemeTeams} from 'xenia-redux/selectors/entities/schemes';
 
 import PermissionsSchemeSummary from './permissions_scheme_summary.jsx';
 

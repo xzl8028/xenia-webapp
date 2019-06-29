@@ -4,35 +4,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {UserTypes} from 'mattermost-redux/action_types';
-import {Client4} from 'mattermost-redux/client';
-import {Preferences} from 'mattermost-redux/constants';
+import {UserTypes} from 'xenia-redux/action_types';
+import {Client4} from 'xenia-redux/client';
+import {Preferences} from 'xenia-redux/constants';
 import {
     getChannelsInCurrentTeam,
     getDirectAndGroupChannels,
     getSortedUnreadChannelIds,
     makeGetChannel,
     getMyChannelMemberships,
-} from 'mattermost-redux/selectors/entities/channels';
-import {getBool, getMyPreferences} from 'mattermost-redux/selectors/entities/preferences';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getLastPostPerChannel} from 'mattermost-redux/selectors/entities/posts';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+} from 'xenia-redux/selectors/entities/channels';
+import {getBool, getMyPreferences} from 'xenia-redux/selectors/entities/preferences';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getLastPostPerChannel} from 'xenia-redux/selectors/entities/posts';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
 import {
     getCurrentUserId,
     getUserIdsInChannels,
     getUser,
     searchProfiles,
-} from 'mattermost-redux/selectors/entities/users';
-import * as ChannelActions from 'mattermost-redux/actions/channels';
-import {logError} from 'mattermost-redux/actions/errors';
+} from 'xenia-redux/selectors/entities/users';
+import * as ChannelActions from 'xenia-redux/actions/channels';
+import {logError} from 'xenia-redux/actions/errors';
 
 import {
     sortChannelsByTypeAndDisplayName,
     isDirectChannelVisible,
     isGroupChannelVisible,
     isUnreadChannel,
-} from 'mattermost-redux/utils/channel_utils';
+} from 'xenia-redux/utils/channel_utils';
 
 import BotBadge from 'components/widgets/badges/bot_badge.jsx';
 

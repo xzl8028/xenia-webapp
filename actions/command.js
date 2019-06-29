@@ -1,13 +1,13 @@
 // Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {Client4} from 'mattermost-redux/client';
-import {unfavoriteChannel} from 'mattermost-redux/actions/channels';
-import {savePreferences} from 'mattermost-redux/actions/preferences';
-import {getCurrentChannel, getRedirectChannelNameForTeam} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
-import {getCurrentRelativeTeamUrl, getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {IntegrationTypes} from 'mattermost-redux/action_types';
+import {Client4} from 'xenia-redux/client';
+import {unfavoriteChannel} from 'xenia-redux/actions/channels';
+import {savePreferences} from 'xenia-redux/actions/preferences';
+import {getCurrentChannel, getRedirectChannelNameForTeam} from 'xenia-redux/selectors/entities/channels';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
+import {getCurrentRelativeTeamUrl, getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+import {IntegrationTypes} from 'xenia-redux/action_types';
 
 import {openModal} from 'actions/views/modals';
 import * as GlobalActions from 'actions/global_actions.jsx';

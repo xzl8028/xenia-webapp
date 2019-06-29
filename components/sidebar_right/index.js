@@ -3,9 +3,9 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
-import {getChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getPost} from 'mattermost-redux/selectors/entities/posts';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
+import {getChannel} from 'xenia-redux/selectors/entities/channels';
+import {getPost} from 'xenia-redux/selectors/entities/posts';
 
 import {scrollPostList} from 'actions/views/channel';
 import {setRhsExpanded, showPinnedPosts} from 'actions/views/rhs';

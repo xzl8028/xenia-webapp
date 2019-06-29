@@ -2,7 +2,7 @@
 // See LICENSE.txt for license information.
 
 import {connect} from 'react-redux';
-import {getChannel} from 'mattermost-redux/selectors/entities/channels';
+import {getChannel} from 'xenia-redux/selectors/entities/channels';
 
 import PostMarkdown from './post_markdown';
 

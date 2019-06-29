@@ -9,9 +9,9 @@ import {
     sendVerificationEmail,
     setDefaultProfileImage,
     uploadProfileImage,
-} from 'mattermost-redux/actions/users';
-import {clearErrors, logError} from 'mattermost-redux/actions/errors';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
+} from 'xenia-redux/actions/users';
+import {clearErrors, logError} from 'xenia-redux/actions/errors';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
 
 import UserSettingsGeneralTab from './user_settings_general.jsx';
 

@@ -3,11 +3,11 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {removePost} from 'mattermost-redux/actions/posts';
-import {isCurrentChannelReadOnly} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {get} from 'mattermost-redux/selectors/entities/preferences';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {removePost} from 'xenia-redux/actions/posts';
+import {isCurrentChannelReadOnly} from 'xenia-redux/selectors/entities/channels';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+import {get} from 'xenia-redux/selectors/entities/preferences';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
 
 import {Preferences} from 'utils/constants.jsx';
 import {getSelectedPostCard} from 'selectors/rhs.jsx';

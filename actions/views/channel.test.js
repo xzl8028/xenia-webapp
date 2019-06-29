@@ -4,9 +4,9 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import {General, Posts} from 'mattermost-redux/constants';
-import {leaveChannel} from 'mattermost-redux/actions/channels';
-import * as PostActions from 'mattermost-redux/actions/posts';
+import {General, Posts} from 'xenia-redux/constants';
+import {leaveChannel} from 'xenia-redux/actions/channels';
+import * as PostActions from 'xenia-redux/actions/posts';
 
 import {browserHistory} from 'utils/browser_history';
 import * as Actions from 'actions/views/channel';
@@ -31,13 +31,13 @@ jest.mock('actions/channel_actions.jsx', () => ({
     }),
 }));
 
-jest.mock('mattermost-redux/actions/channels', () => ({
+jest.mock('xenia-redux/actions/channels', () => ({
     leaveChannel: jest.fn(() => {
         return {type: ''};
     }),
 }));
 
-jest.mock('mattermost-redux/actions/posts');
+jest.mock('xenia-redux/actions/posts');
 
 jest.mock('selectors/local_storage', () => ({
     getLastViewedChannelName: () => 'channel1',

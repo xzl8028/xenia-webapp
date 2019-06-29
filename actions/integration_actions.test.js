@@ -3,11 +3,11 @@
 
 import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
-import {getProfilesByIds} from 'mattermost-redux/actions/users';
+import {getProfilesByIds} from 'xenia-redux/actions/users';
 
 import * as Actions from 'actions/integration_actions.jsx';
 
-jest.mock('mattermost-redux/actions/users', () => ({
+jest.mock('xenia-redux/actions/users', () => ({
     getProfilesByIds: jest.fn(() => {
         return {type: ''};
     }),

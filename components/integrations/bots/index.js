@@ -3,11 +3,11 @@
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getBotAccounts} from 'mattermost-redux/selectors/entities/bots';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {loadBots, disableBot, enableBot} from 'mattermost-redux/actions/bots';
-import {createUserAccessToken, revokeUserAccessToken, enableUserAccessToken, disableUserAccessToken, getUserAccessTokensForUser, getUser} from 'mattermost-redux/actions/users';
-import * as UserSelectors from 'mattermost-redux/selectors/entities/users';
+import {getBotAccounts} from 'xenia-redux/selectors/entities/bots';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {loadBots, disableBot, enableBot} from 'xenia-redux/actions/bots';
+import {createUserAccessToken, revokeUserAccessToken, enableUserAccessToken, disableUserAccessToken, getUserAccessTokensForUser, getUser} from 'xenia-redux/actions/users';
+import * as UserSelectors from 'xenia-redux/selectors/entities/users';
 
 import Bots from './bots.jsx';
 

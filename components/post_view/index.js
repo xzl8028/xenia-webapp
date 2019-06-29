@@ -5,9 +5,9 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 
-import {getChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getUser} from 'mattermost-redux/selectors/entities/users';
-import {getTeamByName} from 'mattermost-redux/selectors/entities/teams';
+import {getChannel} from 'xenia-redux/selectors/entities/channels';
+import {getUser} from 'xenia-redux/selectors/entities/users';
+import {getTeamByName} from 'xenia-redux/selectors/entities/teams';
 
 import {
     checkAndSetMobileView,

@@ -3,8 +3,8 @@
 
 import {connect} from 'react-redux';
 
-import {getPost} from 'mattermost-redux/selectors/entities/posts';
-import * as PostListUtils from 'mattermost-redux/utils/post_list';
+import {getPost} from 'xenia-redux/selectors/entities/posts';
+import * as PostListUtils from 'xenia-redux/utils/post_list';
 
 import FloatingTimestamp from './floating_timestamp';
 

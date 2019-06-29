@@ -4,16 +4,16 @@
 import React from 'react';
 import {
     getChannelsInCurrentTeam,
-} from 'mattermost-redux/selectors/entities/channels';
-import {getMyChannelMemberships} from 'mattermost-redux/selectors/entities/common';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import * as ChannelActions from 'mattermost-redux/actions/channels';
-import {getCurrentUserLocale} from 'mattermost-redux/selectors/entities/i18n';
-import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
-import {Permissions} from 'mattermost-redux/constants';
-import {sortChannelsByTypeAndDisplayName} from 'mattermost-redux/utils/channel_utils';
-import {logError} from 'mattermost-redux/actions/errors';
+} from 'xenia-redux/selectors/entities/channels';
+import {getMyChannelMemberships} from 'xenia-redux/selectors/entities/common';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+import * as ChannelActions from 'xenia-redux/actions/channels';
+import {getCurrentUserLocale} from 'xenia-redux/selectors/entities/i18n';
+import {haveIChannelPermission} from 'xenia-redux/selectors/entities/roles';
+import {Permissions} from 'xenia-redux/constants';
+import {sortChannelsByTypeAndDisplayName} from 'xenia-redux/utils/channel_utils';
+import {logError} from 'xenia-redux/actions/errors';
 
 import GlobeIcon from 'components/svg/globe_icon';
 import LockIcon from 'components/svg/lock_icon';

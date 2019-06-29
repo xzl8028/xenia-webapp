@@ -4,13 +4,13 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {createSelector} from 'reselect';
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentUser} from 'xenia-redux/selectors/entities/users';
 import {
     getCurrentChannel,
     getMyCurrentChannelMembership,
     isCurrentChannelReadOnly,
-} from 'mattermost-redux/selectors/entities/channels';
-import {isChannelMuted} from 'mattermost-redux/utils/channel_utils';
+} from 'xenia-redux/selectors/entities/channels';
+import {isChannelMuted} from 'xenia-redux/utils/channel_utils';
 
 import {
     closeRightHandSide as closeRhs,

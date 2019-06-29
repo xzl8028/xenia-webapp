@@ -7,7 +7,7 @@ import Creatable from 'react-select/lib/Creatable';
 import {components} from 'react-select';
 import {FormattedMessage} from 'react-intl';
 
-import {isEmail} from 'mattermost-redux/utils/helpers';
+import {isEmail} from 'xenia-redux/utils/helpers';
 
 import FormattedMarkdownMessage from 'components/formatted_markdown_message';
 import MailIcon from 'components/svg/mail_icon';

@@ -10,7 +10,7 @@ import {
     uploadPlugin,
     enablePlugin,
     disablePlugin,
-} from 'mattermost-redux/actions/admin';
+} from 'xenia-redux/actions/admin';
 
 import PluginManagement from './plugin_management.jsx';
 

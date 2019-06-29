@@ -3,7 +3,7 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
-import {Permissions} from 'mattermost-redux/constants';
+import {Permissions} from 'xenia-redux/constants';
 import {intlShape} from 'react-intl';
 
 import * as GlobalActions from 'actions/global_actions.jsx';

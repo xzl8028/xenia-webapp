@@ -4,8 +4,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {FormattedMessage} from 'react-intl';
-import {Posts} from 'mattermost-redux/constants/index';
-import * as ReduxPostUtils from 'mattermost-redux/utils/post_utils';
+import {Posts} from 'xenia-redux/constants/index';
+import * as ReduxPostUtils from 'xenia-redux/utils/post_utils';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 import PostMessageContainer from 'components/post_view/post_message_view';
@@ -361,16 +361,14 @@ export default class SearchResultsItem extends React.PureComponent {
                         <div>
                             <div className='post__header'>
                                 <div className='col col__name'>
-                                    <strong>
-                                        <UserProfile
-                                            userId={post.user_id}
-                                            overwriteName={overrideUsername}
-                                            disablePopover={disableProfilePopover}
-                                            isRHS={true}
-                                        />
-                                    </strong>
+                                    <UserProfile
+                                        userId={post.user_id}
+                                        overwriteName={overrideUsername}
+                                        disablePopover={disableProfilePopover}
+                                        isRHS={true}
+                                    />
+                                    <BotBadge show={Boolean(post.props && post.props.from_webhook && !this.props.isBot)}/>
                                 </div>
-                                <BotBadge show={Boolean(post.props && post.props.from_webhook && !this.props.isBot)}/>
                                 <div className='col'>
                                     {this.renderPostTime()}
                                     {pinnedBadge}

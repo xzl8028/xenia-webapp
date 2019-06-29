@@ -4,7 +4,7 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {savePreferences} from 'mattermost-redux/actions/preferences';
+import {savePreferences} from 'xenia-redux/actions/preferences';
 
 import {
     getCurrentChannelId,
@@ -12,15 +12,15 @@ import {
     makeGetChannel,
     shouldHideDefaultChannel,
     getRedirectChannelNameForTeam,
-} from 'mattermost-redux/selectors/entities/channels';
-import {getMyChannelMemberships} from 'mattermost-redux/selectors/entities/common';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {getUserIdsInChannels, getUser} from 'mattermost-redux/selectors/entities/users';
-import {getInt, getTeammateNameDisplaySetting} from 'mattermost-redux/selectors/entities/preferences';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {isChannelMuted, isFavoriteChannel} from 'mattermost-redux/utils/channel_utils';
+} from 'xenia-redux/selectors/entities/channels';
+import {getMyChannelMemberships} from 'xenia-redux/selectors/entities/common';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+import {getUserIdsInChannels, getUser} from 'xenia-redux/selectors/entities/users';
+import {getInt, getTeammateNameDisplaySetting} from 'xenia-redux/selectors/entities/preferences';
+import {getConfig} from 'xenia-redux/selectors/entities/general';
+import {isChannelMuted, isFavoriteChannel} from 'xenia-redux/utils/channel_utils';
 
-import {displayUsername} from 'mattermost-redux/utils/user_utils';
+import {displayUsername} from 'xenia-redux/utils/user_utils';
 
 import {Constants, NotificationLevels, StoragePrefixes} from 'utils/constants.jsx';
 

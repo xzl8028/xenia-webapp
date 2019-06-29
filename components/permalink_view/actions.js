@@ -1,10 +1,10 @@
 // Copyright (c) 2015-present Xenia, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {getChannel, selectChannel, joinChannel, getChannelStats} from 'mattermost-redux/actions/channels';
-import {getPostThread} from 'mattermost-redux/actions/posts';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getChannel, selectChannel, joinChannel, getChannelStats} from 'xenia-redux/actions/channels';
+import {getPostThread} from 'xenia-redux/actions/posts';
+import {getCurrentTeamId} from 'xenia-redux/selectors/entities/teams';
+import {getCurrentUserId} from 'xenia-redux/selectors/entities/users';
 
 import {loadChannelsForCurrentUser} from 'actions/channel_actions.jsx';
 import {loadNewDMIfNeeded, loadNewGMIfNeeded} from 'actions/user_actions.jsx';

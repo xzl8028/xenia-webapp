@@ -24,7 +24,7 @@ jobs:
       - *restore_cache
       - run: |
           npm ci
-          cd node_modules/mattermost-redux && npm i && npm run build
+          cd node_modules/xenia-redux && npm i && npm run build
       - *save_cache
 
   lint:
@@ -68,6 +68,9 @@ jobs:
       - run: make package-ci
       - store_artifacts:
           path: ~/xenia-webapp/xenia-webapp.tar.gz
+      - persist_to_workspace:
+          root: .
+          paths: xenia-webapp.tar.gz
       - run:
           name: Upload to S3
           command: |
@@ -88,6 +91,65 @@ jobs:
             curl --request POST \
             --url "https://lambdas.devops.xenia.com/circleci/uploader?token=${UPLOADER_TOKEN}&vcs-type=github&username=${CIRCLE_PROJECT_USERNAME}&project=${CIRCLE_PROJECT_REPONAME}&build_num=${CIRCLE_BUILD_NUM}&bucket=releases.xenia.com/${CIRCLE_PROJECT_REPONAME}/commit/${CIRCLE_SHA1}/"
 
+  build-docker:
+    working_directory: ~/
+    docker:
+      - image: circleci/buildpack-deps:stretch
+    steps:
+      - attach_workspace:
+          at: .
+      - setup_remote_docker
+      - run:
+          command: |
+            curl -f -o server.tar.gz https://releases.xenia.com/xenia-platform-pr/${CHANGE_BRANCH}/xenia-enterprise-linux-amd64.tar.gz || curl -f -o server.tar.gz https://releases.xenia.com/xenia-platform/master/xenia-enterprise-linux-amd64.tar.gz
+
+            tar xf server.tar.gz
+            rm -rf xenia/client
+            tar xf xenia-webapp.tar.gz
+            mv client xenia/client
+            tar -zcf xenia-enterprise-linux-amd64.tar.gz xenia/
+      - store_artifacts:
+          path: ~/xenia-enterprise-linux-amd64.tar.gz
+      - run:
+          name: Upload to S3
+          command: |
+            if [[ -z "${CIRCLE_PULL_REQUEST:-}" ]]; then
+              echo "Not a PR using the branch name ${CIRCLE_BRANCH}..."
+              export FOLDER_NAME=${CIRCLE_BRANCH}
+              echo "${FOLDER_NAME}"
+            else
+              echo "This is a PR ${CIRCLE_BRANCH}..."
+              export FOLDER_NAME=$(echo "${CIRCLE_BRANCH}" | sed 's/pull\//PR-/g')
+              echo "${FOLDER_NAME}"
+            fi
+            curl --request POST \
+            --url "https://lambdas.devops.xenia.com/circleci/uploader?token=${UPLOADER_TOKEN}&vcs-type=github&username=${CIRCLE_PROJECT_USERNAME}&project=${CIRCLE_PROJECT_REPONAME}&build_num=${CIRCLE_BUILD_NUM}&bucket=releases.xenia.com/${CIRCLE_PROJECT_REPONAME}/${FOLDER_NAME}/"
+      - add_ssh_keys:
+          fingerprints:
+            - "1f:ea:9e:d2:11:90:f7:35:0f:86:0d:45:e2:a4:73:f7"
+      - run:
+          command: |
+            if [[ -z "${CIRCLE_PULL_REQUEST:-}" ]]; then
+              echo "Not a PR using the branch name ${CIRCLE_BRANCH}..."
+              export FOLDER_NAME=${CIRCLE_BRANCH}
+              echo "${FOLDER_NAME}"
+            else
+              echo "This is a PR ${CIRCLE_BRANCH}..."
+              echo "Commit hash ${TAG}"
+              export FOLDER_NAME=$(echo "${CIRCLE_BRANCH}" | sed 's/pull\//PR-/g')
+              echo "${FOLDER_NAME}"
+            fi
+            export TAG="${CIRCLE_SHA1:0:7}"
+
+            mkdir -p ~/.ssh/
+            echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+            git clone git@github.com:xzl8028/xenia-docker.git
+
+            cd xenia-docker
+            export MM_BINARY=https://releases.xenia.com/${CIRCLE_PROJECT_REPONAME}/${FOLDER_NAME}/xenia-enterprise-linux-amd64.tar.gz
+            docker build --build-arg MM_BINARY=$MM_BINARY -t xenia/xenia-enterprise-edition:${TAG} app
+            echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin
+            docker push xenia/xenia-enterprise-edition:${TAG}
 workflows:
   version: 2
   untagged-build:
@@ -105,3 +167,7 @@ workflows:
       - build:
           requires:
             - test
+      - build-docker:
+          context: matterbuild-docker
+          requires:
+            - build
