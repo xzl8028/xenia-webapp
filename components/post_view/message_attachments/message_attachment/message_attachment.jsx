@@ -203,11 +203,32 @@ export default class MessageAttachment extends React.PureComponent {
                     />
                 </th>
             );
-
+            let status_color;
+            switch (field.value) {
+                case "**等待接收**":
+                    status_color = "#9C58E3";
+                    break;
+                case "**执行中**":
+                    status_color = "#2CACE1";
+                    break;
+                case "**已完成**":
+                    status_color = "#258A28";
+                    break;   
+                case "**已取消**":
+                    status_color = "#3D3C40";
+                    break; 
+                case "**已超时**":
+                    status_color = "#FC3D41";
+                    break;
+                default:
+                    status_color = "black";
+                    break;                  
+            }
             bodyCols.push(
                 <td
                     className='attachment-field'
                     key={'attachment__field-' + i + '__' + nrTables}
+                    style={{ color: status_color }}
                 >
                     <Markdown message={field.value}/>
                 </td>
